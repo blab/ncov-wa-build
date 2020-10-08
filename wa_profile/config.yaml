@@ -4,7 +4,7 @@
 #####################################################################################
 
 configfile:
-  - spheres_profile/builds.yaml
+  - wa_profile/builds.yaml
 
 # Always print the commands that will be run to the screen for debugging.
 printshellcmds: True
@@ -37,7 +37,7 @@ keep-going: True
 # "partition". Jobs submitted to the "restart" partition will start running
 # almost immediately, but they may also be killed at any moment when someone
 # else needs those resources. This is analogous to the spot resources on AWS.
-cluster-config: spheres_profile/cluster.json
+cluster-config: wa_profile/cluster.json
 
 # Submit jobs to the cluster with SLURM's sbatch command. The string associated
 # with this key tells SLURM how to map cluster resources with those defined in
