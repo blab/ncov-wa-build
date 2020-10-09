@@ -59,16 +59,21 @@ subsampling:
       max_sequences: 2500
       min_date: --min-date {min_date}
       query: --query "(country == 'USA' & division == '{division}')"
-    local-focus:
+    local-focus-early:
       # Samples across all time for the current division.
       group_by: "year month"
       max_sequences: 1000
+      max_date: --max-date {min_date}
       query: --query "(country == 'USA' & division == '{division}')"
+      priorities:
+        type: proximity
+        focus: local-focus-late
     usa-context-late:
       # Evenly sample across time from min-date on from other divisions prioritizing samples that
       # are that are genetically similar to the current division's sequences.
       group_by: "year month"
       max_sequences: 2000
+      min_date: --min-date {min_date}
       query: --query "(country == 'USA' & division != '{division}')"
       priorities:
         type: proximity
@@ -77,23 +82,26 @@ subsampling:
       # Samples across time from other divisions prioritizing genetically similar sequences.
       group_by: "year month"
       max_sequences: 800
+      max_date: --max-date {min_date}
       query: --query "(country == 'USA' & division != '{division}')"
       priorities:
         type: proximity
-        focus: local-focus
+        focus: local-focus-early
     global-context-late:
       # Evenly sample across time from the rest of the world excluding the USA.
       group_by: "region year month"
       max_sequences: 2000
+      min_date: --min-date {min_date}
       query: --query "(country != 'USA')"
       priorities:
         type: proximity
         focus: local-focus-late
     global-context:
-      # Saples from the rest of the world (excluding the USA) from across all time.
+      # Samples from the rest of the world (excluding the USA) from across all time.
       group_by: "region year month"
       max_sequences: 800
+      max_date: --max-date {min_date}
       query: --query "(country != 'USA')"
       priorities:
         type: proximity
-        focus: local-focus
+        focus: local-focus-early
