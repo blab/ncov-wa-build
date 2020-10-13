@@ -90,9 +90,9 @@
     "region"
   ],
   "display_defaults": {
-    "color_by": "location",
+    "color_by": "division",
     "distance_measure": "num_date",
-    "geo_resolution": "location",
+    "geo_resolution": "division",
     "map_triplicate": true,
     "branch_label": "none"
   },
@@ -108,7 +108,6 @@
   "panels": [
     "tree",
     "map",
-    "entropy",
-    "frequencies"
+    "entropy"
   ]
 }

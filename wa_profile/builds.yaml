@@ -7,14 +7,16 @@ files:
 
 # Define builds for each state and territory.
 builds:
-  washington_early:
+  wa_early:
+    title: "Washington-focused SARS-CoV-2 genomic analysis: Through May 2020"
     colors: wa_profile/colors.tsv
     description: wa_profile/descriptions/early_description.md
     division: Washington
     max_date: 2020-05-31
     subsampling_scheme: early    
 
-  washington_late:
+  wa_late:
+    title: "Washington-focused SARS-CoV-2 genomic analysis: May 15, 2020 onward"
     colors: wa_profile/colors.tsv
     description: wa_profile/descriptions/summer-2020_description.md
     division: Washington
