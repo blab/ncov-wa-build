@@ -64,7 +64,7 @@ subsampling:
     local-focus-early:
       # Samples across all time for the current division.
       group_by: "year month"
-      max_sequences: 1000
+      max_sequences: 500
       max_date: --max-date {min_date}
       query: --query "(country == 'USA' & division == '{division}')"
       priorities:
@@ -83,7 +83,7 @@ subsampling:
     usa-context:
       # Samples across time from other divisions prioritizing genetically similar sequences.
       group_by: "year month"
-      max_sequences: 800
+      max_sequences: 400
       max_date: --max-date {min_date}
       query: --query "(country == 'USA' & division != '{division}')"
       priorities:
@@ -101,7 +101,7 @@ subsampling:
     global-context:
       # Samples from the rest of the world (excluding the USA) from across all time.
       group_by: "region year month"
-      max_sequences: 800
+      max_sequences: 400
       max_date: --max-date {min_date}
       query: --query "(country != 'USA')"
       priorities:
