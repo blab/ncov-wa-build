@@ -1,0 +1,1 @@
+This is a subsampled analysis focused on SARS-CoV-2 sequences in Washington State. This build aims to provide an overview of the genetic diversity of the Washington State epidemic throughout the course of the pandemic. Additional sequences from the rest of the USA & the world are selected by genetic similarity to the state-level sequences. 

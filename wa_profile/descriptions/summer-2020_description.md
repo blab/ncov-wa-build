@@ -1,1 +1,0 @@
-This analysis focuses on SARS-CoV-2 sequences available from Washington State sampled after May 15, 2020. Additional sequences from the rest of the USA & the world are selected by genetic similarity to the state-level sequences. Additionally, earlier sequences from Washington, the USA, and the world are provided for temporal context.
