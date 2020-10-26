@@ -4,11 +4,14 @@ This repository analyzes viral genomes from Washington State using [Nextstrain](
 
 # Usage
 Clone this repository.
+
 `git clone https://github.com/blab/ncov-wa-build.git
 cd ncov-wa-build/`
 
 Modify build definitions, as needed, in `wa_profile/builds.yaml`. Run the workflow.
+
 `snakemake --profile wa_profile/`
 
 View the resulting builds with auspice from a local machine.
+
 `auspice view`
