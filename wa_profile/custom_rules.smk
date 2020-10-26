@@ -2,8 +2,8 @@ from datetime import date
 
 # Calculate dates
 d = date.today()
-m = d.month()
-y = d.year()
+m = d.month
+y = d.year
 four_m = d.replace(month=(m-4))
 one_y = d.replace(year=(y-1))
 
