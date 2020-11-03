@@ -1,11 +1,10 @@
 from datetime import date
+from dateutil import relativedelta
 
 # Calculate dates
 d = date.today()
-m = d.month
-y = d.year
-four_m = d.replace(month=(m-4))
-one_y = d.replace(year=(y-1))
+four_m = d - relativedelta.relativedelta(months=4)
+one_y = d - relativedelta.relativedelta(years=1)
 
 # Set earliest_date & latest_date in builds
 config["builds"]["wa_4m"]["latest_date"] = d.strftime('%Y-%m-%d')
