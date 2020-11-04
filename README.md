@@ -25,9 +25,3 @@ View the resulting builds with auspice from a local machine.
 ```
 auspice view
 ```
-
-### Download formatted datasets
-
-The SARS-CoV-2 genomes were generously shared via GISAID. We gratefully acknowledge the Authors, Originating and Submitting laboratories of the genetic sequence and metadata made available through GISAID on which this research is based.
-
-In order to download the GISAID data to run the analysis yourself, please see [this guide](https://nextstrain.github.io/ncov/data-prep).
