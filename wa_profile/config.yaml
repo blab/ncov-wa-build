@@ -20,16 +20,18 @@ stats: stats.json
 # prohibitively complicated to setup.
 use-conda: True
 
-#
-# OPTIONAL: Setup config for running builds on a SLURM cluster.
-#
-
-# Run no more than this many jobs at once on the cluster.
+# Run no more than this many jobs at once on the cluster. Modify this for the
+# number of clusters available on your workflow.
 cores: 20
 
 # On failure of one or more jobs, try to finish running all other jobs until the
 # workflow has to be restarted.
 keep-going: True
+
+#
+# OPTIONAL: Setup config for running builds on a SLURM cluster. If you are not
+# running on a slurm cluster. Please comment out all the text below.
+#
 
 # Cluster-specific settings for resources required by any rule. This file
 # provides default resources for all rules and allows users to specify resources
@@ -39,14 +41,16 @@ keep-going: True
 # else needs those resources. This is analogous to the spot resources on AWS.
 cluster-config: wa_profile/cluster.json
 
-# Submit jobs to the cluster with SLURM's sbatch command. The string associated
+# Submit jobs to the cluster with SLURM's DRMAA bindings. The string associated
 # with this key tells SLURM how to map cluster resources with those defined in
 # the cluster config above.
-cluster: "sbatch {cluster.partition} --nodes=1 --ntasks=1 --mem={cluster.memory} --cpus-per-task={cluster.cores} --tmp={cluster.disk} --time={cluster.time}"
+drmaa: " {cluster.partition} --nodes=1 --ntasks=1 --mem={cluster.memory} --cpus-per-task={cluster.cores} --tmp={cluster.disk} --time={cluster.time}"
 
+# NOTE: Use the settings from the next block if DRMAA is not an option.
 # Use a custom script to evaluate the status of jobs on the cluster. This
 # prevents jobs from dying silently and not being caught by Snakemake.
-cluster-status: "slurm-status.py"
+#cluster: "sbatch {cluster.partition} --nodes=1 --ntasks=1 --mem={cluster.memory} --cpus-per-task={cluster.cores} --tmp={cluster.disk} --time={cluster.time}"
+#cluster-status: "slurm-status.py"
 
 # Wait a fixed number of seconds for missing files since the cluster file system
 # can be quite slow and the workflow can fail unnecessarily due to this latency.
