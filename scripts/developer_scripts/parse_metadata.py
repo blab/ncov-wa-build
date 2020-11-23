@@ -30,9 +30,9 @@ def read_local_file(file_name): #TODO: how will final file structure look like? 
     if path_file_name in first_files: #simple list
         return [line.strip() for line in file_content[1:]]
 
-    second_files = [path_to_config_files+fi for fi in ["wrong_regions.txt", "abbreviations.txt", "false_divisions.txt", ] ]
+    second_files = [path_to_config_files+fi for fi in ["wrong_regions.txt", "abbreviations.txt", "false_divisions.txt", "manual_adjustments.txt"] ]
 
-    if path_file_name in second_files: #dictionary, keys seaprated from content with tabs
+    if path_file_name in second_files: #dictionary, keys seperated from content with tabs
         content = {}
         for line in file_content[1:]:
             l = line.strip().split("\t")
@@ -139,11 +139,84 @@ def read_geography_file(file_name, hierarchical = False):
     return data
 
 
-#Funtion to support supervised addition of new entries into lat_longs. The user must review every new entry and approve it to be written into the lat_longs file. Ground truth lat_longs is not overwritten, but a copy is made in the developer_scripts folder.
-def auto_sort_lat_longs(new_lat_longs):
+replace_special_char = {
+    "é":"e",
+    "è":"e",
+    "ü":"ue",
+    "ä":"ae",
+    "ö":"oe",
+    "í":"i",
+    "ó":"o",
+    "ç":"c",
+    "á":"a",
+    "'":" ",
+    "â":"a",
+    "š":"s",
+    "ť":"t",
+    "ñ":"n",
+    "ř":"r",
+    "ž":"z",
+    "ů":"u",
+    "ý":"y",
+    "ě":"e",
+    "ň":"n",
+    "ã":"a",
+    "ê":"e",
+    "č":"c",
+    "ô":"o",
+    "ı":"i",
+    "ú": "u",
+    "ś":"s",
+    "ą":"q",
+    "à":"a",
+    "å":"a",
+    "ł":"l",
+    "-":" ",
+    "î": "i"
+}
+
+
+def clean_string(s):
+    s = s.lower()
+    for c in replace_special_char:
+        s = s.replace(c, replace_special_char[c])
+    return s
+
+
+def pre_sort_lat_longs(lat_longs):
+    dataset = {"location": [], "division": [], "country": [], "region": []}
+    regions = ["Africa", "Asia", "Europe", "North America", "Oceania", "South America"]
+    for line in lat_longs:
+        if line == "\n":
+            continue
+        dataset[line.split("\t")[0]].append(line)
+
+    lat_longs_sorted = []
+
+    regions_list = []
+    for type in dataset:
+        no_special_char = {clean_string(dataset[type][i].split("\t")[1]): i for i in range(len(dataset[type]))}
+        for line in sorted(no_special_char):
+            i = no_special_char[line]
+            line_orig = dataset[type][i]
+            if line_orig.startswith("country") and line_orig.split("\t")[1] in regions:
+                regions_list.append(line_orig)
+                continue
+            lat_longs_sorted.append(line_orig)
+        if type == "country":
+            lat_longs_sorted.append("\n")
+            lat_longs_sorted += regions_list
+        lat_longs_sorted.append("\n\n\n")
+
+    return lat_longs_sorted
+
+
+#Function to support supervised addition of new entries into lat_longs. The user must review every new entry and approve it to be written into the lat_longs file. Ground truth lat_longs is not overwritten, but a copy is made in the developer_scripts folder.
+def auto_add_lat_longs(new_lat_longs):
 
     with open("defaults/lat_longs.tsv") as f:
         lat_longs = f.readlines()
+    lat_longs = pre_sort_lat_longs(lat_longs)
     for entry in new_lat_longs:
         if len(entry.split("\t")) < 4:
             continue
@@ -154,7 +227,7 @@ def auto_sort_lat_longs(new_lat_longs):
             if lat_longs[i] != "\n" and entry[:4] != lat_longs[i][:4]: #first characters correspond to country, division, location etc.
                 continue
             correct_hierarchy = True
-            if lat_longs[i] != "\n" and entry > lat_longs[i]:
+            if lat_longs[i] != "\n" and clean_string(entry) > clean_string(lat_longs[i]):
                 continue
             print("\n")
             for k in range(3):
@@ -219,7 +292,7 @@ def read_metadata(metadata):
                 division = location
                 location = ""
 
-        countries_to_division = {"Hunan": "China", "Gibraltar": "United Kingdom"}
+        countries_to_division = {"Hunan": "China", "Gibraltar": "United Kingdom", "Faroe Islands": "Denmark", "St Eustatius": "Netherlands"}
 
         if country in countries_to_division:
             additions_to_annotation.append(strain + "\t" + id + "\tcountry\t"+ countries_to_division[country] +" #previously " + country)
@@ -406,6 +479,10 @@ def correct_data(data, type, corrections, add_annotations = True): #TODO: add re
                         additions_to_annotation.append(strain + "\tregion\t" + region_correct + " # previously " + region)
                 data[region_correct][country_correct][division_correct][location_correct].append(strain)
             del data[region][country][division][location]
+            if data[region][country][division] == {}:
+                del data[region][country][division]
+            if data[region][country] == {}:
+                del data[region][country]
 
     if type == "div_to_loc":
         for location in corrections:
@@ -568,6 +645,40 @@ def adjust_to_database(data): #TODO: temporary solution, needs reworking
     return data
 
 
+##### Step 2.05: Apply manual adjustments set in manual_adjustments.txt
+def manual_adjustments(data):
+    manual_adjustments = read_local_file("manual_adjustments.txt")
+
+    seqs_to_correct = []
+    for region in data:
+        for country in data[region]:
+            for division in data[region][country]:
+                for location in data[region][country][division]:
+                    for g in manual_adjustments:
+                        (region2, country2, division2, location2) = g.split("/")
+                        (region_correct, country_correct, division_correct, location_correct) = manual_adjustments[g].split("/")
+                        if region2 == "*":
+                            region2 = region
+                            region_correct = region
+                        if country2 == "*":
+                            country2 = country
+                            country_correct = country
+                        if division2 == "*":
+                            division2 = division
+                            division_correct = division
+                        if location2 == "*":
+                            location2 = location
+                            location_correct = location
+                        if region == region2 and country == country2 and division == division2 and location == location2:
+                            seqs_to_correct.append((region, country, division, location, region_correct, country_correct, division_correct, location_correct))
+                            print("Manual adjustment: " + bold("/".join([region, country, division, location])) + " -> " + bold("/".join([region_correct, country_correct, division_correct, location_correct])))
+
+    data = correct_data(data, "location", seqs_to_correct)
+    print("\n=============================\n")
+    return data
+
+
+
 ##### Step 2.1: Apply all known variants stored in an external file variants.txt
 def apply_variants(data): #TODO: currently, the file variants.txt doesn't distinguish between location or division - what if we want to correct only one type, not the other?
     variants = read_local_file("variants.txt")
@@ -695,11 +806,13 @@ def check_false_divisions(data):
     for region in data:
         for country in data[region]:
             for division in data[region][country]:
-                for location in data[region][country][division]:
-                    if location in data[region][country] and location != division:
-                        div_as_loc[location] = (region, country, division)
-                        print("Unknown location found as division: " + bold(location) + " (true division: " + bold(division) + ")")
-                        print("(Suggestion: add " + location + " -> " + division + " to false_divisions.txt)")
+                if division != "":
+                    for location in data[region][country][division]:
+                        if location != "":
+                            if location in data[region][country] and location != division:
+                                div_as_loc[location] = (region, country, division)
+                                print("Unknown location found as division: " + bold(location) + " (true division: " + bold(division) + ")")
+                                print("(Suggestion: add " + location + " -> " + division + " to false_divisions.txt)")
 
     additions_to_annotation.append("\n=============================\n")
     print("\n=============================\n")
@@ -991,7 +1104,7 @@ def check_for_missing(data):
 
         answer = input("Would you like to use auto-sort for these lat_longs? y or n")
         if answer == "y":
-            auto_sort_lat_longs(new_lat_longs)
+            auto_add_lat_longs(new_lat_longs)
 
 
     print("\n=============================\n")
@@ -1178,6 +1291,10 @@ if __name__ == '__main__':
 
     ##### Step 2.0: Adjust the divisions and locations by comparing them to a known database - only accessible for Belgium at the moment
     data = adjust_to_database(data)
+
+    ##### Step 2.05: Before checking for any of the other adjustments, apply manually designed adjustments stored in manual_adjustments.txt
+    # This includes manually setting the region, country, division and location before and after the adjustment
+    data = manual_adjustments(data)
 
     ##### Step 2.1: Apply all known variants stored in an external file variants.txt
     data = apply_typical_errors(data) #TODO: do this earlier (before reading metadata), join with UK as region?
