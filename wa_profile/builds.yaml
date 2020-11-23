@@ -19,6 +19,15 @@ builds:
    latest_date: 2020-06-30
    subsampling_scheme: early
 
+  wa_jul20-oct20:
+    title: "Wahington-focused SARS-CoV-2 genomic analysis: July-October 2020"
+    colors: wa_profile/colors.tsv
+    description: wa_profile/descriptions/jul20-oct20_description.md
+    division: Washington
+    earliest_date: 2020-07-01
+    latest_date: 2020-10-31
+    subsampling_scheme: time-window
+
   wa_4m:
     title: "Washington-focused SARS-CoV-2 genomic analysis: Past four months"
     colors: wa_profile/colors.tsv
