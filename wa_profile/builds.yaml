@@ -1,9 +1,11 @@
 # Define path to the conda environment file.
-conda_environment: "../../wa_profile/conda.yaml"
+#conda_environment: "../../wa_profile/conda.yaml"
 
 # Defines path to custom rules
 custom_rules:
-  - wa_profile/custom_rules.smk
+  - wa_profile/add_dates.smk
+
+S3_BUCKET: "nextstrain-ncov-private"
 
 # Define custom auspice configuration to enable frequencies.
 files:
@@ -20,7 +22,7 @@ builds:
    subsampling_scheme: early
 
   wa_jul20-oct20:
-    title: "Wahington-focused SARS-CoV-2 genomic analysis: July-October 2020"
+    title: "Washington-focused SARS-CoV-2 genomic analysis: July-October 2020"
     colors: wa_profile/colors.tsv
     description: wa_profile/descriptions/jul20-oct20_description.md
     division: Washington
