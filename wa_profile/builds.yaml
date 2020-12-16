@@ -1,6 +1,3 @@
-# Define path to the conda environment file.
-#conda_environment: "../../wa_profile/conda.yaml"
-
 # Defines path to custom rules
 custom_rules:
   - wa_profile/add_dates.smk
