@@ -1,4 +1,3 @@
-from datetime import date
 from dateutil import relativedelta
 
 # Calculate dates

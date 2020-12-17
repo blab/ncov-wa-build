@@ -1,7 +1,6 @@
 import copy
 from datetime import date
 import os
-from os import environ
 from socket import getfqdn
 from getpass import getuser
 from snakemake.logging import logger
