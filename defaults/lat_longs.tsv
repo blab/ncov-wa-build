@@ -3,6 +3,7 @@ location	Aalter	51.079810	3.459957
 location	Aarschot	50.986584	4.868284
 location	Aartselaar	51.133297	4.3870241
 location	Abakan	53.7209024	91.442435
+location	Abbotsford	49.0521162	-122.329479
 location	Abondant	48.790785	1.420178
 location	Accra	5.591875	-0.184552
 location	Adajan	21.2651204	72.84991282218647
@@ -730,6 +731,7 @@ location	Fawwar	31.4806083	35.0613504
 location	Fayette County	42.9258	-91.9099
 location	Feira de Santana	-12.2598	-38.9675
 location	Fenoarivo	-17.382029	49.4099733
+location	Fernandopolis	-20.2825647	-50.2500762
 location	Fillmore County	41.5637	-92.0077
 location	Fitchburg	42.986206	-89.426696
 location	Fitero	42.059536	-1.858151
@@ -2310,6 +2312,7 @@ location	Tuebingen	48.5236164	9.0535531
 location	Tughlakabad	28.5023598	77.2992401
 location	Tuklaty	50.0847775	14.7694956
 location	Tulare County	36.2516475	-118.852583
+location	Tulkarem	32.3194023921685	35.023729717985056
 location	Tulua	4.092520	-76.197483
 location	Tumaco	1.792753	-78.793766
 location	Tumakuru	13.3400771	77.1006208
@@ -2775,6 +2778,7 @@ division	China	33.394333	104.689839
 division	Chiriqui	8.3971129	-82.3223443
 division	Chisinau	47.0244707	28.8322534
 division	Choco	5.705238	-76.890815
+division	Chonburi	13.1857117	101.1210777
 division	Chongqing	29.858721	107.375623
 division	Chubu	35.183334	136.899994
 division	Chungcheongnam	36.685948	126.799198
@@ -2885,6 +2889,7 @@ division	Friesland	53.1642	5.7818
 division	Friuli Venezia Giulia	46.2259	13.1034
 division	Fujian	26.284852	118.122938
 division	Gaborone	-24.6581357	25.9088474
+division	Gafsa	34.43367	8.79079875204918
 division	Galapagos	-0.62881505	-90.3638752022324
 division	Galicia	42.5751	-8.1339
 division	Galway	53.2744122	-9.0490632
@@ -3396,6 +3401,7 @@ division	Petah Tikva	32.0840	34.8878
 division	Pezinok	48.2854539	17.270194
 division	Philippeville	50.178836	4.592270
 division	Philippines	12.8797	121.774
+division	Phitsanulok	16.9779975	100.3848239
 division	Phnom Penh	11.568271	104.9224426
 division	Phuket	7.959471	98.339272
 division	Piaui	-7.7183	-42.7289
@@ -3466,6 +3472,7 @@ division	Rostov	47.2213858	39.7114196
 division	Russia	64.6863136	97.7453061
 division	Rwanda	-1.9646631	30.0644358
 division	Ryazan	54.6295687	39.7425039
+division	Saarland	49.3841872	6.9537369
 division	Sabac	44.7571535	19.6953972
 division	Saint Barthélemy	17.9036287	-62.811568843006896
 division	Saint-François	16.2532002	-61.2750706
@@ -3509,6 +3516,7 @@ division	Seoul	37.548278	126.990916
 division	Serbia	43.745902	20.848918
 division	Sergipe	-10.5741	-37.3857
 division	Setúbal	38.5260	-8.8909
+division	Sfax	34.72312735	10.33587885553419
 division	Shandong	36.298013	118.193884
 division	Shanghai	31.171447	121.429896
 division	Sharja	25.3525369	55.4378628
@@ -3535,6 +3543,7 @@ division	Smolyan	41.5774	24.7011
 division	Sodermanland	59.0336	16.7519
 division	Sofia	42.6977	23.3219
 division	Soignies	50.567422	4.040613
+division	Soliman	36.6944327	10.4865924
 division	Solothurn	47.207025	7.528326
 division	Somalia	8.3676771	49.083416
 division	Somogy County	46.439656	17.6212956
@@ -3639,6 +3648,7 @@ division	Tournai-Mouscron	50.610622	3.406319
 division	Trang	7.529936	99.611699
 division	Trentino	46.051733	11.014531
 division	Trentino-Alto Adige	46.441472	11.282121
+division	Trinidad	10.36701726107432	-61.233044896832965
 division	Trois-Rivières	15.9767433	-61.6441603
 division	Troms Og Finnmark	69.720052	23.450581
 division	Trondelag	63.87759235	10.195050547141093
@@ -3756,6 +3766,7 @@ division	Yogyakarta	-7.8011945	110.364917
 division	Yucatan	20.6845957	-88.8755669
 division	Yunnan	24.556297	101.36621
 division	Zacatecas	23.0000001	-103.0000001
+division	Zagreb	45.8131847	15.9771774
 division	Zamora-Chinchipe	-4.0620183	-78.7751588
 division	Zeeland	51.484078	3.802245
 division	Zefat	32.9646	35.4960
@@ -3907,6 +3918,7 @@ country	Tajikistan	38.8610	71.2761
 country	Thailand	14.8971921	100.83273
 country	Timor-Leste	-8.809397	125.909527
 country	Togo	8.88625	1.069709
+country	Trinidad	10.447801502473043	-61.23664353857157
 country	Tunisia	33.654143	9.065134
 country	Turkey	39.046746	36.767068
 country	Uganda	1.861287	32.55149
