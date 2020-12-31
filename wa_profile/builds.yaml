@@ -161,3 +161,7 @@ subsampling:
       priorities:
         type: proximity
         focus: local-focus
+    before:
+      group_by: "year month division"
+      max_sequences: 200
+      max_date: --max-date {earliest_date}
