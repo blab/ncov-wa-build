@@ -28,6 +28,9 @@ cores: 20
 # workflow has to be restarted.
 keep-going: True
 
+# Prints failed log files to screen
+show-failed-logs: True
+
 #
 # OPTIONAL: Setup config for running builds on a SLURM cluster. If you are not
 # running on a slurm cluster. Please comment out all the text below.
