@@ -23,7 +23,6 @@ Cartago
 Lake County
 Iowa County
 Douglas County
-Cordoba
 Cuenca
 Pierce County
 Taylor County
@@ -41,3 +40,12 @@ Svobodny
 Tres Rios
 Borovichi
 Monterey County
+Kings County
+Allegany County
+Concepcion
+Canoas
+San Fernando
+Santa Fe
+San Isidro
+Torres
+Cordoba

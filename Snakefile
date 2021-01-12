@@ -62,7 +62,18 @@ if "builds" not in config:
         }
     }
 
-BUILD_NAMES = list(config["builds"].keys())
+# Allow users to specify a list of active builds from the command line.
+if config.get("active_builds"):
+    BUILD_NAMES = config["active_builds"].split(",")
+else:
+    BUILD_NAMES = list(config["builds"].keys())
+
+# Construct the correct absolute path to the conda environment based on the
+# top-level Snakefile's directory and a path defined in the Snakemake config
+# that is relative to that top-level directory.
+SNAKEMAKE_DIR = os.path.dirname(workflow.snakefile)
+CONDA_ENV_PATH = os.path.join(SNAKEMAKE_DIR, config["conda_environment"])
+config["conda_environment"] = CONDA_ENV_PATH
 
 # Construct the correct absolute path to the conda environment based on the
 # top-level Snakefile's directory and a path defined in the Snakemake config
