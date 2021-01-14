@@ -74,6 +74,7 @@ else:
 SNAKEMAKE_DIR = os.path.dirname(workflow.snakefile)
 CONDA_ENV_PATH = os.path.join(SNAKEMAKE_DIR, config["conda_environment"])
 config["conda_environment"] = CONDA_ENV_PATH
+<<<<<<< HEAD
 
 # Construct the correct absolute path to the conda environment based on the
 # top-level Snakefile's directory and a path defined in the Snakemake config
@@ -81,12 +82,18 @@ config["conda_environment"] = CONDA_ENV_PATH
 SNAKEMAKE_DIR = os.path.dirname(workflow.snakefile)
 CONDA_ENV_PATH = os.path.join(SNAKEMAKE_DIR, config["conda_environment"])
 config["conda_environment"] = CONDA_ENV_PATH
+=======
+>>>>>>> upstream/master
 
 # Define patterns we expect for wildcards.
 wildcard_constraints:
     # Allow build names to contain alpha characters, underscores, and hyphens
     # but not special strings used for Nextstrain builds.
+<<<<<<< HEAD
     build_name = r'(?:[_a-zA-Z0-9-.](?!(tip-frequencies|gisaid|zh)))+',
+=======
+    build_name = r'(?:[_a-zA-Z-](?!(tip-frequencies)))+',
+>>>>>>> upstream/master
     date = r"[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]"
 
 localrules: download_metadata, download_sequences, download, upload, clean
