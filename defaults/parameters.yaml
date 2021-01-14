@@ -3,7 +3,7 @@
 # To temporarily override or provide a value, you can use snakemake's --config
 # or --configfile options.
 ---
-# conda environment file to use by default.
+# conda environment file to use by default
 # This must be a relative path to the top-level Snakefile directory (e.g., `ncov/`).
 conda_environment: "workflow/envs/nextstrain.yaml"
 
