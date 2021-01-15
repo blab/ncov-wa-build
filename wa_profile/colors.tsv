@@ -67,31 +67,33 @@ region	North America	#E29D39
 region	South America	#E1502A
 
 location	Washington State	#D01C8B
-location	Klickitat County	#511EA8
-location	Chelan County	#4928B4
-location	Whatcom County	#4334BF
-location	King County	#4041C7
-location	Yakima County	#3F5ED0
-location	Island County	#416CCE
-location	San Juan County	#4379CD
-location	Grant County WA	#4B8FC1
-location	Grays Harbor County	#5098B9
-location	Walla Walla County	#56A0AF
-location	Spokane County	#5CA7A4
-location	Snohomish County	#6BB18E
-location	Kittitas County	#73B583
-location	Asotin County	#7CB878
-location	Benton County	#90BC65
 location	Seattle	#9ABD5C
-location	Adams County WA	#A4BE56
-location	Thurston County	#AFBD4F
-location	Franklin County WA	#C2BA46
-location	Pierce County	#CCB742
-location	Skagit County	#D3B240
-location	Jefferson County WA	#DAAC3D
-location	Clark County	#E39B39
-location	Douglas County WA	#E68F36
-location	Cowlitz County	#E68234
 location	Kirkland	#E4632E
-location	Mason County	#E1512A
-location	Kitsap County	#DF4027
+location	Lincoln County WA	#511EA8
+location	Clallam County	#4928B4
+location	King County	#4334BF
+location	San Juan County	#4041C7
+location	Clark County WA	#3F5ED0
+location	Grays Harbor County	#416CCE
+location	Whatcom County	#4379CD
+location	Douglas County WA	#4B8FC1
+location	Snohomish County	#5098B9
+location	Asotin County	#56A0AF
+location	Mason County	#5CA7A4
+location	Klickitat County	#6BB18E
+location	Chelan County	#73B583
+location	Skagit County	#7CB878
+location	Adams County WA	#90BC65
+location	Walla Walla County	#9ABD5C
+location	Thurston County	#A4BE56
+location	Pierce County WA	#AFBD4F
+location	Lewis County WA	#C2BA46
+location	Benton County	#CCB742
+location	Spokane County	#D3B240
+location	Yakima County	#DAAC3D
+location	Kittitas County	#E39B39
+location	Grant County WA	#E68F36
+location	Jefferson County WA	#E68234
+location	Pacific County	#E4632E
+location	Cowlitz County	#E1512A
+location	Franklin County WA	#DF4027
