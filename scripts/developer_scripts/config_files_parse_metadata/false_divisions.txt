@@ -201,3 +201,8 @@ Rembau	Negeri Sembilan
 Djerba	Medenine
 Padova	Veneto
 Klatovy	Plzeň Region
+Trstena	Zilina
+Zelovce	Banska Bystrica
+Hurbanovo	Nitra
+Toronto	Ontario
+Bozen	South Tyrol

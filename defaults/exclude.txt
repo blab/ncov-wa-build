@@ -1251,3 +1251,20 @@ Tunisia/12-8274/2020
 
 # early date, likely misdated
 England/205390927/2020
+
+
+# Duplicates, see comments in gisaid_annotations.tsv
+Brazil/AM-987/2020
+Brazil/AM-988/2020
+Brazil/AM-990/2020
+Brazil/AM-992/2020
+Brazil/AM-993/2020
+Brazil/AM-994/2020
+Brazil/AM-997/2020
+
+# https://bedfordlab.slack.com/archives/CTZKJC7PZ/p1611190928000900?thread_ts=1611190385.000800&cid=CTZKJC7PZ
+USA/MDH-8144/2020
+USA/WA-UW-21756/2020
+
+# Invalid date: 2020-01-06 should be 2021-01-06
+CzechRepublic/NRL_274/2021
