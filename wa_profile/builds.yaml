@@ -43,6 +43,15 @@ builds:
     division: Washington
     subsampling_scheme: one-year
 
+# Removes sequence from S dropout for 1y & 4m build
+filter:
+  wa_1y:
+    exclude_where: "purpose_of_sequencing='S dropout'"
+
+  wa_4m:
+    exclude_where: "purpose_of_sequence='S dropout'"
+
+
 # Define subsampling scheme for builds. This scheme should include as much
 # local diversity for a given division as possible and contextual samples from
 # the rest of the USA and the world.
