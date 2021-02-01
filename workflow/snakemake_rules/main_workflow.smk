@@ -27,7 +27,6 @@ rule download:
         config["metadata"],
         config["sequences"]
 
-
 rule excluded_sequences:
     message:
         """
@@ -47,7 +46,7 @@ rule excluded_sequences:
         augur filter \
             --sequences {input.sequences} \
             --metadata {input.metadata} \
-	    --min-length 50000 \
+            --min-length 50000 \
             --include {input.include} \
             --output {output.sequences} 2>&1 | tee {log}
         """
