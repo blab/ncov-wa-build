@@ -1,7 +1,6 @@
 # Defines path to custom rules
 custom_rules:
   - wa_profile/add_dates.smk
-  - wa_profile/download_preprocessed.smk
   - wa_profile/filter_by_date.smk
 
 S3_BUCKET: "nextstrain-ncov-private"
