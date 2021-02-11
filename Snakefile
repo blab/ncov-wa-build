@@ -62,7 +62,11 @@ if "builds" not in config:
         }
     }
 
-BUILD_NAMES = list(config["builds"].keys())
+# Allow users to specify a list of active builds from the command line.
+if config.get("active_builds"):
+    BUILD_NAMES = config["active_builds"].split(",")
+else:
+    BUILD_NAMES = list(config["builds"].keys())
 
 # Construct the correct absolute path to the conda environment based on the
 # top-level Snakefile's directory and a path defined in the Snakemake config
@@ -93,6 +97,11 @@ rule clean:
         "auspice"
     shell:
         "rm -rfv {params}"
+
+rule dump_config:
+    run:
+        import yaml, sys
+        yaml.dump(config, sys.stdout, explicit_start = True, explicit_end = True)
 
 # Include small, shared functions that help build inputs and parameters.
 include: "workflow/snakemake_rules/common.smk"

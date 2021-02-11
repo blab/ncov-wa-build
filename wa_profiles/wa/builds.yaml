@@ -1,3 +1,11 @@
+<<<<<<< HEAD:wa_profiles/wa/builds.yaml
+=======
+# Defines path to custom rules
+custom_rules:
+  - wa_profile/add_dates.smk
+  - wa_profile/filter_by_date.smk
+
+>>>>>>> master:wa_profile/builds.yaml
 S3_BUCKET: "nextstrain-ncov-private"
 
 # Define custom auspice configuration to enable frequencies.
@@ -7,12 +15,21 @@ files:
 # Define WA builds.
 builds:
   wa_mar20-jun20:
+<<<<<<< HEAD:wa_profiles/wa/builds.yaml
    title: "Washington-focused SARS-CoV-2 genomic analysis: Through June 2020"
    colors: wa_profiles/wa/colors.tsv
    description: wa_profiles/wa/descriptions/mar20-jun20_description.md
    division: Washington
    latest_date: 2020-06-30
    subsampling_scheme: early
+=======
+    title: "Washington-focused SARS-CoV-2 genomic analysis: Through June 2020"
+    colors: wa_profile/colors.tsv
+    description: wa_profile/descriptions/mar20-jun20_description.md
+    division: Washington
+    latest_date: 2020-06-30
+    subsampling_scheme: early
+>>>>>>> master:wa_profile/builds.yaml
 
   wa_jul20-oct20:
     title: "Washington-focused SARS-CoV-2 genomic analysis: July-October 2020"
@@ -22,6 +39,7 @@ builds:
     earliest_date: 2020-07-01
     latest_date: 2020-10-31
     subsampling_scheme: month
+<<<<<<< HEAD:wa_profiles/wa/builds.yaml
 
   wa_nov20-feb21:
     title: "Washington-focused SARS-CoV-2 genomic analysis: November 2020-February 2021"
@@ -31,6 +49,8 @@ builds:
     earliest_date: 2020-11-01
     latest_date: 2021-02-28
     subsampling_scheme: month
+=======
+>>>>>>> master:wa_profile/builds.yaml
 
   wa_4m:
     title: "Washington-focused SARS-CoV-2 genomic analysis: Past four months"
@@ -45,6 +65,7 @@ builds:
     description: wa_profiles/wa/descriptions/year_description.md
     division: Washington
     subsampling_scheme: one-year
+
 
 # Define subsampling scheme for builds. This scheme should include as much
 # local diversity for a given division as possible and contextual samples from

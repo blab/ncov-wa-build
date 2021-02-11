@@ -23,7 +23,6 @@ Cartago
 Lake County
 Iowa County
 Douglas County
-Cordoba
 Cuenca
 Pierce County
 Taylor County
@@ -41,3 +40,39 @@ Svobodny
 Tres Rios
 Borovichi
 Monterey County
+Kings County
+Allegany County
+Concepcion
+Canoas
+San Fernando
+Santa Fe
+San Isidro
+Torres
+Cordoba
+Valencia
+Middlesex County
+Lewis County
+Lincoln County
+Clinton County
+Hamilton County
+Union County
+Williamson County
+Fayette County
+San Pedro
+Morgan County
+Shuya
+Calhoun County
+Dekalb County
+Limestone County
+Houston County
+Randolph County
+Pickens County
+Lancaster County
+St. Clair County
+Dallas County
+Perry County
+Lee County
+Cayenne
+Shelby County
+Punjab
+Lille

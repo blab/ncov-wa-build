@@ -25,6 +25,21 @@
       "type": "categorical"
     },
     {
+      "key": "subclade_membership",
+      "title": "Emerging clade",
+      "type": "categorical"
+    },
+    {
+      "key": "pangolin_lineage",
+      "title": "Pangolin lineage",
+      "type": "categorical"
+    },
+    {
+      "key": "GISAID_clade",
+      "title": "GISAID Clade",
+      "type": "categorical"
+    },
+    {
       "key": "host",
       "title": "Host",
       "type": "categorical"
@@ -90,19 +105,20 @@
     "region"
   ],
   "display_defaults": {
-    "color_by": "division",
+    "color_by": "clade_membership",
     "distance_measure": "num_date",
-    "geo_resolution": "division",
-    "map_triplicate": false,
-    "branch_label": "none"
+    "geo_resolution": "location",
+    "map_triplicate": true,
+    "branch_label": "clade",
+    "transmission_lines": false
   },
   "filters": [
     "recency",
+    "clade_membership",
     "location",
     "division",
     "country",
     "region",
-    "host",
     "author"
   ],
   "panels": [

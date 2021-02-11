@@ -119,7 +119,6 @@ Raanana	Central District
 Pardesia	Central District
 Netanya	Central District
 Tirat Zvi	North District
-Haifa	Haifa District
 Tveria	North District
 Hukuk	North District
 Zefat	North District
@@ -152,9 +151,9 @@ Banfora	Cascades
 Dano	Sud-Ouest
 Taoyuan	Taiwan
 Novi Pazar	Raška District
-Krusevac	Rasina District 
+Krusevac	Rasina District
 Kraljevo	Raška District
-Uzice	Zlatibor District 
+Uzice	Zlatibor District
 Cacak	Moravica District
 Cuprija	Pomoravlje District
 Kragujevac	Šumadija District
@@ -191,3 +190,37 @@ Feni	Chattogram
 Bella Union	Artigas
 Rio Branco	Cerro Largo
 Chuy	Rocha
+Ain Aouda	Rabat
+Cox'S Bazar	Chattogram
+Ksar Hellal	Monastir
+Dresden	Saxony
+Ignalina	Utena
+Ukmerge	Vilnius
+Brahmanbaria	Chattogram
+Rembau	Negeri Sembilan
+Djerba	Medenine
+Padova	Veneto
+Klatovy	Plzeň Region
+Trstena	Zilina
+Zelovce	Banska Bystrica
+Hurbanovo	Nitra
+Toronto	Ontario
+Bozen	South Tyrol
+Mamoudzou	Mayotte
+Alpes Maritimes	Provence-Alpes-Côte d'Azur
+Ingiriya	Kalutara
+Sint Michiels	Brugge
+Sint-Amansberg	Gent
+Herthoek	West-Vlaanderen
+Groot-Gelmen	Hasselt
+Ukmergės R.	Vilnius
+Širvintų R.	Vilnius
+Molėtų R.	Utena
+Zarasų R.	Utena
+Kretingos R.	Klaipedos Apskritis
+Visaginas	Utena
+Becej	South Bačka District
+Dolný Kubín	Zilina
+Kuwait City	Al Asimah
+Walhain	Nivelles
+Slaný	Central Bohemian Region
