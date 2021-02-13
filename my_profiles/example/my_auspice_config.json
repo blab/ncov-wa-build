@@ -1,8 +1,8 @@
 {
   "title": "My title here",
-  "build_url": "https://github.com/myusername/myrepository/",
+  "build_url": "https://github.com/blab/ncov-wa-build/tree/tutorial",
   "maintainers": [
-    {"name": "My name", "url": "www.myurl.com"}
+    {"name": "Cassia Wagner", "url": "https://bedford.io/team/cassia-wagner/"}
   ],
   "colorings": [
     {
@@ -91,13 +91,14 @@
     "region"
   ],
   "display_defaults": {
-    "color_by": "division",
+    "color_by": "clade_membership",
     "distance_measure": "num_date",
     "geo_resolution": "division",
     "map_triplicate": true,
     "branch_label": "none"
   },
   "filters": [
+    "clade",
     "recency",
     "location",
     "division",
