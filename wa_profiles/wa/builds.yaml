@@ -1,13 +1,8 @@
-# Defines path to custom rules
-custom_rules:
-  - wa_profile/add_dates.smk
-  - wa_profile/filter_by_date.smk
-
 S3_BUCKET: "nextstrain-ncov-private"
 
 # Define custom auspice configuration to enable frequencies.
 files:
-  auspice_config: "wa_profile/auspice_config.json"
+  auspice_config: "wa_profiles/wa/auspice_config.json"
 
 # Define WA builds.
 builds:
@@ -21,24 +16,33 @@ builds:
 
   wa_jul20-oct20:
     title: "Washington-focused SARS-CoV-2 genomic analysis: July-October 2020"
-    colors: wa_profile/colors.tsv
-    description: wa_profile/descriptions/jul20-oct20_description.md
+    colors: wa_profiles/wa/colors.tsv
+    description: wa_profiles/wa/descriptions/jul20-oct20_description.md
     division: Washington
     earliest_date: 2020-07-01
     latest_date: 2020-10-31
     subsampling_scheme: month
 
+  wa_nov20-feb21:
+    title: "Washington-focused SARS-CoV-2 genomic analysis: November 2020-February 2021"
+    colors: wa_profiles/wa/colors.tsv
+    description: wa_profiles/wa/descriptions/nov20-feb21_description.md
+    division: Washington
+    earliest_date: 2020-11-01
+    latest_date: 2021-02-28
+    subsampling_scheme: month
+
   wa_4m:
     title: "Washington-focused SARS-CoV-2 genomic analysis: Past four months"
-    colors: wa_profile/colors.tsv
-    description: wa_profile/descriptions/four-months_description.md
+    colors: wa_profiles/wa/colors.tsv
+    description: wa_profiles/wa/descriptions/four-months_description.md
     division: Washington
     subsampling_scheme: time-window
 
   wa_1y:
     title: "Washington-focused SARS-CoV-2 genomic analysis: Past year"
-    colors: wa_profile/colors.tsv
-    description: wa_profile/descriptions/year_description.md
+    colors: wa_profiles/wa/colors.tsv
+    description: wa_profiles/wa/descriptions/year_description.md
     division: Washington
     subsampling_scheme: one-year
 
