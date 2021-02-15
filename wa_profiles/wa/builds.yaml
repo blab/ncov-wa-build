@@ -8,8 +8,8 @@ files:
 builds:
   wa_mar20-jun20:
     title: "Washington-focused SARS-CoV-2 genomic analysis: Through June 2020"
-    colors: wa_profile/colors.tsv
-    description: wa_profile/descriptions/mar20-jun20_description.md
+    colors: wa_profiles/wa/colors.tsv
+    description: wa_profiles/wa/descriptions/mar20-jun20_description.md
     division: Washington
     latest_date: 2020-06-30
     subsampling_scheme: early
