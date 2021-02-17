@@ -4,7 +4,6 @@
 
 # We control which rule runs via `ruleorder` declarations
 ruleorder: download_aligned > align
-ruleorder: download_filtered > filter
 ruleorder: download_refiltered > refilter
 ruleorder: download_masked > mask
 ruleorder: download_diagnostic > diagnostic
@@ -68,19 +67,4 @@ rule download_masked:
     shell:
         """
         aws s3 cp s3://{params.s3_bucket}/masked.fasta.{params.compression} - | {params.deflate} > {output.sequences:q}
-        """
-
-
-rule download_filtered:
-    message: "Downloading final filtered fasta files from S3 bucket {params.s3_bucket}"
-    output:
-        sequences = "results/filtered.fasta"
-    conda: config["conda_environment"]
-    params:
-        compression = config['preprocess']['compression'],
-        deflate = config['preprocess']['deflate'],
-        s3_bucket = config["S3_BUCKET"]
-    shell:
-        """
-        aws s3 cp s3://{params.s3_bucket}/filtered.fasta.{params.compression} - | {params.deflate} > {output.sequences:q}
         """

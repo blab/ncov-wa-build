@@ -55,7 +55,7 @@ subsampling:
     # Subsampling for the earliest build.
     local-focus:
       # Evenly sample across time for the current division until max-date.
-      group_by: "year month"
+      group_by: "division"
       max_sequences: 4750
       max_date: --max-date {latest_date}
       query: --query "(country == 'USA' & division == '{division}')"
@@ -82,7 +82,7 @@ subsampling:
     # Subsampling for a given time window
     local-focus:
       # Evenly sample from earliest_date to latest_date for the current division.
-      group_by: "year month"
+      group_by: "division"
       max_sequences: 1800
       max_date: --max-date {latest_date}
       min_date: --min-date {earliest_date}
@@ -145,7 +145,7 @@ subsampling:
     # Subsampling for a given time window
     local-focus:
       # Evenly sample from earliest_date to latest_date for the current division.
-      group_by: "year month"
+      group_by: "division"
       max_sequences: 1800
       max_date: --max-date {latest_date}
       min_date: --min-date {earliest_date}
