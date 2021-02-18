@@ -41,7 +41,6 @@ rule proximity_score_filtered:
         """
     input:
         alignment = _get_filtered_by_date,
-        #alignment = "results/filtered.fasta",
         metadata = config["metadata"],
         reference = config["files"]["reference"],
         focal_alignment = "results/{build_name}/sample-{focus}.fasta"
