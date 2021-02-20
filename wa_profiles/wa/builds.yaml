@@ -83,7 +83,7 @@ subsampling:
     local-focus:
       # Evenly sample from earliest_date to latest_date for the current division.
       group_by: "division"
-      max_sequences: 1800
+      max_sequences: 2000
       max_date: --max-date {latest_date}
       min_date: --min-date {earliest_date}
       query: --query "(country == 'USA' & division == '{division}' & purpose_of_sequencing != 'S dropout')"
@@ -91,7 +91,7 @@ subsampling:
       # Sampling in the time window from other divisions in the USA, prioritizing
       # samples genetically similar to the current division's sequences.
       group_by: "year month"
-      max_sequences: 720
+      max_sequences: 800
       max_date: --max-date {latest_date}
       min_date: --min-date {earliest_date}
       query: --query "(country == 'USA' & division != '{division}' & purpose_of_sequencing != 'S dropout')"
@@ -102,7 +102,7 @@ subsampling:
       # Even sampling in the time window from across the world excluding the USA,
       # prioritizing samples genetically similar to current division's sequences.
       group_by: "region year month"
-      max_sequences: 360
+      max_sequences: 400
       max_date: --max-date {latest_date}
       min_date: --min-date {earliest_date}
       query: --query "(country != 'USA' & purpose_of_sequencing != 'S dropout')"
@@ -146,7 +146,7 @@ subsampling:
     local-focus:
       # Evenly sample from earliest_date to latest_date for the current division.
       group_by: "division"
-      max_sequences: 1800
+      max_sequences: 2000
       max_date: --max-date {latest_date}
       min_date: --min-date {earliest_date}
       query: --query "(country == 'USA' & division == '{division}')"
@@ -154,7 +154,7 @@ subsampling:
       # Sampling in the time window from other divisions in the USA, prioritizing
       # samples genetically similar to the current division's sequences.
       group_by: "year month"
-      max_sequences: 720
+      max_sequences: 800
       max_date: --max-date {latest_date}
       min_date: --min-date {earliest_date}
       query: --query "(country == 'USA' & division != '{division}')"
@@ -165,7 +165,7 @@ subsampling:
       # Even sampling in the time window from across the world excluding the USA,
       # prioritizing samples genetically similar to current division's sequences.
       group_by: "region year month"
-      max_sequences: 360
+      max_sequences: 400
       max_date: --max-date {latest_date}
       min_date: --min-date {earliest_date}
       query: --query "(country != 'USA')"
