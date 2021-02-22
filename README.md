@@ -20,7 +20,7 @@ Download sequences from [GISAID](https://www.gisaid.org/). You will require a GI
 4. Then, in this window click on "nextfasta" to download the file nextstrain_sequences.fasta.bz2. This should be decompressed and saved as data/sequences.fasta.
 For more details, see "Contextualizing your data" at [this guide](https://nextstrain.github.io/ncov/data-prep).
 
-Run the workflow.
+Run the workflow:
 ```
 snakemake --profile wa_profiles/wa-external/
 ```
