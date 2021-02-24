@@ -17,7 +17,7 @@ Download sequences from [GISAID](https://www.gisaid.org/). You will require a GI
 1. Log into GISAID's EpiCoV site
 2. Click "Downloads" to bring up a modal window
 3. In this window click on "nextmeta" to download the file nextstrain_metadata.tsv.bz2. This should be decompressed and saved as data/metadata.tsv.
-4. Then, in this window click on "nextfasta" to download the file nextstrain_sequences.fasta.bz2. This should be decompressed and saved as data/sequences.fasta.
+4. Then, in this window click on "FASTA" to download the file nextstrain_sequences.fasta.bz2. This should be decompressed and saved as data/sequences.fasta.
 For more details, see "Contextualizing your data" at [this guide](https://nextstrain.github.io/ncov/data-prep).
 
 Run the workflow:
