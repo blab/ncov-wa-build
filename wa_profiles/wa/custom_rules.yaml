@@ -1,4 +1,4 @@
 custom_rules:
   - wa_profiles/wa/download_preprocessed.smk
-  - wa_profiles/wa/add_dates.smk
+  - wa_profiles/wa/add_to_builds.smk
   - wa_profiles/wa/filter_by_date.smk

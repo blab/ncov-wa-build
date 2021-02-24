@@ -335,6 +335,8 @@ def _get_specific_subsampling_setting(setting, optional=False):
             value = value.format(**build)
             if value !="" and setting == 'exclude_ambiguous_dates_by':
                 value = f"--exclude-ambiguous-dates-by {value}"
+            if value !="" and setting == 'max_sequences':
+                value = f"--subsample-max-sequences {value}"
         elif value is not None:
             # If is 'seq_per_group' or 'max_sequences' build subsampling setting,
             # need to return the 'argument' for augur

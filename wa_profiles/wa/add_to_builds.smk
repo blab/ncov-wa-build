@@ -12,3 +12,12 @@ if "wa_4m" in config["builds"]:
 
 if "wa_1y" in config["builds"]:
     config["builds"]["wa_1y"]["earliest_date"]= one_y.strftime('%Y-%m-%d')
+
+# Add # of sequences per subsampling group
+for build in config["builds"]:
+    if "n_sequences" in config["builds"][build]:
+        n = config["builds"][build]["n_sequences"]
+        config["builds"][build]['n_usa'] = int(n*2/5)
+        config["builds"][build]['n_global'] = int(n/5)
+        config["builds"][build]['n_early'] = int(n/4)
+        config["builds"][build]['n_global_early'] = int(n*3/20)
