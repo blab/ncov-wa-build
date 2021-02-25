@@ -1465,3 +1465,79 @@ Romania/B-1507/2021
 
 # wrong date
 USA/OH-UHTL-3/2020
+
+# over-diverged
+Lebanon/LAU-R43/2020
+
+# wrong date, see https://bedfordlab.slack.com/archives/CTZKJC7PZ/p1613491136302100
+USA/CA-LACPHL-AF00294/2020
+
+# divergence; see https://bedfordlab.slack.com/archives/CTZKJC7PZ/p1613610878317300
+Egypt/CCHE57357-A-59/2020
+Mozambique/INS-K007882/2020
+Romania/Focsani-268927/2020
+Taiwan/TSGH-32/2020
+UnitedArabEmirates/4277/2020
+UnitedArabEmirates/4285/2020
+
+# Date too early for clade
+Norway/7667/2020
+Spain/MD-IBV-99018532/2020
+
+# Marked as "Longitudinal surveillance (repeat sampling)" in additional info 
+USA/MA-MGH-03866/2020
+USA/MA-MGH-03872/2020
+USA/MA-MGH-03873/2020
+USA/MA-MGH-03874/2020
+USA/MA-MGH-03876/2020
+USA/MA-MGH-03880/2020
+USA/MA-MGH-03883/2020
+USA/MA-MGH-03885/2020
+USA/MA-MGH-03887/2020
+USA/MA-MGH-03889/2020
+USA/MA-MGH-03892/2020
+USA/MA-MGH-03895/2020
+USA/MA-MGH-03896/2020
+USA/MA-MGH-03898/2020
+USA/MA-MGH-03900/2020
+USA/MA-MGH-03901/2020
+USA/MA-MGH-03917/2020
+USA/MA-MGH-03918/2020
+USA/MA-MGH-03922/2020
+USA/MA-MGH-03923/2020
+USA/MA-MGH-03924/2020
+USA/MA-MGH-03929/2020
+USA/MA-MGH-03930/2020
+USA/MA-MGH-03931/2020
+USA/MA-MGH-03932/2020
+USA/MA-MGH-03933/2020
+
+# divergence; see https://bedfordlab.slack.com/archives/CTZKJC7PZ/p1613779102005100
+Mozambique/INS-K007880/2020
+Israel/n14264/2020
+Shandong/2020C1240229/2020
+Lebanon/LAU-R249/2020
+Lebanon/LAU-R77/2020
+Lebanon/LAU-R115/2020
+Lebanon/LAU-R148/2020
+
+# misdated 2012 instead of 2021; reached out to submitter
+SouthAfrica/KRISP-K008526/2021
+
+# duplicate; additional info was: refseq hCoV-19/Wuhan/WIV04/2019|GISAID accession no. EPI_ISL_402124; see https://bedfordlab.slack.com/archives/CTZKJC7PZ/p1614102889023200
+Wuhan/WH-CD/2020
+
+# lab sequence; see https://bedfordlab.slack.com/archives/CTZKJC7PZ/p1614102889023200
+mouse/Wuhan/LG/2020
+
+# divergence; see https://bedfordlab.slack.com/archives/CTZKJC7PZ/p1614127615034900
+Egypt/C-CEIRS-2MOH/2020
+Tunisia/5008/2020
+Tunisia/9111/2020
+Tunisia/COV1663/2020
+Israel/CVL1198/2020
+Turkey/HSGM-2004082/2020
+Mexico/ROO-InDRE_243/2020
+USA/PR-CDC-S32/2020
+Serbia/Belgrade-2515952809/2020
+England/LOND-12F7D4C/2021
