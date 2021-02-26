@@ -12,11 +12,6 @@
         "memory": "8192",
         "cores": 8
     },
-    "proximity_score_filtered": {
-	"partition": "-p campus-new",
-	"memory":"8192",
-	"cores": 4
-    },
     "tree": {
         "partition": "-p campus-new",
         "time": "5:00:00",
