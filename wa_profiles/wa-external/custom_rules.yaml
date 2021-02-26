@@ -1,3 +1,0 @@
-custom_rules:
-  - wa_profiles/wa/add_to_builds.smk
-  - wa_profiles/wa/filter_by_date.smk

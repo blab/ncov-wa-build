@@ -1,6 +1,6 @@
 configfile:
   - wa_profiles/wa/builds.yaml
-  - wa_profiles/wa/custom_rules.yaml
+  - wa_profiles/wa/input.yaml
 
 cores: 8
 keep-going: True

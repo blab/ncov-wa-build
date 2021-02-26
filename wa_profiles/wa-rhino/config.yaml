@@ -5,7 +5,7 @@
 
 configfile:
   - wa_profiles/wa/builds.yaml
-  - wa_profiles/wa/custom_rules.yaml
+  - wa_profiles/wa/input.yaml
 
 # Always print the commands that will be run to the screen for debugging.
 printshellcmds: True

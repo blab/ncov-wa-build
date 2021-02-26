@@ -1,4 +1,16 @@
-S3_BUCKET: "nextstrain-ncov-private"
+# Define starting input. Will be overridden if start_from_alignment.smk is
+# added as a custom rule.
+sequences: "data/sequences.fasta"
+metadata: "data/metadata.tsv"
+
+# Defines next align specs
+genes: ["ORF1a", "ORF1b", "S", "ORF3a", "M", "N"]
+use_nextalign: true
+conda_environment: "workflow/envs/nextstrain_with_nextalign.yaml"
+
+# Define custom rules
+custom_rules:
+  - wa_profiles/wa/add_to_builds.smk
 
 # Define custom auspice configuration to enable frequencies.
 files:

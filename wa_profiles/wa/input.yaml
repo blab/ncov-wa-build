@@ -1,0 +1,15 @@
+
+inputs:
+  - name: gisaid
+    metadata: "s3://nextstrain-ncov-private/metadata.tsv.gz"
+    sequences: "s3://nextstrain-ncov-private/sequences.fasta.gz"
+   # Uncomment outputs to start the pipeline at that stage.
+   # E.g. if you uncomment `filtered` then the pipeline
+   # will start by downloading that file and proceeding straight to
+   # subsampling
+   # metadata: "s3://nextstrain-ncov-private/metadata_gisaid.tsv.gz"
+   # sequences: "s3://nextstrain-ncov-private/sequences_gisaid.fasta.gz"
+   # aligned: "s3://nextstrain-ncov-private/aligned_gisaid.fasta.xz"
+   # to-exclude: "s3://nextstrain-ncov-private/to-exclude_gisaid.txt.xz"
+    masked: "s3://nextstrain-ncov-private/masked_gisaid.fasta.fasta.xz"
+   # filtered: "s3://nextstrain-ncov-private/filtered_gisaid.fasta.xz"
