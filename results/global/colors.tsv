@@ -1,0 +1,85 @@
+location	Wuhan	#4A8CC2
+location	San Francisco	#71B486
+location	Maricopa County	#ABBD52
+location	East Feliciana Parish	#DEA73C
+
+division	Iran	#5E1D9D
+division	India	#501EA9
+division	Sri Lanka	#4A27B2
+division	Thailand	#4531BB
+division	Malaysia	#403AC4
+division	China	#3F46C9
+division	Hubei	#3F52CD
+division	Beijing	#3F5ED0
+division	Ho Chi Minh City	#4169CF
+division	Taiwan	#4274CE
+division	South Korea	#457ECB
+division	Saitama	#4887C6
+division	Victoria	#4C90C0
+division	Guam	#5098B9
+division	Spain	#559EB1
+division	France	#59A4A9
+division	Netherlands	#5FA9A0
+division	Bavaria	#65AD97
+division	Athens	#6BB18E
+division	Uruguay	#72B485
+division	Jamaica	#79B77C
+division	Hawaii	#81B973
+division	Alaska	#89BB6B
+division	Washington	#91BC64
+division	California	#99BD5D
+division	Idaho	#A2BE57
+division	Utah	#AABD52
+division	Arizona	#B3BD4D
+division	Nebraska	#BBBC49
+division	USA	#C3BA46
+division	Louisiana	#CBB842
+division	Wisconsin	#D1B340
+division	Illinois	#D7AF3E
+division	Indiana	#DDAA3C
+division	Michigan	#E0A23A
+division	Georgia	#E39B39
+division	Ohio	#E69237
+division	Florida	#E68735
+division	South Carolina	#E67B32
+division	North Carolina	#E66F30
+division	Virginia	#E3612D
+division	Pennsylvania	#E1532B
+division	New York	#DF4528
+division	Connecticut	#DD3625
+division	Massachusetts	#DB2823
+
+country	Iran	#5E1D9D
+country	India	#492AB5
+country	Sri Lanka	#4042C7
+country	Thailand	#3E5DD0
+country	Malaysia	#4377CD
+country	China	#4A8CC2
+country	Vietnam	#549DB2
+country	Taiwan	#60AA9E
+country	South Korea	#6EB389
+country	Japan	#80B974
+country	Australia	#92BC63
+country	Guam	#A6BE55
+country	Spain	#B9BC4A
+country	France	#CBB742
+country	Netherlands	#D9AD3D
+country	Germany	#E29D39
+country	Greece	#E68634
+country	Uruguay	#E56A2F
+country	Jamaica	#E04929
+country	USA	#DB2823
+
+recency	Older	#447CCD
+recency	One month ago	#5EA9A1
+recency	One week ago	#8ABB6A
+recency	3-7 days ago	#BEBB48
+recency	1-2 days ago	#E29E39
+recency	New	#E2562B
+
+region	Asia	#4784C8
+region	Oceania	#67AE95
+region	Europe	#98BD5E
+region	South America	#CDB642
+region	North America	#E68634
+

@@ -1,0 +1,3347 @@
+{
+  "alignment": "results/global/subsampled_alignment.fasta",
+  "clock": {
+    "intercept": -1.6159545337395576,
+    "rate": 0.0008,
+    "rtt_Tmrca": 2019.943167174447
+  },
+  "generated_by": {
+    "program": "augur",
+    "version": "10.3.0"
+  },
+  "input_tree": "results/global/tree_raw.nwk",
+  "nodes": {
+    "Australia/VIC05/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-03-05",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1762295081967,
+        2020.1762295081967
+      ],
+      "numdate": 2020.1762295081967,
+      "raw_date": "2020-03-05"
+    },
+    "Australia/VIC1008/2020": {
+      "branch_length": 1,
+      "clock_length": 6.769491957068379e-05,
+      "date": "2020-03-31",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.2472677595629,
+        2020.2472677595629
+      ],
+      "numdate": 2020.2472677595629,
+      "raw_date": "2020-03-31"
+    },
+    "Australia/VIC1018/2020": {
+      "branch_length": 1,
+      "clock_length": 4.2200492699868584e-05,
+      "date": "2020-04-01",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.25,
+        2020.25
+      ],
+      "numdate": 2020.25,
+      "raw_date": "2020-04-01"
+    },
+    "Australia/VIC1038/2020": {
+      "branch_length": 1,
+      "clock_length": 5.1528804428623335e-05,
+      "date": "2020-04-03",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.2554644808743,
+        2020.2554644808743
+      ],
+      "numdate": 2020.2554644808743,
+      "raw_date": "2020-04-03"
+    },
+    "Australia/VIC1045/2020": {
+      "branch_length": 0,
+      "clock_length": 2.6216959331117604e-05,
+      "date": "2020-04-03",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2554644808743,
+        2020.2554644808743
+      ],
+      "numdate": 2020.2554644808743,
+      "raw_date": "2020-04-03"
+    },
+    "Australia/VIC1048/2020": {
+      "branch_length": 0,
+      "clock_length": 7.068476693192563e-06,
+      "date": "2020-04-03",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2554644808743,
+        2020.2554644808743
+      ],
+      "numdate": 2020.2554644808743,
+      "raw_date": "2020-04-03"
+    },
+    "Australia/VIC1062/2020": {
+      "branch_length": 3,
+      "clock_length": 5.7424170476822584e-05,
+      "date": "2020-04-04",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.2581967213114,
+        2020.2581967213114
+      ],
+      "numdate": 2020.2581967213114,
+      "raw_date": "2020-04-04"
+    },
+    "Australia/VIC1120/2020": {
+      "branch_length": 0,
+      "clock_length": 4.426903518994698e-05,
+      "date": "2020-04-08",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.26912568306,
+        2020.26912568306
+      ],
+      "numdate": 2020.26912568306,
+      "raw_date": "2020-04-08"
+    },
+    "Australia/VIC1135/2020": {
+      "branch_length": 1,
+      "clock_length": 4.448149932294787e-05,
+      "date": "2020-04-08",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.26912568306,
+        2020.26912568306
+      ],
+      "numdate": 2020.26912568306,
+      "raw_date": "2020-04-08"
+    },
+    "Australia/VIC1139/2020": {
+      "branch_length": 4,
+      "clock_length": 9.141785200202394e-05,
+      "date": "2020-04-08",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.26912568306,
+        2020.26912568306
+      ],
+      "numdate": 2020.26912568306,
+      "raw_date": "2020-04-08"
+    },
+    "Australia/VIC1175/2020": {
+      "branch_length": 4,
+      "clock_length": 0.00010098720796389716,
+      "date": "2020-04-10",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.2745901639344,
+        2020.2745901639344
+      ],
+      "numdate": 2020.2745901639344,
+      "raw_date": "2020-04-10"
+    },
+    "Australia/VIC1186/2020": {
+      "branch_length": 2,
+      "clock_length": 7.270804377232983e-05,
+      "date": "2020-04-11",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.2773224043715,
+        2020.2773224043715
+      ],
+      "numdate": 2020.2773224043715,
+      "raw_date": "2020-04-11"
+    },
+    "Australia/VIC1199/2020": {
+      "branch_length": 0,
+      "clock_length": 2.027306336412093e-05,
+      "date": "2020-03-31",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2472677595629,
+        2020.2472677595629
+      ],
+      "numdate": 2020.2472677595629,
+      "raw_date": "2020-03-31"
+    },
+    "Australia/VIC1208/2020": {
+      "branch_length": 5,
+      "clock_length": 7.611730555393546e-05,
+      "date": "2020-04-01",
+      "mutation_length": 5,
+      "num_date_confidence": [
+        2020.25,
+        2020.25
+      ],
+      "numdate": 2020.25,
+      "raw_date": "2020-04-01"
+    },
+    "Australia/VIC1251/2020": {
+      "branch_length": 0,
+      "clock_length": 4.854405588823217e-05,
+      "date": "2020-04-10",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2745901639344,
+        2020.2745901639344
+      ],
+      "numdate": 2020.2745901639344,
+      "raw_date": "2020-04-10"
+    },
+    "Australia/VIC14/2020": {
+      "branch_length": 1,
+      "clock_length": 3.538654462091411e-05,
+      "date": "2020-02-02",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.0887978142077,
+        2020.0887978142077
+      ],
+      "numdate": 2020.0887978142077,
+      "raw_date": "2020-02-02"
+    },
+    "Australia/VIC187/2020": {
+      "branch_length": 1,
+      "clock_length": 4.013775226719373e-05,
+      "date": "2020-03-19",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.214480874317,
+        2020.214480874317
+      ],
+      "numdate": 2020.214480874317,
+      "raw_date": "2020-03-19"
+    },
+    "Australia/VIC205/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-03-19",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.214480874317,
+        2020.214480874317
+      ],
+      "numdate": 2020.214480874317,
+      "raw_date": "2020-03-19"
+    },
+    "Australia/VIC241/2020": {
+      "branch_length": 0,
+      "clock_length": 4.371584699401827e-06,
+      "date": "2020-03-21",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2199453551912,
+        2020.2199453551912
+      ],
+      "numdate": 2020.2199453551912,
+      "raw_date": "2020-03-21"
+    },
+    "Australia/VIC295/2020": {
+      "branch_length": 1,
+      "clock_length": 9.199793593251543e-06,
+      "date": "2020-03-23",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.2254098360656,
+        2020.2254098360656
+      ],
+      "numdate": 2020.2254098360656,
+      "raw_date": "2020-03-23"
+    },
+    "Australia/VIC300/2020": {
+      "branch_length": 2,
+      "clock_length": 3.119466228022948e-05,
+      "date": "2020-03-23",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.2254098360656,
+        2020.2254098360656
+      ],
+      "numdate": 2020.2254098360656,
+      "raw_date": "2020-03-23"
+    },
+    "Australia/VIC306/2020": {
+      "branch_length": 1,
+      "clock_length": 4.8963718639705644e-05,
+      "date": "2020-03-23",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.2254098360656,
+        2020.2254098360656
+      ],
+      "numdate": 2020.2254098360656,
+      "raw_date": "2020-03-23"
+    },
+    "Australia/VIC312/2020": {
+      "branch_length": 1,
+      "clock_length": 2.2528361552378272e-05,
+      "date": "2020-03-23",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.2254098360656,
+        2020.2254098360656
+      ],
+      "numdate": 2020.2254098360656,
+      "raw_date": "2020-03-23"
+    },
+    "Australia/VIC329/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-03-17",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2090163934427,
+        2020.2090163934427
+      ],
+      "numdate": 2020.2090163934427,
+      "raw_date": "2020-03-17"
+    },
+    "Australia/VIC330/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-03-18",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2117486338798,
+        2020.2117486338798
+      ],
+      "numdate": 2020.2117486338798,
+      "raw_date": "2020-03-18"
+    },
+    "Australia/VIC423/2020": {
+      "branch_length": 0,
+      "clock_length": 1.3484459968953356e-05,
+      "date": "2020-03-25",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.23087431694,
+        2020.23087431694
+      ],
+      "numdate": 2020.23087431694,
+      "raw_date": "2020-03-25"
+    },
+    "Australia/VIC431/2020": {
+      "branch_length": 0,
+      "clock_length": 6.544828183627292e-06,
+      "date": "2020-03-25",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.23087431694,
+        2020.23087431694
+      ],
+      "numdate": 2020.23087431694,
+      "raw_date": "2020-03-25"
+    },
+    "Australia/VIC498/2020": {
+      "branch_length": 0,
+      "clock_length": 2.94776382455471e-07,
+      "date": "2020-03-23",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2254098360656,
+        2020.2254098360656
+      ],
+      "numdate": 2020.2254098360656,
+      "raw_date": "2020-03-23"
+    },
+    "Australia/VIC549/2020": {
+      "branch_length": 1,
+      "clock_length": 3.4647276923287316e-05,
+      "date": "2020-03-23",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.2254098360656,
+        2020.2254098360656
+      ],
+      "numdate": 2020.2254098360656,
+      "raw_date": "2020-03-23"
+    },
+    "Australia/VIC583/2020": {
+      "branch_length": 2,
+      "clock_length": 3.556624697963141e-05,
+      "date": "2020-03-25",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.23087431694,
+        2020.23087431694
+      ],
+      "numdate": 2020.23087431694,
+      "raw_date": "2020-03-25"
+    },
+    "Australia/VIC720/2020": {
+      "branch_length": 2,
+      "clock_length": 5.985974827587702e-05,
+      "date": "2020-03-28",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.2390710382513,
+        2020.2390710382513
+      ],
+      "numdate": 2020.2390710382513,
+      "raw_date": "2020-03-28"
+    },
+    "Australia/VIC797/2020": {
+      "branch_length": 0,
+      "clock_length": 3.794061018814424e-05,
+      "date": "2020-04-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.25,
+        2020.25
+      ],
+      "numdate": 2020.25,
+      "raw_date": "2020-04-01"
+    },
+    "Australia/VIC800/2020": {
+      "branch_length": 0,
+      "clock_length": 2.6968919937906278e-06,
+      "date": "2020-04-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.25,
+        2020.25
+      ],
+      "numdate": 2020.25,
+      "raw_date": "2020-04-01"
+    },
+    "Australia/VIC803/2020": {
+      "branch_length": 0,
+      "clock_length": 2.6968919937906278e-06,
+      "date": "2020-04-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.25,
+        2020.25
+      ],
+      "numdate": 2020.25,
+      "raw_date": "2020-04-01"
+    },
+    "Australia/VIC824/2020": {
+      "branch_length": 1,
+      "clock_length": 2.433849222934772e-05,
+      "date": "2020-04-03",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.2554644808743,
+        2020.2554644808743
+      ],
+      "numdate": 2020.2554644808743,
+      "raw_date": "2020-04-03"
+    },
+    "Australia/VIC851/2020": {
+      "branch_length": 1,
+      "clock_length": 5.3714596778324194e-05,
+      "date": "2020-04-04",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.2581967213114,
+        2020.2581967213114
+      ],
+      "numdate": 2020.2581967213114,
+      "raw_date": "2020-04-04"
+    },
+    "Australia/VIC96/2020": {
+      "branch_length": 1,
+      "clock_length": 1.6190093089844338e-05,
+      "date": "2020-03-16",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.2062841530055,
+        2020.2062841530055
+      ],
+      "numdate": 2020.2062841530055,
+      "raw_date": "2020-03-16"
+    },
+    "Australia/VIC962/2020": {
+      "branch_length": 0,
+      "clock_length": 7.03861150677203e-05,
+      "date": "2020-03-27",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2363387978141,
+        2020.2363387978141
+      ],
+      "numdate": 2020.2363387978141,
+      "raw_date": "2020-03-27"
+    },
+    "Australia/VIC985/2020": {
+      "branch_length": 0,
+      "clock_length": 2.8415300546475895e-05,
+      "date": "2020-03-30",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2445355191257,
+        2020.2445355191257
+      ],
+      "numdate": 2020.2445355191257,
+      "raw_date": "2020-03-30"
+    },
+    "China/Beijing_IME-BJ05/2020": {
+      "branch_length": 2,
+      "clock_length": 7.011421415430228e-05,
+      "date": "2020-01-27",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.0724043715848,
+        2020.0724043715848
+      ],
+      "numdate": 2020.0724043715848,
+      "raw_date": "2020-01-27"
+    },
+    "China/WHUHnCoV020/2020": {
+      "branch_length": 2,
+      "clock_length": 3.884040625481283e-05,
+      "date": "2020-01-22",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.058743169399,
+        2020.058743169399
+      ],
+      "numdate": 2020.058743169399,
+      "raw_date": "2020-01-22"
+    },
+    "China/Wuhan_YB012611/2020": {
+      "branch_length": 8,
+      "clock_length": 7.959626789566423e-05,
+      "date": "2020-01-26",
+      "mutation_length": 8,
+      "num_date_confidence": [
+        2020.0696721311476,
+        2020.0696721311476
+      ],
+      "numdate": 2020.0696721311476,
+      "raw_date": "2020-01-26"
+    },
+    "ENV/USA/UF-11/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-02-21",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1407103825136,
+        2020.1407103825136
+      ],
+      "numdate": 2020.1407103825136,
+      "raw_date": "2020-02-21"
+    },
+    "France/10006HC/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-03-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1653005464482,
+        2020.1653005464482
+      ],
+      "numdate": 2020.1653005464482,
+      "raw_date": "2020-03-01"
+    },
+    "France/10015BY/2020": {
+      "branch_length": 0,
+      "clock_length": 9.367662775813107e-07,
+      "date": "2020-03-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1653005464482,
+        2020.1653005464482
+      ],
+      "numdate": 2020.1653005464482,
+      "raw_date": "2020-03-01"
+    },
+    "France/10023FD/2020": {
+      "branch_length": 3,
+      "clock_length": 8.357742712478936e-06,
+      "date": "2020-03-01",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.1653005464482,
+        2020.1653005464482
+      ],
+      "numdate": 2020.1653005464482,
+      "raw_date": "2020-03-01"
+    },
+    "France/10041MR/2020": {
+      "branch_length": 1,
+      "clock_length": 5.485772609745447e-06,
+      "date": "2020-03-01",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.1653005464482,
+        2020.1653005464482
+      ],
+      "numdate": 2020.1653005464482,
+      "raw_date": "2020-03-01"
+    },
+    "France/10045DZ/2020": {
+      "branch_length": 4,
+      "clock_length": 8.999026788602139e-06,
+      "date": "2020-03-01",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.1653005464482,
+        2020.1653005464482
+      ],
+      "numdate": 2020.1653005464482,
+      "raw_date": "2020-03-01"
+    },
+    "France/10060KV/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-03-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1653005464482,
+        2020.1653005464482
+      ],
+      "numdate": 2020.1653005464482,
+      "raw_date": "2020-03-01"
+    },
+    "France/10068ND/2020": {
+      "branch_length": 0,
+      "clock_length": 9.029167940608656e-05,
+      "date": "2020-03-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1653005464482,
+        2020.1653005464482
+      ],
+      "numdate": 2020.1653005464482,
+      "raw_date": "2020-03-01"
+    },
+    "France/10078MA/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-03-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1653005464482,
+        2020.1653005464482
+      ],
+      "numdate": 2020.1653005464482,
+      "raw_date": "2020-03-01"
+    },
+    "France/40003KA/2020": {
+      "branch_length": 0,
+      "clock_length": 9.367662775813107e-07,
+      "date": "2020-03-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1653005464482,
+        2020.1653005464482
+      ],
+      "numdate": 2020.1653005464482,
+      "raw_date": "2020-03-01"
+    },
+    "France/50001AR/2020": {
+      "branch_length": 4,
+      "clock_length": 8.357742712478936e-06,
+      "date": "2020-03-01",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.1653005464482,
+        2020.1653005464482
+      ],
+      "numdate": 2020.1653005464482,
+      "raw_date": "2020-03-01"
+    },
+    "Germany/BavPat1-ChVir929/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-01-28",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.0751366120219,
+        2020.0751366120219
+      ],
+      "numdate": 2020.0751366120219,
+      "raw_date": "2020-01-28"
+    },
+    "Germany/BavPat3-ChVir1020/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-01-28",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.0751366120219,
+        2020.0751366120219
+      ],
+      "numdate": 2020.0751366120219,
+      "raw_date": "2020-01-28"
+    },
+    "Greece/139_32716/2020": {
+      "branch_length": 0,
+      "clock_length": 6.557377049102794e-06,
+      "date": "2020-03-12",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1953551912568,
+        2020.1953551912568
+      ],
+      "numdate": 2020.1953551912568,
+      "raw_date": "2020-03-12"
+    },
+    "Greece/209_33926/2020": {
+      "branch_length": 4,
+      "clock_length": 3.7161567603022925e-05,
+      "date": "2020-03-14",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.200819672131,
+        2020.200819672131
+      ],
+      "numdate": 2020.200819672131,
+      "raw_date": "2020-03-14"
+    },
+    "Greece/222_33921/2020": {
+      "branch_length": 0,
+      "clock_length": 6.61334715819405e-07,
+      "date": "2020-03-14",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.200819672131,
+        2020.200819672131
+      ],
+      "numdate": 2020.200819672131,
+      "raw_date": "2020-03-14"
+    },
+    "Greece/226_35576/2020": {
+      "branch_length": 2,
+      "clock_length": 4.013775226719373e-05,
+      "date": "2020-03-19",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.214480874317,
+        2020.214480874317
+      ],
+      "numdate": 2020.214480874317,
+      "raw_date": "2020-03-19"
+    },
+    "Greece/227_35969/2020": {
+      "branch_length": 0,
+      "clock_length": 1.814767351379068e-05,
+      "date": "2020-03-22",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2226775956285,
+        2020.2226775956285
+      ],
+      "numdate": 2020.2226775956285,
+      "raw_date": "2020-03-22"
+    },
+    "Greece/246_32206/2020": {
+      "branch_length": 1,
+      "clock_length": 2.058246581318013e-05,
+      "date": "2020-03-10",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.1898907103825,
+        2020.1898907103825
+      ],
+      "numdate": 2020.1898907103825,
+      "raw_date": "2020-03-10"
+    },
+    "Greece/248_32261/2020": {
+      "branch_length": 2,
+      "clock_length": 2.058246581318013e-05,
+      "date": "2020-03-10",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.1898907103825,
+        2020.1898907103825
+      ],
+      "numdate": 2020.1898907103825,
+      "raw_date": "2020-03-10"
+    },
+    "Greece/259_31928/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-03-09",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1871584699454,
+        2020.1871584699454
+      ],
+      "numdate": 2020.1871584699454,
+      "raw_date": "2020-03-09"
+    },
+    "Greece/37_35684/2020": {
+      "branch_length": 0,
+      "clock_length": 2.6968919937906278e-06,
+      "date": "2020-03-20",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.217213114754,
+        2020.217213114754
+      ],
+      "numdate": 2020.217213114754,
+      "raw_date": "2020-03-20"
+    },
+    "Greece/41_36861/2020": {
+      "branch_length": 2,
+      "clock_length": 5.985974827587702e-05,
+      "date": "2020-03-28",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.2390710382513,
+        2020.2390710382513
+      ],
+      "numdate": 2020.2390710382513,
+      "raw_date": "2020-03-28"
+    },
+    "Guam/GU-NHG-01/2020": {
+      "branch_length": 3,
+      "clock_length": 6.013058135281445e-05,
+      "date": "2020-03-26",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.233606557377,
+        2020.233606557377
+      ],
+      "numdate": 2020.233606557377,
+      "raw_date": "2020-03-26"
+    },
+    "Hangzhou/HZ-1/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-01-20",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.0532786885246,
+        2020.0532786885246
+      ],
+      "numdate": 2020.0532786885246,
+      "raw_date": "2020-01-20"
+    },
+    "India/GBRC14/2020": {
+      "branch_length": 3,
+      "clock_length": 8.538000550700362e-05,
+      "date": "2020-04-27",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.3210382513662,
+        2020.3210382513662
+      ],
+      "numdate": 2020.3210382513662,
+      "raw_date": "2020-04-27"
+    },
+    "India/GBRC20/2020": {
+      "branch_length": 2,
+      "clock_length": 7.525870501399405e-05,
+      "date": "2020-04-26",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.318306010929,
+        2020.318306010929
+      ],
+      "numdate": 2020.318306010929,
+      "raw_date": "2020-04-26"
+    },
+    "India/GBRC21/2020": {
+      "branch_length": 1,
+      "clock_length": 0.0001031991188581398,
+      "date": "2020-04-26",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.318306010929,
+        2020.318306010929
+      ],
+      "numdate": 2020.318306010929,
+      "raw_date": "2020-04-26"
+    },
+    "India/GBRC26/2020": {
+      "branch_length": 1,
+      "clock_length": 5.519343830836978e-05,
+      "date": "2020-04-26",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.318306010929,
+        2020.318306010929
+      ],
+      "numdate": 2020.318306010929,
+      "raw_date": "2020-04-26"
+    },
+    "India/GBRC29/2020": {
+      "branch_length": 0,
+      "clock_length": 6.472540785097626e-05,
+      "date": "2020-04-30",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.3292349726776,
+        2020.3292349726776
+      ],
+      "numdate": 2020.3292349726776,
+      "raw_date": "2020-04-30"
+    },
+    "India/GBRC51/2020": {
+      "branch_length": 1,
+      "clock_length": 6.830819240657537e-05,
+      "date": "2020-05-02",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.3346994535518,
+        2020.3346994535518
+      ],
+      "numdate": 2020.3346994535518,
+      "raw_date": "2020-05-02"
+    },
+    "India/GBRC56a/2020": {
+      "branch_length": 4,
+      "clock_length": 0.00012079547546647786,
+      "date": "2020-05-03",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.3374316939892,
+        2020.3374316939892
+      ],
+      "numdate": 2020.3374316939892,
+      "raw_date": "2020-05-03"
+    },
+    "India/GBRC8/2020": {
+      "branch_length": 1,
+      "clock_length": 4.7224942915328506e-05,
+      "date": "2020-04-22",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.3073770491803,
+        2020.3073770491803
+      ],
+      "numdate": 2020.3073770491803,
+      "raw_date": "2020-04-22"
+    },
+    "India/GBRC85/2020": {
+      "branch_length": 1,
+      "clock_length": 7.56402434618044e-05,
+      "date": "2020-05-05",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.3428961748634,
+        2020.3428961748634
+      ],
+      "numdate": 2020.3428961748634,
+      "raw_date": "2020-05-05"
+    },
+    "India/GBRC88a/2020": {
+      "branch_length": 1,
+      "clock_length": 7.128278490026087e-05,
+      "date": "2020-05-03",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.3374316939892,
+        2020.3374316939892
+      ],
+      "numdate": 2020.3374316939892,
+      "raw_date": "2020-05-03"
+    },
+    "India/GBRC9/2020": {
+      "branch_length": 4,
+      "clock_length": 0.00011992143471497825,
+      "date": "2020-04-21",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.3046448087432,
+        2020.3046448087432
+      ],
+      "numdate": 2020.3046448087432,
+      "raw_date": "2020-04-21"
+    },
+    "India/GBRC96/2020": {
+      "branch_length": 4,
+      "clock_length": 0.0001516400632383246,
+      "date": "2020-05-09",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.353825136612,
+        2020.353825136612
+      ],
+      "numdate": 2020.353825136612,
+      "raw_date": "2020-05-09"
+    },
+    "India/GBRC97a/2020": {
+      "branch_length": 6,
+      "clock_length": 0.00015737704918046807,
+      "date": "2020-05-10",
+      "mutation_length": 6,
+      "num_date_confidence": [
+        2020.3565573770493,
+        2020.3565573770493
+      ],
+      "numdate": 2020.3565573770493,
+      "raw_date": "2020-05-10"
+    },
+    "India/GMC-KP1125/2020": {
+      "branch_length": 0,
+      "clock_length": 3.136354585589582e-05,
+      "date": "2020-03-24",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2281420765028,
+        2020.2281420765028
+      ],
+      "numdate": 2020.2281420765028,
+      "raw_date": "2020-03-24"
+    },
+    "India/GMCKN318/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-03-11",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1926229508197,
+        2020.1926229508197
+      ],
+      "numdate": 2020.1926229508197,
+      "raw_date": "2020-03-11"
+    },
+    "India/GMCTC469/2020": {
+      "branch_length": 0,
+      "clock_length": 2.6968919937906278e-06,
+      "date": "2020-03-20",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.217213114754,
+        2020.217213114754
+      ],
+      "numdate": 2020.217213114754,
+      "raw_date": "2020-03-20"
+    },
+    "India/nimh-2873/2020": {
+      "branch_length": 4,
+      "clock_length": 0.00012086888460902405,
+      "date": "2020-04-21",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.3046448087432,
+        2020.3046448087432
+      ],
+      "numdate": 2020.3046448087432,
+      "raw_date": "2020-04-21"
+    },
+    "India/nimh-3952/2020": {
+      "branch_length": 5,
+      "clock_length": 0.00014683688647325202,
+      "date": "2020-04-23",
+      "mutation_length": 5,
+      "num_date_confidence": [
+        2020.3101092896175,
+        2020.3101092896175
+      ],
+      "numdate": 2020.3101092896175,
+      "raw_date": "2020-04-23"
+    },
+    "Iran/HGRC-1.1-IPI-8206/2020": {
+      "branch_length": 2,
+      "clock_length": 0.00010594264956515908,
+      "date": "2020-03-09",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.1871584699454,
+        2020.1871584699454
+      ],
+      "numdate": 2020.1871584699454,
+      "raw_date": "2020-03-09"
+    },
+    "Jamaica/JM-CDC-7286/2020": {
+      "branch_length": 1,
+      "clock_length": 3.649731730826183e-05,
+      "date": "2020-03-17",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.2090163934427,
+        2020.2090163934427
+      ],
+      "numdate": 2020.2090163934427,
+      "raw_date": "2020-03-17"
+    },
+    "Japan/P4-6/2020": {
+      "branch_length": 1,
+      "clock_length": 4.218760383436473e-05,
+      "date": "2020-03-20",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.217213114754,
+        2020.217213114754
+      ],
+      "numdate": 2020.217213114754,
+      "raw_date": "2020-03-20"
+    },
+    "Malaysia/189332/2020": {
+      "branch_length": 4,
+      "clock_length": 4.701582725442704e-05,
+      "date": "2020-03-20",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.217213114754,
+        2020.217213114754
+      ],
+      "numdate": 2020.217213114754,
+      "raw_date": "2020-03-20"
+    },
+    "NODE_0000000": {
+      "branch_length": 0,
+      "clock_length": 0.001,
+      "date": "2019-12-21",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2019.967248232643,
+        2019.9776444433467
+      ],
+      "numdate": 2019.970176796278
+    },
+    "NODE_0000003": {
+      "branch_length": 1,
+      "clock_length": 9.595536163207856e-05,
+      "date": "2020-02-23",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.0609319570526,
+        2020.1675780125145
+      ],
+      "numdate": 2020.147030797816
+    },
+    "NODE_0000009": {
+      "branch_length": 0,
+      "clock_length": 4.665381502422261e-06,
+      "date": "2020-03-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.132366477302,
+        2020.2371440594186
+      ],
+      "numdate": 2020.164275057564
+    },
+    "NODE_0000010": {
+      "branch_length": 0,
+      "clock_length": 4.003054953472798e-05,
+      "date": "2020-03-19",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1278823371656,
+        2020.250741442541
+      ],
+      "numdate": 2020.2143132444824
+    },
+    "NODE_0000011": {
+      "branch_length": 1,
+      "clock_length": 3.92573439712805e-05,
+      "date": "2020-03-19",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.177636444454,
+        2020.2581967213114
+      ],
+      "numdate": 2020.2143722264123
+    },
+    "NODE_0000013": {
+      "branch_length": 1,
+      "clock_length": 3.286978286432462e-05,
+      "date": "2020-01-05",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2019.953186019541,
+        2020.0958356221383
+      ],
+      "numdate": 2020.0112640248585
+    },
+    "NODE_0000014": {
+      "branch_length": 2,
+      "clock_length": 3.477290650441198e-05,
+      "date": "2020-01-21",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.0050162934272,
+        2020.1767704706085
+      ],
+      "numdate": 2020.054730157989
+    },
+    "NODE_0000015": {
+      "branch_length": 1,
+      "clock_length": 1.5784435518490544e-05,
+      "date": "2020-01-28",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.0351718229392,
+        2020.1871584699454
+      ],
+      "numdate": 2020.0744607023871
+    },
+    "NODE_0000016": {
+      "branch_length": 0,
+      "clock_length": 5.303824291221231e-06,
+      "date": "2020-03-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1568932563189,
+        2020.1734972677596
+      ],
+      "numdate": 2020.1645612186649
+    },
+    "NODE_0000017": {
+      "branch_length": 2,
+      "clock_length": 3.685401615742697e-05,
+      "date": "2020-01-21",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.0362686146561,
+        2020.1571038251366
+      ],
+      "numdate": 2020.0573315450551
+    },
+    "NODE_0000018": {
+      "branch_length": 0,
+      "clock_length": 6.801067683389131e-06,
+      "date": "2020-03-04",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.157095901559,
+        2020.1762295081967
+      ],
+      "numdate": 2020.1730625532691
+    },
+    "NODE_0000019": {
+      "branch_length": 2,
+      "clock_length": 8.558171114214164e-05,
+      "date": "2020-03-01",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.1470204442107,
+        2020.21255786769
+      ],
+      "numdate": 2020.1643086839829
+    },
+    "NODE_0000020": {
+      "branch_length": 1,
+      "clock_length": 7.6946784879665e-05,
+      "date": "2020-02-26",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.0006620440947,
+        2020.1706620081266
+      ],
+      "numdate": 2020.1535150261548
+    },
+    "NODE_0000021": {
+      "branch_length": 3,
+      "clock_length": 0.00011383574249877856,
+      "date": "2020-02-26",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.1006253384433,
+        2020.1615247802335
+      ],
+      "numdate": 2020.1535587029819
+    },
+    "NODE_0000022": {
+      "branch_length": 1,
+      "clock_length": 3.9077021632577015e-06,
+      "date": "2020-02-27",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.153371385175,
+        2020.1653005464482
+      ],
+      "numdate": 2020.158443330686
+    },
+    "NODE_0000023": {
+      "branch_length": 0,
+      "clock_length": 3.060109289617686e-05,
+      "date": "2020-03-19",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1779075978482,
+        2020.214480874317
+      ],
+      "numdate": 2020.214480874317
+    },
+    "NODE_0000024": {
+      "branch_length": 0,
+      "clock_length": 1.0303906171150188e-05,
+      "date": "2020-02-26",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1414283791853,
+        2020.15796232547
+      ],
+      "numdate": 2020.1535902652274
+    },
+    "NODE_0000025": {
+      "branch_length": 0,
+      "clock_length": 4.9966402769381895e-06,
+      "date": "2020-02-28",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1503364984233,
+        2020.1598360655737
+      ],
+      "numdate": 2020.1598360655737
+    },
+    "NODE_0000026": {
+      "branch_length": 0,
+      "clock_length": 1.2913922582302902e-06,
+      "date": "2020-02-26",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.143949692644,
+        2020.1944078474314
+      ],
+      "numdate": 2020.1552045055503
+    },
+    "NODE_0000027": {
+      "branch_length": 0,
+      "clock_length": 8.002736388460201e-06,
+      "date": "2020-03-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1589000594745,
+        2020.200819672131
+      ],
+      "numdate": 2020.165207926036
+    },
+    "NODE_0000028": {
+      "branch_length": 2,
+      "clock_length": 3.201269224186582e-05,
+      "date": "2020-01-04",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.0073875020526,
+        2020.0399810160586
+      ],
+      "numdate": 2020.0101926615803
+    },
+    "NODE_0000029": {
+      "branch_length": 0,
+      "clock_length": 7.499647565268014e-06,
+      "date": "2020-03-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1485273031042,
+        2020.2068444432307
+      ],
+      "numdate": 2020.1645790650068
+    },
+    "NODE_0000030": {
+      "branch_length": 7,
+      "clock_length": 0.00012456584381670443,
+      "date": "2020-03-01",
+      "mutation_length": 7,
+      "num_date_confidence": [
+        2020.1517983744775,
+        2020.1789617486338
+      ],
+      "numdate": 2020.1658999663512
+    },
+    "NODE_0000031": {
+      "branch_length": 2,
+      "clock_length": 3.6678934022815746e-05,
+      "date": "2020-03-18",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.1886703413902,
+        2020.2117486338798
+      ],
+      "numdate": 2020.2117486338798
+    },
+    "NODE_0000032": {
+      "branch_length": 0,
+      "clock_length": 1.9838306084291046e-05,
+      "date": "2020-03-10",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1468932756818,
+        2020.214480874317
+      ],
+      "numdate": 2020.1893769476123
+    },
+    "NODE_0000033": {
+      "branch_length": 0,
+      "clock_length": 2.0255675253937674e-05,
+      "date": "2020-03-10",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1668856364072,
+        2020.2096320700161
+      ],
+      "numdate": 2020.1898986590743
+    },
+    "NODE_0000034": {
+      "branch_length": 0,
+      "clock_length": 1.9296066323500755e-05,
+      "date": "2020-03-19",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.196528925441,
+        2020.23087431694
+      ],
+      "numdate": 2020.2140187419786
+    },
+    "NODE_0000035": {
+      "branch_length": 5,
+      "clock_length": 0.00011819102137630537,
+      "date": "2020-02-27",
+      "mutation_length": 5,
+      "num_date_confidence": [
+        2020.1456472401653,
+        2020.1687158378122
+      ],
+      "numdate": 2020.1579314383007
+    },
+    "NODE_0000036": {
+      "branch_length": 0,
+      "clock_length": 1.7479979844365625e-05,
+      "date": "2020-03-18",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1910428859278,
+        2020.2117486338798
+      ],
+      "numdate": 2020.2117486338798
+    },
+    "NODE_0000037": {
+      "branch_length": 2,
+      "clock_length": 4.478292461864981e-05,
+      "date": "2020-03-19",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.18512458924,
+        2020.2223318017245
+      ],
+      "numdate": 2020.213910094074
+    },
+    "NODE_0000038": {
+      "branch_length": 0,
+      "clock_length": 5.455579607459705e-06,
+      "date": "2019-12-23",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2019.9693543420183,
+        2019.98195572951
+      ],
+      "numdate": 2019.9769962707874
+    },
+    "NODE_0000039": {
+      "branch_length": 0,
+      "clock_length": 6.316606142342182e-06,
+      "date": "2019-12-26",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2019.9755450737498,
+        2019.9849315068493
+      ],
+      "numdate": 2019.9848920284653
+    },
+    "NODE_0000040": {
+      "branch_length": 1,
+      "clock_length": 3.228302920571004e-05,
+      "date": "2020-01-19",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.02799817488,
+        2020.0505464480875
+      ],
+      "numdate": 2020.0505464480875
+    },
+    "NODE_0000041": {
+      "branch_length": 2,
+      "clock_length": 7.213114754085835e-05,
+      "date": "2020-02-21",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.126029509913,
+        2020.1407103825136
+      ],
+      "numdate": 2020.1407103825136
+    },
+    "NODE_0000042": {
+      "branch_length": 0,
+      "clock_length": -1.0433965873897152e-07,
+      "date": "2019-12-26",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2019.9640544309761,
+        2020.0357227464278
+      ],
+      "numdate": 2019.984761603892
+    },
+    "NODE_0000043": {
+      "branch_length": 0,
+      "clock_length": 1.939987505059635e-05,
+      "date": "2020-01-04",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2019.9931365211996,
+        2020.0391727005476
+      ],
+      "numdate": 2020.0090114477052
+    },
+    "NODE_0000044": {
+      "branch_length": 0,
+      "clock_length": 1.4460118456509677e-05,
+      "date": "2020-01-10",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.0062647835452,
+        2020.0441862711627
+      ],
+      "numdate": 2020.0270865957757
+    },
+    "NODE_0000046": {
+      "branch_length": 0,
+      "clock_length": 1.3982430124669662e-05,
+      "date": "2020-01-17",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.025183101422,
+        2020.0514546398933
+      ],
+      "numdate": 2020.0445646334315
+    },
+    "NODE_0000047": {
+      "branch_length": 0,
+      "clock_length": 6.971244074438108e-06,
+      "date": "2020-01-20",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.0392214234625,
+        2020.0532786885246
+      ],
+      "numdate": 2020.0532786885246
+    },
+    "NODE_0000048": {
+      "branch_length": 0,
+      "clock_length": 8.115827264148048e-05,
+      "date": "2020-02-26",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.131251881041,
+        2020.1632435949275
+      ],
+      "numdate": 2020.1547265293266
+    },
+    "NODE_0000049": {
+      "branch_length": 0,
+      "clock_length": 8.459213697349145e-06,
+      "date": "2020-03-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1533295902211,
+        2020.1653005464482
+      ],
+      "numdate": 2020.1653005464482
+    },
+    "NODE_0000051": {
+      "branch_length": 0,
+      "clock_length": 2.743455822151774e-05,
+      "date": "2020-04-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1804137419526,
+        2020.2669793500004
+      ],
+      "numdate": 2020.248665424189
+    },
+    "NODE_0000052": {
+      "branch_length": 0,
+      "clock_length": 8.436663345357171e-06,
+      "date": "2020-03-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.152273101109,
+        2020.1928440690094
+      ],
+      "numdate": 2020.1652723585082
+    },
+    "NODE_0000053": {
+      "branch_length": 1,
+      "clock_length": 2.8415300546475895e-05,
+      "date": "2020-03-05",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.1558586874505,
+        2020.1762295081967
+      ],
+      "numdate": 2020.1762295081967
+    },
+    "NODE_0000054": {
+      "branch_length": 0,
+      "clock_length": 1.6619342508025466e-05,
+      "date": "2020-03-09",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1548030025374,
+        2020.2049528469772
+      ],
+      "numdate": 2020.1860465366433
+    },
+    "NODE_0000057": {
+      "branch_length": 1,
+      "clock_length": 2.2269603363151975e-05,
+      "date": "2020-03-19",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.1917576527885,
+        2020.2543829393642
+      ],
+      "numdate": 2020.213883540847
+    },
+    "NODE_0000062": {
+      "branch_length": 2,
+      "clock_length": 6.035174112256007e-05,
+      "date": "2020-01-20",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.00179966247,
+        2020.0634394488266
+      ],
+      "numdate": 2020.0524359471906
+    },
+    "NODE_0000063": {
+      "branch_length": 1,
+      "clock_length": 1.8160531865046283e-05,
+      "date": "2020-01-28",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.0517076961294,
+        2020.0751366120219
+      ],
+      "numdate": 2020.0751366120219
+    },
+    "NODE_0000064": {
+      "branch_length": 0,
+      "clock_length": 9.423875253180202e-07,
+      "date": "2020-02-26",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1464676708404,
+        2020.1798944329694
+      ],
+      "numdate": 2020.1555456970339
+    },
+    "NODE_0000065": {
+      "branch_length": 1,
+      "clock_length": 4.114125560321098e-05,
+      "date": "2020-02-16",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2019.9885327376676,
+        2020.143578690192
+      ],
+      "numdate": 2020.1265631815259
+    },
+    "NODE_0000066": {
+      "branch_length": 0,
+      "clock_length": 6.960524698004745e-06,
+      "date": "2020-03-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1559715974522,
+        2020.216121936831
+      ],
+      "numdate": 2020.1642463529065
+    },
+    "NODE_0000067": {
+      "branch_length": 0,
+      "clock_length": 7.146330341727689e-06,
+      "date": "2020-03-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1491524437556,
+        2020.1808628135298
+      ],
+      "numdate": 2020.1644786099612
+    },
+    "NODE_0000068": {
+      "branch_length": 0,
+      "clock_length": 6.817135589331212e-06,
+      "date": "2020-03-04",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1605732251003,
+        2020.1852729310515
+      ],
+      "numdate": 2020.1730000294478
+    },
+    "NODE_0000069": {
+      "branch_length": 0,
+      "clock_length": 1.1326752398141274e-05,
+      "date": "2020-03-09",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1719964841614,
+        2020.1871584699454
+      ],
+      "numdate": 2020.1871584699454
+    },
+    "NODE_0000070": {
+      "branch_length": 1,
+      "clock_length": 2.5338794292694084e-05,
+      "date": "2020-03-09",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.162932635751,
+        2020.1935138662095
+      ],
+      "numdate": 2020.1864165082154
+    },
+    "NODE_0000071": {
+      "branch_length": 0,
+      "clock_length": 7.410174831487624e-06,
+      "date": "2020-03-07",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1665906501182,
+        2020.1944232912806
+      ],
+      "numdate": 2020.1822627479871
+    },
+    "NODE_0000072": {
+      "branch_length": 0,
+      "clock_length": 7.032581881099426e-06,
+      "date": "2020-03-10",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1754724985658,
+        2020.243456713458
+      ],
+      "numdate": 2020.1910534753385
+    },
+    "NODE_0000073": {
+      "branch_length": 0,
+      "clock_length": 6.411161776044929e-06,
+      "date": "2020-03-10",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1788206783228,
+        2020.1976015420278
+      ],
+      "numdate": 2020.190276700207
+    },
+    "NODE_0000074": {
+      "branch_length": 3,
+      "clock_length": 2.2243624881100447e-05,
+      "date": "2020-02-26",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.1467083604625,
+        2020.1572093772718
+      ],
+      "numdate": 2020.1543677126272
+    },
+    "NODE_0000075": {
+      "branch_length": 0,
+      "clock_length": 1.885223964371034e-05,
+      "date": "2020-03-19",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.193153364336,
+        2020.217213114754
+      ],
+      "numdate": 2020.2138419997618
+    },
+    "NODE_0000076": {
+      "branch_length": 0,
+      "clock_length": 7.773042823294046e-06,
+      "date": "2020-03-14",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1884513106613,
+        2020.200819672131
+      ],
+      "numdate": 2020.1999930037364
+    },
+    "NODE_0000077": {
+      "branch_length": 0,
+      "clock_length": 1.3609028554949676e-05,
+      "date": "2020-02-22",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1126442043235,
+        2020.147477209632
+      ],
+      "numdate": 2020.1435744672197
+    },
+    "NODE_0000078": {
+      "branch_length": 0,
+      "clock_length": 8.934838503922267e-06,
+      "date": "2020-02-26",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1403597072053,
+        2020.1810542879175
+      ],
+      "numdate": 2020.1547430153496
+    },
+    "NODE_0000079": {
+      "branch_length": 0,
+      "clock_length": 3.834521034816723e-06,
+      "date": "2020-02-29",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.155510165393,
+        2020.1632435949275
+      ],
+      "numdate": 2020.1626491100994
+    },
+    "NODE_0000080": {
+      "branch_length": 0,
+      "clock_length": 9.336738782856377e-06,
+      "date": "2020-03-13",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1806443540518,
+        2020.198087431694
+      ],
+      "numdate": 2020.198087431694
+    },
+    "NODE_0000081": {
+      "branch_length": 0,
+      "clock_length": 2.6666222167722646e-06,
+      "date": "2020-02-23",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1304720280448,
+        2020.149397494815
+      ],
+      "numdate": 2020.1469077449906
+    },
+    "NODE_0000082": {
+      "branch_length": 0,
+      "clock_length": 2.1378634974486034e-07,
+      "date": "2020-02-23",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1409638729817,
+        2020.1512945527509
+      ],
+      "numdate": 2020.1471749779278
+    },
+    "NODE_0000083": {
+      "branch_length": 0,
+      "clock_length": 2.121149078928241e-06,
+      "date": "2020-03-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1606242033927,
+        2020.1653005464482
+      ],
+      "numdate": 2020.1653005464482
+    },
+    "NODE_0000087": {
+      "branch_length": 0,
+      "clock_length": 6.504291261160973e-06,
+      "date": "2020-02-26",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.144087207176,
+        2020.179482008187
+      ],
+      "numdate": 2020.155038109067
+    },
+    "NODE_0000088": {
+      "branch_length": 5,
+      "clock_length": 6.091275534318046e-05,
+      "date": "2020-03-25",
+      "mutation_length": 5,
+      "num_date_confidence": [
+        2020.2074675542094,
+        2020.2490002512961
+      ],
+      "numdate": 2020.2305086568063
+    },
+    "NODE_0000089": {
+      "branch_length": 1,
+      "clock_length": 4.374682357145094e-06,
+      "date": "2020-02-28",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.1553245062378,
+        2020.1598360655737
+      ],
+      "numdate": 2020.1598360655737
+    },
+    "NODE_0000090": {
+      "branch_length": 0,
+      "clock_length": 2.511939247126435e-05,
+      "date": "2020-03-09",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1391642551905,
+        2020.2184804948968
+      ],
+      "numdate": 2020.186437349656
+    },
+    "NODE_0000091": {
+      "branch_length": 0,
+      "clock_length": 8.858175525861683e-06,
+      "date": "2020-03-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1497053557723,
+        2020.1852803641439
+      ],
+      "numdate": 2020.1661108284743
+    },
+    "NODE_0000092": {
+      "branch_length": 0,
+      "clock_length": 1.855702710565235e-05,
+      "date": "2020-03-10",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1314021730518,
+        2020.239469848845
+      ],
+      "numdate": 2020.1893071123563
+    },
+    "NODE_0000094": {
+      "branch_length": 2,
+      "clock_length": 4.4319407469674776e-05,
+      "date": "2020-03-15",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.1708687605392,
+        2020.2302237281983
+      ],
+      "numdate": 2020.2025742372648
+    },
+    "NODE_0000095": {
+      "branch_length": 2,
+      "clock_length": 3.524371819435361e-05,
+      "date": "2020-03-31",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.222512058358,
+        2020.25
+      ],
+      "numdate": 2020.2466288850078
+    },
+    "NODE_0000096": {
+      "branch_length": 0,
+      "clock_length": 1.2981891793524786e-05,
+      "date": "2020-03-07",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1662836669936,
+        2020.190565999299
+      ],
+      "numdate": 2020.1823381932163
+    },
+    "NODE_0000097": {
+      "branch_length": 0,
+      "clock_length": 2.1342560181138713e-05,
+      "date": "2020-03-17",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1848973297667,
+        2020.2090163934427
+      ],
+      "numdate": 2020.2090163934427
+    },
+    "NODE_0000098": {
+      "branch_length": 0,
+      "clock_length": 8.227806082751195e-06,
+      "date": "2020-03-11",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.179576595954,
+        2020.1926229508197
+      ],
+      "numdate": 2020.1926229508197
+    },
+    "NODE_0000100": {
+      "branch_length": 0,
+      "clock_length": 9.937535985906059e-06,
+      "date": "2020-03-23",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1962546686727,
+        2020.2772060511802
+      ],
+      "numdate": 2020.2242326296616
+    },
+    "NODE_0000101": {
+      "branch_length": 1,
+      "clock_length": 4.72168804059673e-05,
+      "date": "2020-03-31",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.1801750519357,
+        2020.3079942791492
+      ],
+      "numdate": 2020.248328212864
+    },
+    "NODE_0000102": {
+      "branch_length": 1,
+      "clock_length": 8.544784702617532e-06,
+      "date": "2020-02-27",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.152654922625,
+        2020.1618392876674
+      ],
+      "numdate": 2020.157855958806
+    },
+    "NODE_0000103": {
+      "branch_length": 0,
+      "clock_length": 6.646629371501764e-06,
+      "date": "2020-03-04",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1569013802596,
+        2020.2097707619987
+      ],
+      "numdate": 2020.1724709148305
+    },
+    "NODE_0000104": {
+      "branch_length": 0,
+      "clock_length": 1.3173383481959408e-05,
+      "date": "2020-03-10",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.155876219099,
+        2020.2281420765028
+      ],
+      "numdate": 2020.188937644183
+    },
+    "NODE_0000105": {
+      "branch_length": 1,
+      "clock_length": 3.15147402553329e-05,
+      "date": "2020-03-13",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.165244712911,
+        2020.2202689824678
+      ],
+      "numdate": 2020.1972493841251
+    },
+    "NODE_0000106": {
+      "branch_length": 0,
+      "clock_length": 2.0065266705624266e-05,
+      "date": "2020-04-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1972153423976,
+        2020.2858617193826
+      ],
+      "numdate": 2020.2493142130436
+    },
+    "NODE_0000110": {
+      "branch_length": 1,
+      "clock_length": 1.7434377962878968e-05,
+      "date": "2020-02-24",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.1050320279114,
+        2020.1506738393362
+      ],
+      "numdate": 2020.1483561539794
+    },
+    "NODE_0000112": {
+      "branch_length": 0,
+      "clock_length": 1.996964515907449e-05,
+      "date": "2020-03-10",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1672361640958,
+        2020.233606557377
+      ],
+      "numdate": 2020.1898999537202
+    },
+    "NODE_0000113": {
+      "branch_length": 1,
+      "clock_length": 1.2645179309260512e-05,
+      "date": "2020-03-01",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.1491036010345,
+        2020.1736649305808
+      ],
+      "numdate": 2020.1641626281162
+    },
+    "NODE_0000114": {
+      "branch_length": 0,
+      "clock_length": 1.8320266038297566e-05,
+      "date": "2020-03-18",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1620564885218,
+        2020.2265442196344
+      ],
+      "numdate": 2020.212800286268
+    },
+    "NODE_0000115": {
+      "branch_length": 0,
+      "clock_length": 7.673535391155813e-06,
+      "date": "2020-03-22",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1682737973226,
+        2020.2430753943188
+      ],
+      "numdate": 2020.222392205507
+    },
+    "NODE_0000116": {
+      "branch_length": 0,
+      "clock_length": -1.64035624628878e-08,
+      "date": "2020-02-26",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1452699179283,
+        2020.1614040866352
+      ],
+      "numdate": 2020.1548328636045
+    },
+    "NODE_0000117": {
+      "branch_length": 1,
+      "clock_length": 1.829845239703599e-05,
+      "date": "2020-03-18",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.1746519359092,
+        2020.2875794740055
+      ],
+      "numdate": 2020.2118107096792
+    },
+    "NODE_0000118": {
+      "branch_length": 0,
+      "clock_length": 6.321280256269793e-06,
+      "date": "2020-02-29",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.151583969454,
+        2020.1632435949275
+      ],
+      "numdate": 2020.1627344639248
+    },
+    "NODE_0000119": {
+      "branch_length": 0,
+      "clock_length": 1.1160997410907198e-06,
+      "date": "2020-03-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1616498117353,
+        2020.1653005464482
+      ],
+      "numdate": 2020.164129588601
+    },
+    "NODE_0000120": {
+      "branch_length": 3,
+      "clock_length": 2.9228128685586017e-05,
+      "date": "2020-03-31",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.2325000995843,
+        2020.3073770491803
+      ],
+      "numdate": 2020.2483458705362
+    },
+    "NODE_0000121": {
+      "branch_length": 0,
+      "clock_length": 1.1765790729325936e-06,
+      "date": "2020-03-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.161807216848,
+        2020.1986223081317
+      ],
+      "numdate": 2020.164205187766
+    },
+    "NODE_0000122": {
+      "branch_length": 1,
+      "clock_length": 4.556487186348191e-06,
+      "date": "2020-02-26",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.139489011111,
+        2020.1628261738933
+      ],
+      "numdate": 2020.1540517629624
+    },
+    "NODE_0000123": {
+      "branch_length": 1,
+      "clock_length": 7.406169763626803e-05,
+      "date": "2020-03-31",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.172886803133,
+        2020.25
+      ],
+      "numdate": 2020.2466288850078
+    },
+    "NODE_0000124": {
+      "branch_length": 1,
+      "clock_length": 5.197771262471394e-06,
+      "date": "2020-02-26",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.1415436597078,
+        2020.1573258786607
+      ],
+      "numdate": 2020.1548533680575
+    },
+    "NODE_0000125": {
+      "branch_length": 0,
+      "clock_length": -8.98371291324987e-08,
+      "date": "2020-02-26",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1459667606464,
+        2020.1935341164078
+      ],
+      "numdate": 2020.1547205671932
+    },
+    "NODE_0000126": {
+      "branch_length": 0,
+      "clock_length": 6.939343691391288e-06,
+      "date": "2020-02-29",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1609678932869,
+        2020.198087431694
+      ],
+      "numdate": 2020.1633947468074
+    },
+    "NODE_0000127": {
+      "branch_length": 0,
+      "clock_length": 7.078361832622555e-06,
+      "date": "2020-02-29",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1583586500155,
+        2020.2126753189266
+      ],
+      "numdate": 2020.1635685194838
+    },
+    "NODE_0000128": {
+      "branch_length": 0,
+      "clock_length": 2.0073824822240682e-05,
+      "date": "2020-03-10",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.160489419029,
+        2020.2276691347927
+      ],
+      "numdate": 2020.1886608005116
+    },
+    "NODE_0000130": {
+      "branch_length": 0,
+      "clock_length": 2.061805495670642e-05,
+      "date": "2020-03-19",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1946443897984,
+        2020.2445355191257
+      ],
+      "numdate": 2020.2144333692077
+    },
+    "NODE_0000131": {
+      "branch_length": 0,
+      "clock_length": 1.990399403976851e-05,
+      "date": "2020-03-09",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1659385397736,
+        2020.215997155749
+      ],
+      "numdate": 2020.1884485120336
+    },
+    "NODE_0000132": {
+      "branch_length": 0,
+      "clock_length": 1.3876244904157298e-05,
+      "date": "2020-03-16",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.185579053106,
+        2020.2271116330655
+      ],
+      "numdate": 2020.2057938181638
+    },
+    "NODE_0000133": {
+      "branch_length": 0,
+      "clock_length": 1.3725096264398059e-05,
+      "date": "2020-03-22",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2003491846942,
+        2020.2363387978141
+      ],
+      "numdate": 2020.2229501884942
+    },
+    "NODE_0000134": {
+      "branch_length": 0,
+      "clock_length": 1.351957083726681e-05,
+      "date": "2020-03-22",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2011309523446,
+        2020.23087431694
+      ],
+      "numdate": 2020.2226932817105
+    },
+    "NODE_0000135": {
+      "branch_length": 0,
+      "clock_length": 1.3586428672419612e-05,
+      "date": "2020-03-16",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1848410809496,
+        2020.220328277786
+      ],
+      "numdate": 2020.205431547874
+    },
+    "NODE_0000136": {
+      "branch_length": 0,
+      "clock_length": 1.3195905986898267e-05,
+      "date": "2020-03-22",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2016511307656,
+        2020.2226775956285
+      ],
+      "numdate": 2020.2219264303578
+    },
+    "NODE_0000137": {
+      "branch_length": 1,
+      "clock_length": 2.1797897483157827e-05,
+      "date": "2020-03-07",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.1425504115537,
+        2020.1984214663191
+      ],
+      "numdate": 2020.1821007399114
+    },
+    "NODE_0000138": {
+      "branch_length": 0,
+      "clock_length": 6.686272958861673e-06,
+      "date": "2020-03-19",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1903341573052,
+        2020.26912568306
+      ],
+      "numdate": 2020.2137893890726
+    },
+    "NODE_0000141": {
+      "branch_length": 1,
+      "clock_length": 4.866894225725017e-05,
+      "date": "2020-03-23",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.1918834349049,
+        2020.2254098360656
+      ],
+      "numdate": 2020.2250413655875
+    },
+    "NODE_0000148": {
+      "branch_length": 1,
+      "clock_length": 2.062023302535612e-05,
+      "date": "2020-03-19",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.1987516016761,
+        2020.25
+      ],
+      "numdate": 2020.2144360917935
+    },
+    "NODE_0000149": {
+      "branch_length": 1,
+      "clock_length": 7.718308140573045e-06,
+      "date": "2020-03-01",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.1570192313623,
+        2020.186678039764
+      ],
+      "numdate": 2020.1645012532333
+    },
+    "NODE_0000150": {
+      "branch_length": 1,
+      "clock_length": 3.921804453850303e-05,
+      "date": "2020-03-19",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.189208077883,
+        2020.2390327274895
+      ],
+      "numdate": 2020.2135238089065
+    },
+    "NODE_0000155": {
+      "branch_length": 1,
+      "clock_length": 8.067623370992469e-06,
+      "date": "2020-03-01",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.1507184860834,
+        2020.1953551912568
+      ],
+      "numdate": 2020.1649378972713
+    },
+    "Spain/Valencia002/2020": {
+      "branch_length": 1,
+      "clock_length": 1.2452663567037942e-05,
+      "date": "2020-03-04",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.1734972677596,
+        2020.1734972677596
+      ],
+      "numdate": 2020.1734972677596,
+      "raw_date": "2020-03-04"
+    },
+    "Spain/Valencia003/2020": {
+      "branch_length": 0,
+      "clock_length": 2.533563942128548e-06,
+      "date": "2020-03-05",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1762295081967,
+        2020.1762295081967
+      ],
+      "numdate": 2020.1762295081967,
+      "raw_date": "2020-03-05"
+    },
+    "Spain/Valencia22/2020": {
+      "branch_length": 0,
+      "clock_length": 1.127673334111413e-05,
+      "date": "2020-03-09",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1871584699454,
+        2020.1871584699454
+      ],
+      "numdate": 2020.1871584699454,
+      "raw_date": "2020-03-09"
+    },
+    "Spain/Valencia8/2020": {
+      "branch_length": 0,
+      "clock_length": 7.148839275816711e-06,
+      "date": "2020-03-04",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1734972677596,
+        2020.1734972677596
+      ],
+      "numdate": 2020.1734972677596,
+      "raw_date": "2020-03-04"
+    },
+    "SriLanka/COV38/2020": {
+      "branch_length": 5,
+      "clock_length": 0.00010545876049475702,
+      "date": "2020-03-16",
+      "mutation_length": 5,
+      "num_date_confidence": [
+        2020.2062841530055,
+        2020.2062841530055
+      ],
+      "numdate": 2020.2062841530055,
+      "raw_date": "2020-03-16"
+    },
+    "Taiwan/CGMH-CGU-07/2020": {
+      "branch_length": 4,
+      "clock_length": 9.015821404666853e-05,
+      "date": "2020-03-09",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.1871584699454,
+        2020.1871584699454
+      ],
+      "numdate": 2020.1871584699454,
+      "raw_date": "2020-03-09"
+    },
+    "Thailand/SI200615-NT/2020": {
+      "branch_length": 4,
+      "clock_length": 8.615364494476703e-05,
+      "date": "2020-01-29",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.077868852459,
+        2020.077868852459
+      ],
+      "numdate": 2020.077868852459,
+      "raw_date": "2020-01-29"
+    },
+    "Thailand/SI204487-NT/2020": {
+      "branch_length": 5,
+      "clock_length": 3.1286339731881026e-05,
+      "date": "2020-03-11",
+      "mutation_length": 5,
+      "num_date_confidence": [
+        2020.1926229508197,
+        2020.1926229508197
+      ],
+      "numdate": 2020.1926229508197,
+      "raw_date": "2020-03-11"
+    },
+    "Thailand/SI204512-NT/2020": {
+      "branch_length": 4,
+      "clock_length": 5.5033607784721436e-05,
+      "date": "2020-03-12",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.1953551912568,
+        2020.1953551912568
+      ],
+      "numdate": 2020.1953551912568,
+      "raw_date": "2020-03-12"
+    },
+    "Thailand/SI204514-NT/2020": {
+      "branch_length": 6,
+      "clock_length": 0.00014813002374113266,
+      "date": "2020-03-12",
+      "mutation_length": 6,
+      "num_date_confidence": [
+        2020.1953551912568,
+        2020.1953551912568
+      ],
+      "numdate": 2020.1953551912568,
+      "raw_date": "2020-03-12"
+    },
+    "USA/CA-CDPH-UC28/2020": {
+      "branch_length": 1,
+      "clock_length": 2.8489396876125528e-05,
+      "date": "2020-03-14",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.200819672131,
+        2020.200819672131
+      ],
+      "numdate": 2020.200819672131,
+      "raw_date": "2020-03-14"
+    },
+    "USA/CA-CZB-1025/2020": {
+      "branch_length": 2,
+      "clock_length": 7.47948066665364e-05,
+      "date": "2020-04-22",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.3073770491803,
+        2020.3073770491803
+      ],
+      "numdate": 2020.3073770491803,
+      "raw_date": "2020-04-22"
+    },
+    "USA/CA-CZB-1033/2020": {
+      "branch_length": 3,
+      "clock_length": 0.00011368375253771384,
+      "date": "2020-04-22",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.3073770491803,
+        2020.3073770491803
+      ],
+      "numdate": 2020.3073770491803,
+      "raw_date": "2020-04-22"
+    },
+    "USA/CA-CZB-1045/2020": {
+      "branch_length": 0,
+      "clock_length": 3.505959591927881e-05,
+      "date": "2020-04-04",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2581967213114,
+        2020.2581967213114
+      ],
+      "numdate": 2020.2581967213114,
+      "raw_date": "2020-04-04"
+    },
+    "USA/CA-CZB-1071/2020": {
+      "branch_length": 1,
+      "clock_length": 7.698059901623726e-05,
+      "date": "2020-04-23",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.3101092896175,
+        2020.3101092896175
+      ],
+      "numdate": 2020.3101092896175,
+      "raw_date": "2020-04-23"
+    },
+    "USA/CA-CZB-1085/2020": {
+      "branch_length": 0,
+      "clock_length": 1.6368207096746764e-05,
+      "date": "2020-04-08",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.26912568306,
+        2020.26912568306
+      ],
+      "numdate": 2020.26912568306,
+      "raw_date": "2020-04-08"
+    },
+    "USA/CA-CZB-1092/2020": {
+      "branch_length": 1,
+      "clock_length": 6.664143114041383e-05,
+      "date": "2020-05-01",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.3319672131147,
+        2020.3319672131147
+      ],
+      "numdate": 2020.3319672131147,
+      "raw_date": "2020-05-01"
+    },
+    "USA/CA-CZB-1097/2020": {
+      "branch_length": 0,
+      "clock_length": 8.342981516029266e-05,
+      "date": "2020-04-26",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.318306010929,
+        2020.318306010929
+      ],
+      "numdate": 2020.318306010929,
+      "raw_date": "2020-04-26"
+    },
+    "USA/CA-CZB-1114/2020": {
+      "branch_length": 1,
+      "clock_length": 9.398907103823156e-05,
+      "date": "2020-04-30",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.3292349726776,
+        2020.3292349726776
+      ],
+      "numdate": 2020.3292349726776,
+      "raw_date": "2020-04-30"
+    },
+    "USA/CA-CZB-1206/2020": {
+      "branch_length": 0,
+      "clock_length": 2.6229508196775036e-05,
+      "date": "2020-03-25",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.23087431694,
+        2020.23087431694
+      ],
+      "numdate": 2020.23087431694,
+      "raw_date": "2020-03-25"
+    },
+    "USA/CA-CZB-1231/2020": {
+      "branch_length": 0,
+      "clock_length": 3.292098911345366e-05,
+      "date": "2020-04-03",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2554644808743,
+        2020.2554644808743
+      ],
+      "numdate": 2020.2554644808743,
+      "raw_date": "2020-04-03"
+    },
+    "USA/CA-CZB0137/2020": {
+      "branch_length": 0,
+      "clock_length": 4.448149932294787e-05,
+      "date": "2020-04-08",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.26912568306,
+        2020.26912568306
+      ],
+      "numdate": 2020.26912568306,
+      "raw_date": "2020-04-08"
+    },
+    "USA/CA-CZB091/2020": {
+      "branch_length": 2,
+      "clock_length": 6.338797814205469e-05,
+      "date": "2020-03-28",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.2390710382513,
+        2020.2390710382513
+      ],
+      "numdate": 2020.2390710382513,
+      "raw_date": "2020-03-28"
+    },
+    "USA/CT-UW-4343/2020": {
+      "branch_length": 3,
+      "clock_length": 7.174572085453363e-05,
+      "date": "2020-03-30",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.2445355191257,
+        2020.2445355191257
+      ],
+      "numdate": 2020.2445355191257,
+      "raw_date": "2020-03-30"
+    },
+    "USA/FL_5125/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-02-28",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1598360655737,
+        2020.1598360655737
+      ],
+      "numdate": 2020.1598360655737,
+      "raw_date": "2020-02-28"
+    },
+    "USA/GA_2742/2020": {
+      "branch_length": 1,
+      "clock_length": 6.560474706846062e-06,
+      "date": "2020-02-29",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.1625683060108,
+        2020.1625683060108
+      ],
+      "numdate": 2020.1625683060108,
+      "raw_date": "2020-02-29"
+    },
+    "USA/HI_7881/2020": {
+      "branch_length": 1,
+      "clock_length": 3.278688524587772e-05,
+      "date": "2020-03-07",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.181693989071,
+        2020.181693989071
+      ],
+      "numdate": 2020.181693989071,
+      "raw_date": "2020-03-07"
+    },
+    "USA/ID-UW-6472/2020": {
+      "branch_length": 1,
+      "clock_length": 3.136674522456035e-05,
+      "date": "2020-04-02",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.2527322404371,
+        2020.2527322404371
+      ],
+      "numdate": 2020.2527322404371,
+      "raw_date": "2020-04-02"
+    },
+    "USA/MI-MDHHS-SC20095/2020": {
+      "branch_length": 0,
+      "clock_length": 2.4081719934559358e-05,
+      "date": "2020-03-30",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2445355191257,
+        2020.2445355191257
+      ],
+      "numdate": 2020.2445355191257,
+      "raw_date": "2020-03-30"
+    },
+    "USA/MI-MDHHS-SC20177/2020": {
+      "branch_length": 0,
+      "clock_length": 2.8415300546475895e-05,
+      "date": "2020-03-24",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2281420765028,
+        2020.2281420765028
+      ],
+      "numdate": 2020.2281420765028,
+      "raw_date": "2020-03-24"
+    },
+    "USA/MI-MDHHS-SC20252/2020": {
+      "branch_length": 0,
+      "clock_length": 6.009322166307266e-07,
+      "date": "2020-03-22",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2226775956285,
+        2020.2226775956285
+      ],
+      "numdate": 2020.2226775956285,
+      "raw_date": "2020-03-22"
+    },
+    "USA/MI-MDHHS-SC20281/2020": {
+      "branch_length": 0,
+      "clock_length": 1.071088745589787e-05,
+      "date": "2020-03-27",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2363387978141,
+        2020.2363387978141
+      ],
+      "numdate": 2020.2363387978141,
+      "raw_date": "2020-03-27"
+    },
+    "USA/MI-MDHHS-SC20284/2020": {
+      "branch_length": 1,
+      "clock_length": 3.9382266382647735e-05,
+      "date": "2020-04-06",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.2636612021859,
+        2020.2636612021859
+      ],
+      "numdate": 2020.2636612021859,
+      "raw_date": "2020-04-06"
+    },
+    "USA/MI-MDHHS-SC20389/2020": {
+      "branch_length": 0,
+      "clock_length": 9.235646688391318e-05,
+      "date": "2020-04-30",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.3292349726776,
+        2020.3292349726776
+      ],
+      "numdate": 2020.3292349726776,
+      "raw_date": "2020-04-30"
+    },
+    "USA/NY-CDC-SURV0144NYC/2020": {
+      "branch_length": 2,
+      "clock_length": 1.6801591255559802e-05,
+      "date": "2020-03-02",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.1680327868853,
+        2020.1680327868853
+      ],
+      "numdate": 2020.1680327868853,
+      "raw_date": "2020-03-02"
+    },
+    "USA/NY-PV08138/2020": {
+      "branch_length": 1,
+      "clock_length": 2.775414790927614e-05,
+      "date": "2020-03-13",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.198087431694,
+        2020.198087431694
+      ],
+      "numdate": 2020.198087431694,
+      "raw_date": "2020-03-13"
+    },
+    "USA/NY-PV08414/2020": {
+      "branch_length": 1,
+      "clock_length": 4.2215301480567576e-05,
+      "date": "2020-03-16",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.2062841530055,
+        2020.2062841530055
+      ],
+      "numdate": 2020.2062841530055,
+      "raw_date": "2020-03-16"
+    },
+    "USA/NY-PV09121/2020": {
+      "branch_length": 2,
+      "clock_length": 2.5904107524301733e-05,
+      "date": "2020-03-19",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.214480874317,
+        2020.214480874317
+      ],
+      "numdate": 2020.214480874317,
+      "raw_date": "2020-03-19"
+    },
+    "USA/OH-MDHHS-SC20370/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-03-13",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.198087431694,
+        2020.198087431694
+      ],
+      "numdate": 2020.198087431694,
+      "raw_date": "2020-03-13"
+    },
+    "USA/SC_3569/2020": {
+      "branch_length": 0,
+      "clock_length": 1.0449425826040818e-05,
+      "date": "2020-03-06",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1789617486338,
+        2020.1789617486338
+      ],
+      "numdate": 2020.1789617486338,
+      "raw_date": "2020-03-06"
+    },
+    "USA/UNC_200181/2020": {
+      "branch_length": 1,
+      "clock_length": 3.060109289617686e-05,
+      "date": "2020-04-01",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.25,
+        2020.25
+      ],
+      "numdate": 2020.25,
+      "raw_date": "2020-04-01"
+    },
+    "USA/USA-WA_0480/2020": {
+      "branch_length": 1,
+      "clock_length": 2.008314136371322e-05,
+      "date": "2020-03-19",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.214480874317,
+        2020.214480874317
+      ],
+      "numdate": 2020.214480874317,
+      "raw_date": "2020-03-19"
+    },
+    "USA/UT-00291/2020": {
+      "branch_length": 4,
+      "clock_length": 3.9983696866886516e-05,
+      "date": "2020-03-19",
+      "mutation_length": 4,
+      "num_date_confidence": [
+        2020.214480874317,
+        2020.214480874317
+      ],
+      "numdate": 2020.214480874317,
+      "raw_date": "2020-03-19"
+    },
+    "USA/VA-DCLS-0067/2020": {
+      "branch_length": 2,
+      "clock_length": 7.213114754104028e-05,
+      "date": "2020-04-01",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.25,
+        2020.25
+      ],
+      "numdate": 2020.25,
+      "raw_date": "2020-04-01"
+    },
+    "USA/VA-DCLS-0115/2020": {
+      "branch_length": 0,
+      "clock_length": 1.559307455500491e-05,
+      "date": "2020-04-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.25,
+        2020.25
+      ],
+      "numdate": 2020.25,
+      "raw_date": "2020-04-01"
+    },
+    "USA/VA-DCLS-0120/2020": {
+      "branch_length": 1,
+      "clock_length": 1.559307455500491e-05,
+      "date": "2020-04-01",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.25,
+        2020.25
+      ],
+      "numdate": 2020.25,
+      "raw_date": "2020-04-01"
+    },
+    "USA/VA-DCLS-0185/2020": {
+      "branch_length": 0,
+      "clock_length": 2.8451126565311484e-05,
+      "date": "2020-04-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.25,
+        2020.25
+      ],
+      "numdate": 2020.25,
+      "raw_date": "2020-04-01"
+    },
+    "USA/VA-DCLS-0188/2020": {
+      "branch_length": 1,
+      "clock_length": 2.8451126565311484e-05,
+      "date": "2020-04-01",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.25,
+        2020.25
+      ],
+      "numdate": 2020.25,
+      "raw_date": "2020-04-01"
+    },
+    "USA/VA-DCLS-0197/2020": {
+      "branch_length": 0,
+      "clock_length": 2.6968919937906278e-06,
+      "date": "2020-04-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.25,
+        2020.25
+      ],
+      "numdate": 2020.25,
+      "raw_date": "2020-04-01"
+    },
+    "USA/VA-DCLS-0199/2020": {
+      "branch_length": 0,
+      "clock_length": 2.6968919937906278e-06,
+      "date": "2020-04-01",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.25,
+        2020.25
+      ],
+      "numdate": 2020.25,
+      "raw_date": "2020-04-01"
+    },
+    "USA/WA-UW-1338/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-03-18",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2117486338798,
+        2020.2117486338798
+      ],
+      "numdate": 2020.2117486338798,
+      "raw_date": "2020-03-18"
+    },
+    "USA/WA-UW-1567/2020": {
+      "branch_length": 1,
+      "clock_length": 3.963438163646709e-05,
+      "date": "2020-03-19",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.214480874317,
+        2020.214480874317
+      ],
+      "numdate": 2020.214480874317,
+      "raw_date": "2020-03-19"
+    },
+    "USA/WA-UW-1593/2020": {
+      "branch_length": 1,
+      "clock_length": 3.360796758916868e-05,
+      "date": "2020-03-19",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.214480874317,
+        2020.214480874317
+      ],
+      "numdate": 2020.214480874317,
+      "raw_date": "2020-03-19"
+    },
+    "USA/WA-UW-3855/2020": {
+      "branch_length": 1,
+      "clock_length": 3.496528292548098e-05,
+      "date": "2020-03-26",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.233606557377,
+        2020.233606557377
+      ],
+      "numdate": 2020.233606557377,
+      "raw_date": "2020-03-26"
+    },
+    "USA/WA-UW-4407/2020": {
+      "branch_length": 0,
+      "clock_length": 1.9454056854883452e-05,
+      "date": "2020-03-31",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2472677595629,
+        2020.2472677595629
+      ],
+      "numdate": 2020.2472677595629,
+      "raw_date": "2020-03-31"
+    },
+    "USA/WA-UW-4593/2020": {
+      "branch_length": 1,
+      "clock_length": 1.990044324471415e-05,
+      "date": "2020-03-31",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.2472677595629,
+        2020.2472677595629
+      ],
+      "numdate": 2020.2472677595629,
+      "raw_date": "2020-03-31"
+    },
+    "USA/WA-UW-5025/2020": {
+      "branch_length": 3,
+      "clock_length": 8.923205965232297e-05,
+      "date": "2020-04-07",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.266393442623,
+        2020.266393442623
+      ],
+      "numdate": 2020.266393442623,
+      "raw_date": "2020-04-07"
+    },
+    "USA/WA-UW-5166/2020": {
+      "branch_length": 0,
+      "clock_length": 2.4272027944116084e-05,
+      "date": "2020-04-02",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.2527322404371,
+        2020.2527322404371
+      ],
+      "numdate": 2020.2527322404371,
+      "raw_date": "2020-04-02"
+    },
+    "USA/WA-UW-5169/2020": {
+      "branch_length": 1,
+      "clock_length": 3.19455633352719e-05,
+      "date": "2020-04-02",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.2527322404371,
+        2020.2527322404371
+      ],
+      "numdate": 2020.2527322404371,
+      "raw_date": "2020-04-02"
+    },
+    "USA/WA-UW-6162/2020": {
+      "branch_length": 1,
+      "clock_length": 4.8498441910189115e-05,
+      "date": "2020-04-01",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.25,
+        2020.25
+      ],
+      "numdate": 2020.25,
+      "raw_date": "2020-04-01"
+    },
+    "USA/WA-UW155/2020": {
+      "branch_length": 1,
+      "clock_length": 2.4333835188378606e-05,
+      "date": "2020-03-12",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.1953551912568,
+        2020.1953551912568
+      ],
+      "numdate": 2020.1953551912568,
+      "raw_date": "2020-03-12"
+    },
+    "USA/WA-UW384/2020": {
+      "branch_length": 1,
+      "clock_length": 3.2860981575709284e-05,
+      "date": "2020-03-16",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.2062841530055,
+        2020.2062841530055
+      ],
+      "numdate": 2020.2062841530055,
+      "raw_date": "2020-03-16"
+    },
+    "USA/WA1/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-01-19",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.0505464480875,
+        2020.0505464480875
+      ],
+      "numdate": 2020.0505464480875,
+      "raw_date": "2020-01-19"
+    },
+    "USA/WA4-UW2/2020": {
+      "branch_length": 0,
+      "clock_length": 0.0,
+      "date": "2020-02-28",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2020.1598360655737,
+        2020.1598360655737
+      ],
+      "numdate": 2020.1598360655737,
+      "raw_date": "2020-02-28"
+    },
+    "USA/WA_5030/2020": {
+      "branch_length": 3,
+      "clock_length": 7.981782406507013e-05,
+      "date": "2020-02-27",
+      "mutation_length": 3,
+      "num_date_confidence": [
+        2020.1571038251366,
+        2020.1571038251366
+      ],
+      "numdate": 2020.1571038251366,
+      "raw_date": "2020-02-27"
+    },
+    "USA/WI-UW-266/2020": {
+      "branch_length": 2,
+      "clock_length": 9.549011584570287e-05,
+      "date": "2020-04-07",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.266393442623,
+        2020.266393442623
+      ],
+      "numdate": 2020.266393442623,
+      "raw_date": "2020-04-07"
+    },
+    "Uruguay/Mdeo-1/2020": {
+      "branch_length": 2,
+      "clock_length": 0.00015031581609083362,
+      "date": "2020-03-13",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2020.198087431694,
+        2020.198087431694
+      ],
+      "numdate": 2020.198087431694,
+      "raw_date": "2020-03-13"
+    },
+    "Vietnam/nCoV-19-02S/2020": {
+      "branch_length": 1,
+      "clock_length": 3.978537735501938e-05,
+      "date": "2020-01-22",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2020.058743169399,
+        2020.058743169399
+      ],
+      "numdate": 2020.058743169399,
+      "raw_date": "2020-01-22"
+    },
+    "Wuhan/Hu-1/2019": {
+      "branch_length": 0,
+      "clock_length": 3.1582707206542944e-08,
+      "date": "2019-12-26",
+      "mutation_length": 0,
+      "num_date_confidence": [
+        2019.9849315068493,
+        2019.9849315068493
+      ],
+      "numdate": 2019.9849315068493,
+      "raw_date": "2019-12-26"
+    },
+    "Wuhan/IPBCAMS-WH-03/2019": {
+      "branch_length": 1,
+      "clock_length": 2.0570891744733965e-05,
+      "date": "2019-12-30",
+      "mutation_length": 1,
+      "num_date_confidence": [
+        2019.995890410959,
+        2019.995890410959
+      ],
+      "numdate": 2019.995890410959,
+      "raw_date": "2019-12-30"
+    },
+    "Wuhan/WH01/2019": {
+      "branch_length": 2,
+      "clock_length": 1.180376845700843e-05,
+      "date": "2019-12-26",
+      "mutation_length": 2,
+      "num_date_confidence": [
+        2019.9849315068493,
+        2019.9849315068493
+      ],
+      "numdate": 2019.9849315068493,
+      "raw_date": "2019-12-26"
+    },
+    "mink/Netherlands/NB01_01KS/2020": {
+      "branch_length": 6,
+      "clock_length": 0.00015995164057163954,
+      "date": "2020-04-29",
+      "mutation_length": 6,
+      "num_date_confidence": [
+        2020.3265027322404,
+        2020.3265027322404
+      ],
+      "numdate": 2020.3265027322404,
+      "raw_date": "2020-04-29"
+    },
+    "mink/Netherlands/NB02_06KS/2020": {
+      "branch_length": 9,
+      "clock_length": 0.0002850607487699166,
+      "date": "2020-04-29",
+      "mutation_length": 9,
+      "num_date_confidence": [
+        2020.3265027322404,
+        2020.3265027322404
+      ],
+      "numdate": 2020.3265027322404,
+      "raw_date": "2020-04-29"
+    }
+  },
+  "skyline": [
+    [
+      2019.96601794935,
+      2019.986572656071,
+      2020.007127362792,
+      2020.027682069513,
+      2020.0482367762343,
+      2020.0687914829552,
+      2020.0893461896762,
+      2020.1099008963972,
+      2020.1304556031182,
+      2020.1510103098392,
+      2020.1715650165602,
+      2020.1921197232812,
+      2020.2126744300022,
+      2020.2332291367231,
+      2020.2537838434444,
+      2020.2743385501653,
+      2020.2948932568863,
+      2020.3154479636073,
+      2020.3360026703283,
+      2020.3565573770493
+    ],
+    [
+      2.586938941214534,
+      6.635819957585851,
+      9.145025972653096,
+      15.470654803037474,
+      16.92079877996604,
+      24.189708710253655,
+      28.507297422542788,
+      22.65552694892625,
+      15.301645899392755,
+      14.967865875668936,
+      48.67453370862995,
+      72.71736135567043,
+      83.79363273714968,
+      122.1220428984455,
+      141.546631303061,
+      197.40642495431638,
+      215.5300222370986,
+      234.46279550918146,
+      232.86841667891082,
+      168.30949105853801
+    ],
+    [
+      6.262475941737723,
+      12.504915217038631,
+      17.410410404032127,
+      29.504841507015712,
+      30.562522186468804,
+      45.22243133850259,
+      54.735659637988114,
+      43.77153708593778,
+      28.195237728746882,
+      23.474378420380454,
+      69.22836033214708,
+      107.3407829707931,
+      131.30741345963963,
+      202.46880249437285,
+      258.3686812160647,
+      390.55142006161526,
+      438.5398436398908,
+      473.64133719561875,
+      472.2830787077328,
+      457.50498654173447
+    ],
+    [
+      15.160236021044684,
+      23.56497095834614,
+      33.14614866521699,
+      56.27012453171653,
+      55.202344436854794,
+      84.54290709580587,
+      105.09563188675097,
+      84.56865572735805,
+      51.95332814570621,
+      36.81529797237019,
+      98.46146453022676,
+      158.4496944605434,
+      205.76309041935974,
+      335.677450283033,
+      471.6069525554642,
+      772.6719722898721,
+      892.2988661326128,
+      956.8090144675807,
+      957.8426719034529,
+      1243.606711624803
+    ]
+  ]
+}

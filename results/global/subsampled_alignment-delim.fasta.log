@@ -1,0 +1,256 @@
+IQ-TREE multicore version 2.0.3 for Linux 64-bit built Dec 20 2020
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    rhino03 (AVX512, FMA3, 754 GB RAM)
+Command: iqtree -ninit 2 -n 2 -me 0.05 -nt 1 -s results/global/subsampled_alignment-delim.fasta -m GTR -ninit 10 -n 4
+Seed:    858394 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Feb 25 19:18:07 2021
+Kernel:  AVX+FMA - 1 threads (72 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 72 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file results/global/subsampled_alignment-delim.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 153 sites contain only gaps or ambiguous characters.
+Alignment has 162 sequences with 29903 columns, 1252 distinct patterns
+75 parsimony-informative, 207 singleton sites, 29621 constant sites
+                                                                                                                  Gap/Ambiguity  Composition  p-value
+   1  Wuhan_DELIM-TFFYEGNCTABIOPUJJMAD_Hu-1_DELIM-TFFYEGNCTABIOPUJJMAD_2019                                               0.51%    passed     99.99%
+   2  Wuhan_DELIM-TFFYEGNCTABIOPUJJMAD_WH01_DELIM-TFFYEGNCTABIOPUJJMAD_2019                                               0.51%    passed     99.99%
+   3  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC05_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                          1.33%    passed     99.95%
+   4  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC1008_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                        1.16%    passed     99.97%
+   5  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC1018_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                        1.14%    passed     99.99%
+   6  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC1038_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                        2.15%    passed     99.23%
+   7  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC1045_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                        1.31%    passed     99.97%
+   8  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC1048_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                        1.46%    passed     99.96%
+   9  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC1062_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                        0.51%    passed    100.00%
+  10  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC1120_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                        6.06%    passed     96.66%
+  11  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC1135_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                        0.51%    passed    100.00%
+  12  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC1139_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                        1.13%    passed     99.99%
+  13  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC1175_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                        2.28%    passed     99.93%
+  14  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC1186_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                        1.99%    passed     99.25%
+  15  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC1199_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                        1.29%    passed     99.99%
+  16  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC1208_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                        1.19%    passed     99.96%
+  17  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC1251_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                        6.02%    passed     94.40%
+  18  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC14_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                          2.29%    passed     99.97%
+  19  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC187_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         1.30%    passed     99.95%
+  20  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC205_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         1.77%    passed     98.40%
+  21  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC241_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.57%    passed     99.99%
+  22  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC295_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.52%    passed    100.00%
+  23  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC300_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.56%    passed    100.00%
+  24  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC306_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.68%    passed     97.36%
+  25  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC312_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.56%    passed    100.00%
+  26  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC329_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         1.47%    passed     99.35%
+  27  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC330_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         2.00%    passed     99.78%
+  28  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC423_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         5.49%    passed     98.22%
+  29  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC431_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         7.02%    passed     95.72%
+  30  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC498_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.73%    passed     96.33%
+  31  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC549_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         2.43%    passed     69.05%
+  32  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC583_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         1.43%    passed     98.62%
+  33  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC720_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         1.60%    passed     99.54%
+  34  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC797_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         1.64%    passed     99.68%
+  35  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC800_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         1.18%    passed     99.97%
+  36  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC803_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         2.45%    passed     97.29%
+  37  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC824_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.53%    passed     99.99%
+  38  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC851_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         2.30%    passed     99.77%
+  39  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC96_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                          0.55%    passed     99.97%
+  40  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC962_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         3.54%    passed     97.60%
+  41  Australia_DELIM-TFFYEGNCTABIOPUJJMAD_VIC985_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         1.31%    passed     99.95%
+  42  China_DELIM-TFFYEGNCTABIOPUJJMAD_Beijing_IME-BJ05_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                   0.51%    passed    100.00%
+  43  China_DELIM-TFFYEGNCTABIOPUJJMAD_WHUHnCoV020_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                        0.93%    passed     99.96%
+  44  China_DELIM-TFFYEGNCTABIOPUJJMAD_Wuhan_YB012611_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                     0.51%    passed     99.95%
+  45  ENV_DELIM-TFFYEGNCTABIOPUJJMAD_USA_DELIM-TFFYEGNCTABIOPUJJMAD_UF-11_DELIM-TFFYEGNCTABIOPUJJMAD_2020                 0.51%    passed    100.00%
+  46  France_DELIM-TFFYEGNCTABIOPUJJMAD_10006HC_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed    100.00%
+  47  France_DELIM-TFFYEGNCTABIOPUJJMAD_10015BY_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed    100.00%
+  48  France_DELIM-TFFYEGNCTABIOPUJJMAD_10023FD_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed    100.00%
+  49  France_DELIM-TFFYEGNCTABIOPUJJMAD_10041MR_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed    100.00%
+  50  France_DELIM-TFFYEGNCTABIOPUJJMAD_10045DZ_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed    100.00%
+  51  France_DELIM-TFFYEGNCTABIOPUJJMAD_10060KV_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed     99.99%
+  52  France_DELIM-TFFYEGNCTABIOPUJJMAD_10068ND_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed     99.99%
+  53  France_DELIM-TFFYEGNCTABIOPUJJMAD_10078MA_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed    100.00%
+  54  France_DELIM-TFFYEGNCTABIOPUJJMAD_40003KA_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed    100.00%
+  55  France_DELIM-TFFYEGNCTABIOPUJJMAD_50001AR_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed     99.99%
+  56  Germany_DELIM-TFFYEGNCTABIOPUJJMAD_BavPat1-ChVir929_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                 0.57%    passed     99.99%
+  57  Germany_DELIM-TFFYEGNCTABIOPUJJMAD_BavPat3-ChVir1020_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                0.51%    passed    100.00%
+  58  Greece_DELIM-TFFYEGNCTABIOPUJJMAD_139_32716_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.55%    passed     99.99%
+  59  Greece_DELIM-TFFYEGNCTABIOPUJJMAD_209_33926_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.65%    passed     99.95%
+  60  Greece_DELIM-TFFYEGNCTABIOPUJJMAD_222_33921_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.68%    passed     99.98%
+  61  Greece_DELIM-TFFYEGNCTABIOPUJJMAD_226_35576_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.55%    passed     99.99%
+  62  Greece_DELIM-TFFYEGNCTABIOPUJJMAD_227_35969_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.60%    passed     99.98%
+  63  Greece_DELIM-TFFYEGNCTABIOPUJJMAD_246_32206_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.55%    passed    100.00%
+  64  Greece_DELIM-TFFYEGNCTABIOPUJJMAD_248_32261_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.55%    passed     99.99%
+  65  Greece_DELIM-TFFYEGNCTABIOPUJJMAD_259_31928_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.55%    passed     99.99%
+  66  Greece_DELIM-TFFYEGNCTABIOPUJJMAD_37_35684_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                          0.55%    passed     99.99%
+  67  Greece_DELIM-TFFYEGNCTABIOPUJJMAD_41_36861_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                          0.55%    passed    100.00%
+  68  Guam_DELIM-TFFYEGNCTABIOPUJJMAD_GU-NHG-01_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed    100.00%
+  69  Hangzhou_DELIM-TFFYEGNCTABIOPUJJMAD_HZ-1_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                            0.57%    passed     99.97%
+  70  India_DELIM-TFFYEGNCTABIOPUJJMAD_GBRC14_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                             1.06%    passed     99.97%
+  71  India_DELIM-TFFYEGNCTABIOPUJJMAD_GBRC20_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                             0.55%    passed    100.00%
+  72  India_DELIM-TFFYEGNCTABIOPUJJMAD_GBRC21_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                             0.72%    passed     99.98%
+  73  India_DELIM-TFFYEGNCTABIOPUJJMAD_GBRC26_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                             0.66%    passed    100.00%
+  74  India_DELIM-TFFYEGNCTABIOPUJJMAD_GBRC29_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                             0.55%    passed     99.99%
+  75  India_DELIM-TFFYEGNCTABIOPUJJMAD_GBRC51_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                             0.55%    passed    100.00%
+  76  India_DELIM-TFFYEGNCTABIOPUJJMAD_GBRC56a_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                            0.55%    passed    100.00%
+  77  India_DELIM-TFFYEGNCTABIOPUJJMAD_GBRC8_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                              0.55%    passed    100.00%
+  78  India_DELIM-TFFYEGNCTABIOPUJJMAD_GBRC85_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                             0.55%    passed    100.00%
+  79  India_DELIM-TFFYEGNCTABIOPUJJMAD_GBRC88a_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                            0.55%    passed     99.99%
+  80  India_DELIM-TFFYEGNCTABIOPUJJMAD_GBRC9_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                              0.69%    passed     99.97%
+  81  India_DELIM-TFFYEGNCTABIOPUJJMAD_GBRC96_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                             0.80%    passed     99.94%
+  82  India_DELIM-TFFYEGNCTABIOPUJJMAD_GBRC97a_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                            0.55%    passed    100.00%
+  83  India_DELIM-TFFYEGNCTABIOPUJJMAD_GMC-KP1125_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.51%    passed    100.00%
+  84  India_DELIM-TFFYEGNCTABIOPUJJMAD_GMCKN318_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed    100.00%
+  85  India_DELIM-TFFYEGNCTABIOPUJJMAD_GMCTC469_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed    100.00%
+  86  India_DELIM-TFFYEGNCTABIOPUJJMAD_nimh-2873_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                          2.18%    passed     99.96%
+  87  India_DELIM-TFFYEGNCTABIOPUJJMAD_nimh-3952_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                          2.27%    passed     99.91%
+  88  Iran_DELIM-TFFYEGNCTABIOPUJJMAD_HGRC-1.1-IPI-8206_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                   0.51%    passed     99.99%
+  89  Jamaica_DELIM-TFFYEGNCTABIOPUJJMAD_JM-CDC-7286_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                      0.51%    passed    100.00%
+  90  Japan_DELIM-TFFYEGNCTABIOPUJJMAD_P4-6_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                               0.51%    passed    100.00%
+  91  Malaysia_DELIM-TFFYEGNCTABIOPUJJMAD_189332_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                          0.51%    passed    100.00%
+  92  Spain_DELIM-TFFYEGNCTABIOPUJJMAD_Valencia002_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                        5.89%    passed     99.12%
+  93  Spain_DELIM-TFFYEGNCTABIOPUJJMAD_Valencia003_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                        0.57%    passed    100.00%
+  94  Spain_DELIM-TFFYEGNCTABIOPUJJMAD_Valencia22_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         4.43%    passed     99.66%
+  95  Spain_DELIM-TFFYEGNCTABIOPUJJMAD_Valencia8_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                          0.57%    passed    100.00%
+  96  SriLanka_DELIM-TFFYEGNCTABIOPUJJMAD_COV38_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed     99.99%
+  97  Taiwan_DELIM-TFFYEGNCTABIOPUJJMAD_CGMH-CGU-07_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                       0.51%    passed    100.00%
+  98  Thailand_DELIM-TFFYEGNCTABIOPUJJMAD_SI200615-NT_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                     0.88%    passed     99.93%
+  99  Thailand_DELIM-TFFYEGNCTABIOPUJJMAD_SI204487-NT_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                     0.87%    passed     99.97%
+ 100  Thailand_DELIM-TFFYEGNCTABIOPUJJMAD_SI204512-NT_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                     0.92%    passed     99.96%
+ 101  Thailand_DELIM-TFFYEGNCTABIOPUJJMAD_SI204514-NT_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                     0.57%    passed    100.00%
+ 102  USA_DELIM-TFFYEGNCTABIOPUJJMAD_CA-CDPH-UC28_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         1.53%    passed     99.19%
+ 103  USA_DELIM-TFFYEGNCTABIOPUJJMAD_CA-CZB-1025_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                          0.51%    passed    100.00%
+ 104  USA_DELIM-TFFYEGNCTABIOPUJJMAD_CA-CZB-1033_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                          0.51%    passed     99.99%
+ 105  USA_DELIM-TFFYEGNCTABIOPUJJMAD_CA-CZB-1045_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                          0.51%    passed     99.98%
+ 106  USA_DELIM-TFFYEGNCTABIOPUJJMAD_CA-CZB-1071_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                          0.58%    passed     99.99%
+ 107  USA_DELIM-TFFYEGNCTABIOPUJJMAD_CA-CZB-1085_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                          0.51%    passed     99.98%
+ 108  USA_DELIM-TFFYEGNCTABIOPUJJMAD_CA-CZB-1092_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                          0.51%    passed     99.98%
+ 109  USA_DELIM-TFFYEGNCTABIOPUJJMAD_CA-CZB-1097_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                          0.51%    passed    100.00%
+ 110  USA_DELIM-TFFYEGNCTABIOPUJJMAD_CA-CZB-1114_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                          8.04%    passed     97.25%
+ 111  USA_DELIM-TFFYEGNCTABIOPUJJMAD_CA-CZB-1206_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                          0.58%    passed    100.00%
+ 112  USA_DELIM-TFFYEGNCTABIOPUJJMAD_CA-CZB-1231_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                          0.51%    passed    100.00%
+ 113  USA_DELIM-TFFYEGNCTABIOPUJJMAD_CA-CZB0137_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed    100.00%
+ 114  USA_DELIM-TFFYEGNCTABIOPUJJMAD_CA-CZB091_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                            0.51%    passed    100.00%
+ 115  USA_DELIM-TFFYEGNCTABIOPUJJMAD_CT-UW-4343_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.54%    passed    100.00%
+ 116  USA_DELIM-TFFYEGNCTABIOPUJJMAD_FL_5125_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                              0.51%    passed    100.00%
+ 117  USA_DELIM-TFFYEGNCTABIOPUJJMAD_GA_2742_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                              0.51%    passed    100.00%
+ 118  USA_DELIM-TFFYEGNCTABIOPUJJMAD_HI_7881_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                              0.51%    passed    100.00%
+ 119  USA_DELIM-TFFYEGNCTABIOPUJJMAD_ID-UW-6472_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.58%    passed     99.99%
+ 120  USA_DELIM-TFFYEGNCTABIOPUJJMAD_MI-MDHHS-SC20095_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                     3.35%    passed     99.52%
+ 121  USA_DELIM-TFFYEGNCTABIOPUJJMAD_MI-MDHHS-SC20177_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                     4.66%    passed     99.07%
+ 122  USA_DELIM-TFFYEGNCTABIOPUJJMAD_MI-MDHHS-SC20252_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                     4.08%    passed     99.26%
+ 123  USA_DELIM-TFFYEGNCTABIOPUJJMAD_MI-MDHHS-SC20281_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                     2.37%    passed     99.57%
+ 124  USA_DELIM-TFFYEGNCTABIOPUJJMAD_MI-MDHHS-SC20284_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                     1.45%    passed     99.96%
+ 125  USA_DELIM-TFFYEGNCTABIOPUJJMAD_MI-MDHHS-SC20389_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                     4.44%    passed     97.96%
+ 126  USA_DELIM-TFFYEGNCTABIOPUJJMAD_NY-CDC-SURV0144NYC_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                   0.51%    passed    100.00%
+ 127  USA_DELIM-TFFYEGNCTABIOPUJJMAD_NY-PV08138_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.75%    passed     99.99%
+ 128  USA_DELIM-TFFYEGNCTABIOPUJJMAD_NY-PV08414_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           4.50%    passed     88.90%
+ 129  USA_DELIM-TFFYEGNCTABIOPUJJMAD_NY-PV09121_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           1.70%    passed     99.97%
+ 130  USA_DELIM-TFFYEGNCTABIOPUJJMAD_OH-MDHHS-SC20370_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                     3.00%    passed     98.44%
+ 131  USA_DELIM-TFFYEGNCTABIOPUJJMAD_SC_3569_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                              0.51%    passed     99.98%
+ 132  USA_DELIM-TFFYEGNCTABIOPUJJMAD_UNC_200181_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed    100.00%
+ 133  USA_DELIM-TFFYEGNCTABIOPUJJMAD_USA-WA_0480_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                          0.51%    passed     99.99%
+ 134  USA_DELIM-TFFYEGNCTABIOPUJJMAD_UT-00291_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                             2.25%    passed     99.82%
+ 135  USA_DELIM-TFFYEGNCTABIOPUJJMAD_VA-DCLS-0067_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.51%    passed    100.00%
+ 136  USA_DELIM-TFFYEGNCTABIOPUJJMAD_VA-DCLS-0115_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         1.67%    passed     99.82%
+ 137  USA_DELIM-TFFYEGNCTABIOPUJJMAD_VA-DCLS-0120_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.51%    passed    100.00%
+ 138  USA_DELIM-TFFYEGNCTABIOPUJJMAD_VA-DCLS-0185_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.51%    passed    100.00%
+ 139  USA_DELIM-TFFYEGNCTABIOPUJJMAD_VA-DCLS-0188_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.51%    passed    100.00%
+ 140  USA_DELIM-TFFYEGNCTABIOPUJJMAD_VA-DCLS-0197_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.51%    passed    100.00%
+ 141  USA_DELIM-TFFYEGNCTABIOPUJJMAD_VA-DCLS-0199_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                         0.51%    passed    100.00%
+ 142  USA_DELIM-TFFYEGNCTABIOPUJJMAD_WA-UW-1338_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed    100.00%
+ 143  USA_DELIM-TFFYEGNCTABIOPUJJMAD_WA-UW-1567_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.54%    passed    100.00%
+ 144  USA_DELIM-TFFYEGNCTABIOPUJJMAD_WA-UW-1593_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.96%    passed     99.92%
+ 145  USA_DELIM-TFFYEGNCTABIOPUJJMAD_WA-UW-3855_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed    100.00%
+ 146  USA_DELIM-TFFYEGNCTABIOPUJJMAD_WA-UW-4407_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed    100.00%
+ 147  USA_DELIM-TFFYEGNCTABIOPUJJMAD_WA-UW-4593_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed    100.00%
+ 148  USA_DELIM-TFFYEGNCTABIOPUJJMAD_WA-UW-5025_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.66%    passed     99.98%
+ 149  USA_DELIM-TFFYEGNCTABIOPUJJMAD_WA-UW-5166_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.62%    passed    100.00%
+ 150  USA_DELIM-TFFYEGNCTABIOPUJJMAD_WA-UW-5169_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed    100.00%
+ 151  USA_DELIM-TFFYEGNCTABIOPUJJMAD_WA-UW-6162_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.52%    passed    100.00%
+ 152  USA_DELIM-TFFYEGNCTABIOPUJJMAD_WA-UW155_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                             0.51%    passed    100.00%
+ 153  USA_DELIM-TFFYEGNCTABIOPUJJMAD_WA-UW384_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                             0.51%    passed    100.00%
+ 154  USA_DELIM-TFFYEGNCTABIOPUJJMAD_WA1_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                                  0.51%    passed     99.99%
+ 155  USA_DELIM-TFFYEGNCTABIOPUJJMAD_WA4-UW2_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                              0.51%    passed    100.00%
+ 156  USA_DELIM-TFFYEGNCTABIOPUJJMAD_WA_5030_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                              0.51%    passed    100.00%
+ 157  USA_DELIM-TFFYEGNCTABIOPUJJMAD_WI-UW-266_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                            0.57%    passed     99.99%
+ 158  Uruguay_DELIM-TFFYEGNCTABIOPUJJMAD_Mdeo-1_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                           0.51%    passed    100.00%
+ 159  Vietnam_DELIM-TFFYEGNCTABIOPUJJMAD_nCoV-19-02S_DELIM-TFFYEGNCTABIOPUJJMAD_2020                                      0.51%    passed     99.99%
+ 160  Wuhan_DELIM-TFFYEGNCTABIOPUJJMAD_IPBCAMS-WH-03_DELIM-TFFYEGNCTABIOPUJJMAD_2019                                      0.51%    passed     99.98%
+ 161  mink_DELIM-TFFYEGNCTABIOPUJJMAD_Netherlands_DELIM-TFFYEGNCTABIOPUJJMAD_NB01_01KS_DELIM-TFFYEGNCTABIOPUJJMAD_2020    0.96%    passed     99.95%
+ 162  mink_DELIM-TFFYEGNCTABIOPUJJMAD_Netherlands_DELIM-TFFYEGNCTABIOPUJJMAD_NB02_06KS_DELIM-TFFYEGNCTABIOPUJJMAD_2020    0.52%    passed     99.96%
+****  TOTAL                                                                                                               1.18%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: France_DELIM-TFFYEGNCTABIOPUJJMAD_10060KV_DELIM-TFFYEGNCTABIOPUJJMAD_2020 is identical to Wuhan_DELIM-TFFYEGNCTABIOPUJJMAD_Hu-1_DELIM-TFFYEGNCTABIOPUJJMAD_2019 but kept for subsequent analysis
+NOTE: USA_DELIM-TFFYEGNCTABIOPUJJMAD_CA-CZB-1097_DELIM-TFFYEGNCTABIOPUJJMAD_2020 is identical to ENV_DELIM-TFFYEGNCTABIOPUJJMAD_USA_DELIM-TFFYEGNCTABIOPUJJMAD_UF-11_DELIM-TFFYEGNCTABIOPUJJMAD_2020 but kept for subsequent analysis
+NOTE: France_DELIM-TFFYEGNCTABIOPUJJMAD_10078MA_DELIM-TFFYEGNCTABIOPUJJMAD_2020 is identical to France_DELIM-TFFYEGNCTABIOPUJJMAD_10006HC_DELIM-TFFYEGNCTABIOPUJJMAD_2020 but kept for subsequent analysis
+NOTE: France_DELIM-TFFYEGNCTABIOPUJJMAD_40003KA_DELIM-TFFYEGNCTABIOPUJJMAD_2020 is identical to France_DELIM-TFFYEGNCTABIOPUJJMAD_10015BY_DELIM-TFFYEGNCTABIOPUJJMAD_2020 but kept for subsequent analysis
+NOTE: Greece_DELIM-TFFYEGNCTABIOPUJJMAD_259_31928_DELIM-TFFYEGNCTABIOPUJJMAD_2020 is identical to Greece_DELIM-TFFYEGNCTABIOPUJJMAD_139_32716_DELIM-TFFYEGNCTABIOPUJJMAD_2020 but kept for subsequent analysis
+NOTE: USA_DELIM-TFFYEGNCTABIOPUJJMAD_CA-CZB-1085_DELIM-TFFYEGNCTABIOPUJJMAD_2020 is identical to USA_DELIM-TFFYEGNCTABIOPUJJMAD_CA-CZB-1045_DELIM-TFFYEGNCTABIOPUJJMAD_2020 but kept for subsequent analysis
+NOTE: USA_DELIM-TFFYEGNCTABIOPUJJMAD_VA-DCLS-0199_DELIM-TFFYEGNCTABIOPUJJMAD_2020 is identical to USA_DELIM-TFFYEGNCTABIOPUJJMAD_VA-DCLS-0197_DELIM-TFFYEGNCTABIOPUJJMAD_2020 but kept for subsequent analysis
+NOTE: 4 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: USA_DELIM-TFFYEGNCTABIOPUJJMAD_WA-UW-1338_DELIM-TFFYEGNCTABIOPUJJMAD_2020 (identical to ENV_DELIM-TFFYEGNCTABIOPUJJMAD_USA_DELIM-TFFYEGNCTABIOPUJJMAD_UF-11_DELIM-TFFYEGNCTABIOPUJJMAD_2020) is ignored but added at the end
+NOTE: USA_DELIM-TFFYEGNCTABIOPUJJMAD_WA4-UW2_DELIM-TFFYEGNCTABIOPUJJMAD_2020 (identical to ENV_DELIM-TFFYEGNCTABIOPUJJMAD_USA_DELIM-TFFYEGNCTABIOPUJJMAD_UF-11_DELIM-TFFYEGNCTABIOPUJJMAD_2020) is ignored but added at the end
+NOTE: USA_DELIM-TFFYEGNCTABIOPUJJMAD_WA-UW-4407_DELIM-TFFYEGNCTABIOPUJJMAD_2020 (identical to France_DELIM-TFFYEGNCTABIOPUJJMAD_10015BY_DELIM-TFFYEGNCTABIOPUJJMAD_2020) is ignored but added at the end
+NOTE: Greece_DELIM-TFFYEGNCTABIOPUJJMAD_37_35684_DELIM-TFFYEGNCTABIOPUJJMAD_2020 (identical to Greece_DELIM-TFFYEGNCTABIOPUJJMAD_139_32716_DELIM-TFFYEGNCTABIOPUJJMAD_2020) is ignored but added at the end
+Alignment was printed to results/global/subsampled_alignment-delim.fasta.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to results/global/subsampled_alignment-delim.fasta.uniqueseq.phy
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.016 seconds
+
+NOTE: 6 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.500)
+1. Initial log-likelihood: -43694.327
+2. Current log-likelihood: -43527.925
+Optimal log-likelihood: -43527.918
+Rate parameters:  A-C: 0.24003  A-G: 1.04853  A-T: 0.12701  C-G: 0.20590  C-T: 3.38505  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Parameters optimization took 2 rounds (0.819 sec)
+Computing ML distances based on estimated model parameters... 0.163 sec
+Computing BIONJ tree...
+0.020 seconds
+Log-likelihood of BIONJ tree: -43529.877
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 8 parsimony trees... 0.093 second
+Computing log-likelihood of 8 initial trees ... 0.110 seconds
+Current best score: -43527.909
+
+Do NNI search on 2 best initial trees
+BETTER TREE FOUND at iteration 1: -43527.897
+BETTER TREE FOUND at iteration 2: -43527.857
+Finish initializing candidate tree set (12)
+Current best tree score: -43527.857 / CPU time: 0.471
+Number of iterations: 2
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+TREE SEARCH COMPLETED AFTER 4 ITERATIONS / Time: 0h:0m:2s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.050)
+1. Initial log-likelihood: -43527.857
+Optimal log-likelihood: -43527.856
+Rate parameters:  A-C: 0.24177  A-G: 1.04909  A-T: 0.12507  C-G: 0.20368  C-T: 3.38509  G-T: 1.00000
+Base frequencies:  A: 0.299  C: 0.184  G: 0.196  T: 0.321
+Parameters optimization took 1 rounds (0.075 sec)
+BEST SCORE FOUND : -43527.856
+Total tree length: 0.010
+
+Total number of iterations: 4
+CPU time used for tree search: 1.068 sec (0h:0m:1s)
+Wall-clock time used for tree search: 1.087 sec (0h:0m:1s)
+Total CPU time used: 2.204 sec (0h:0m:2s)
+Total wall-clock time used: 2.397 sec (0h:0m:2s)
+
+Analysis results written to: 
+  IQ-TREE report:                results/global/subsampled_alignment-delim.fasta.iqtree
+  Maximum-likelihood tree:       results/global/subsampled_alignment-delim.fasta.treefile
+  Likelihood distances:          results/global/subsampled_alignment-delim.fasta.mldist
+  Screen log file:               results/global/subsampled_alignment-delim.fasta.log
+
+Date and Time: Thu Feb 25 19:18:10 2021
