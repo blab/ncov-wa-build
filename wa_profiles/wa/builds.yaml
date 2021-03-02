@@ -6,7 +6,7 @@ metadata: "data/metadata.tsv"
 # Defines next align specs
 genes: ["ORF1a", "ORF1b", "S", "ORF3a", "M", "N"]
 use_nextalign: true
-conda_environment: "workflow/envs/nextstrain_with_nextalign.yaml"
+conda_environment: "workflow/envs/nextstrain.yaml"
 
 # Define custom rules
 custom_rules:
