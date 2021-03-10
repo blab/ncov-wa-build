@@ -31,7 +31,7 @@
     },
     {
       "key": "pango_lineage",
-      "title": "Pangolin lineage",
+      "title": "PANGO lineage",
       "type": "categorical"
     },
     {
