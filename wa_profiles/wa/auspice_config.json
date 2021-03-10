@@ -30,7 +30,7 @@
       "type": "categorical"
     },
     {
-      "key": "pangolin_lineage",
+      "key": "pango_lineage",
       "title": "Pangolin lineage",
       "type": "categorical"
     },
@@ -119,7 +119,8 @@
     "division",
     "country",
     "region",
-    "author"
+    "author",
+    "pango_lineage"
   ],
   "panels": [
     "tree",
