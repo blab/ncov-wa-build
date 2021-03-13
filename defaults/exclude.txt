@@ -917,7 +917,7 @@ pangolin/Yunnan/MP20/2020
 CzechRepublic/NRL_9894/2020
 
 # Collection date in the future
-England/C200040625/2020 
+England/C200040625/2020
 
 # Divergence is far more diverse than the very narrow date range given
 # suspect incorrect dates - excluding until can be fixed
@@ -1484,7 +1484,7 @@ UnitedArabEmirates/4285/2020
 Norway/7667/2020
 Spain/MD-IBV-99018532/2020
 
-# Marked as "Longitudinal surveillance (repeat sampling)" in additional info 
+# Marked as "Longitudinal surveillance (repeat sampling)" in additional info
 USA/MA-MGH-03866/2020
 USA/MA-MGH-03872/2020
 USA/MA-MGH-03873/2020
@@ -1770,3 +1770,15 @@ Brazil/RJ-FIOCRUZ-12887/2020
 Brazil/RJ-FIOCRUZ-12985/2020
 Brazil/RJ-FIOCRUZ-7657/2020
 USA/PR-01222021-811/2021
+
+# large deletions, including in Spike:
+Turkey/22_Ankara_GUMV_50454/2020
+USA/SC-CDC-2-3714451/2020
+
+# too early for clade; see https://bedfordlab.slack.com/archives/CTZKJC7PZ/p1615577473113100
+Austria/CeMM4362/2020
+Austria/CeMM4363/2020
+Spain/CL-MS6922/2020
+
+# too many s1 mutations; https://bedfordlab.slack.com/archives/CTZKJC7PZ/p1615591129119500
+SriLanka/Genelabs-CA17643/2020
