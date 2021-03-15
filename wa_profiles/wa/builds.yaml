@@ -33,7 +33,7 @@ builds:
     division: Washington
     earliest_date: 2020-07-01
     latest_date: 2020-10-31
-    n_sequences: 1100
+    n_sequences: 1250
     subsampling_scheme: month
 
   wa_nov20-feb21:
