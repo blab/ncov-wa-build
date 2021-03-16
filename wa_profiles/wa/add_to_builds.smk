@@ -17,7 +17,7 @@ if "wa_1y" in config["builds"]:
 for build in config["builds"]:
     if "n_sequences" in config["builds"][build]:
         n = config["builds"][build]["n_sequences"]
-        config["builds"][build]['n_usa'] = int(n*2/5)
-        config["builds"][build]['n_global'] = int(n/5)
-        config["builds"][build]['n_early'] = int(n/4)
+        config["builds"][build]['n_usa'] = int(n*3/10)
+        config["builds"][build]['n_global'] = int(n*3/10)
+        config["builds"][build]['n_early'] = int(n*3/20)
         config["builds"][build]['n_global_early'] = int(n*3/20)
