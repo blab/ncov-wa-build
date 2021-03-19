@@ -13,8 +13,10 @@ custom_rules:
   - wa_profiles/wa/add_to_builds.smk
 
 # Define custom auspice configuration to enable frequencies.
+# Define subsclades.
 files:
   auspice_config: "wa_profiles/wa/auspice_config.json"
+  subclades: "wa_profiles/wa/cdc_voi_voc.tsv"
 
 # Define WA builds.
 builds:
@@ -44,7 +46,6 @@ builds:
     earliest_date: 2020-11-01
     latest_date: 2021-02-28
     n_sequences: 4000
-    subclades: wa_profiles/wa/cdc_voi_voc.tsv
     subsampling_scheme: month
 
   wa_mar21-jun21:
@@ -55,7 +56,6 @@ builds:
     earliest_date: 2021-03-01
     latest_date: 2021-06-30
     n_sequences: 250
-    subclades: wa_profiles/wa/cdc_voi_voc.tsv
     subsampling_scheme: month
 
   wa_4m:
@@ -64,7 +64,6 @@ builds:
     description: wa_profiles/wa/descriptions/four-months_description.md
     division: Washington
     n_sequences: 3750
-    subclades: wa_profiles/wa/cdc_voi_voc.tsv
     subsampling_scheme: time-window
 
   wa_1y:
@@ -72,7 +71,6 @@ builds:
     colors: wa_profiles/wa/colors.tsv
     description: wa_profiles/wa/descriptions/year_description.md
     division: Washington
-    subclades: wa_profiles/wa/cdc_voi_voc.tsv
     subsampling_scheme: one-year
 
 
