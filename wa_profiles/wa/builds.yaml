@@ -16,7 +16,7 @@ custom_rules:
 # Define subsclades.
 files:
   auspice_config: "wa_profiles/wa/auspice_config.json"
-# subclades: "wa_profiles/wa/cdc_voi_voc.tsv"
+  subclades: "wa_profiles/wa/cdc_voi_voc.tsv"
 
 # Define WA builds.
 builds:
