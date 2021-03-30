@@ -45,7 +45,7 @@ builds:
     division: Washington
     earliest_date: 2020-11-01
     latest_date: 2021-02-28
-    n_sequences: 4000
+    n_sequences: 4600
     subsampling_scheme: month
 
   wa_mar21-jun21:
@@ -55,7 +55,7 @@ builds:
     division: Washington
     earliest_date: 2021-03-01
     latest_date: 2021-06-30
-    n_sequences: 250
+    n_sequences: 500
     subsampling_scheme: month
 
   wa_4m:
@@ -63,7 +63,7 @@ builds:
     colors: wa_profiles/wa/colors.tsv
     description: wa_profiles/wa/descriptions/four-months_description.md
     division: Washington
-    n_sequences: 3750
+    n_sequences: 4400
     subsampling_scheme: time-window
 
   wa_1y:
@@ -83,13 +83,13 @@ subsampling:
     local-focus:
       # Evenly sample across time for the current division until max-date.
       group_by: "division"
-      max_sequences: 5000
+      max_sequences: 4800
       max_date: --max-date {latest_date}
       query: --query "(country == 'USA' & division == '{division}')"
     usa-context:
       # Evenly samples across time from the United States, excluding current division,until max-date.                                                                                                                                        # are that are genetically similar to the current division's sequences.
       group_by: "year month"
-      max_sequences: 1000
+      max_sequences: 960
       max_date: --max-date {latest_date}
       query: --query "(country == 'USA' & division != '{division}')"
       priorities:
@@ -98,7 +98,7 @@ subsampling:
     global-context:
       # Evenly samples across time until from the rest of the world, excluding the USA, until max-date.
       group_by: "region year month"
-      max_sequences: 1000
+      max_sequences: 960
       max_date: --max-date {latest_date}
       query: --query "(country != 'USA')"
       priorities:
