@@ -14,23 +14,23 @@
     },
     "filter": {
       "partition": "-p campus-new",
-      "time": "01:30:00",
-      "memory": "16384"
+      "time": "01:30:00"
+    },
+    "proximity_score": {
+      "partition": "-p campus-new",
+      "time": "00:25:00"
     },
     "tree": {
         "partition": "-p campus-new",
-        "time": "5:00:00",
-        "memory": "16384",
+        "time": "6:00:00",
         "cores": 8
     },
     "refine": {
         "partition": "-p campus-new",
-        "time": "4:00:00",
-        "memory": "16384"
+        "time": "4:00:00"
     },
     "ancestral": {
         "partition": "-p campus-new",
-        "time": "0:15:00",
-        "memory": "4096"
+        "time": "0:15:00"
     }
 }
