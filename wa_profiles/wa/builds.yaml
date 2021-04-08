@@ -63,7 +63,7 @@ builds:
     colors: wa_profiles/wa/colors.tsv
     description: wa_profiles/wa/descriptions/four-months_description.md
     division: Washington
-    n_sequences: 5300
+    n_sequences: 5250
     subsampling_scheme: time-window
 
   wa_1y:
