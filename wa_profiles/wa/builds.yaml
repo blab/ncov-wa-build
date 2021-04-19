@@ -55,7 +55,7 @@ builds:
     division: Washington
     earliest_date: 2021-03-01
     latest_date: 2021-06-30
-    n_sequences: 2500
+    n_sequences: 3500
     subsampling_scheme: month
 
   wa_4m:
@@ -63,7 +63,7 @@ builds:
     colors: wa_profiles/wa/colors.tsv
     description: wa_profiles/wa/descriptions/four-months_description.md
     division: Washington
-    n_sequences: 6350
+    n_sequences: 7500
     subsampling_scheme: time-window
 
   wa_1y:
