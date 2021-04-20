@@ -66,34 +66,35 @@ region	Europe	#BBBC49
 region	North America	#E29D39
 region	South America	#E1502A
 
-location	Washington State	#D01C8B
-location	Seattle	#9ABD5C
-location	Kirkland	#E4632E
-location	Lincoln County WA	#511EA8
-location	Clallam County	#4928B4
-location	King County	#4334BF
-location	San Juan County	#4041C7
-location	Clark County WA	#3F5ED0
-location	Grays Harbor County	#416CCE
-location	Whatcom County	#4379CD
-location	Douglas County WA	#4B8FC1
+location	Clallam County	#511EA8
+location	Douglas County WA	#4928B4
+location	Cowlitz County	#4334BF
+location	Grant County WA	#4041C7
+location	San Juan County	#3F50CC
+location	Klickitat County	#3F5ED0
+location	Whatcom County	#416CCE
+location	Franklin County WA	#4379CD
+location	Lewis County WA	#4B8FC1
 location	Snohomish County	#5098B9
-location	Asotin County	#56A0AF
-location	Mason County	#5CA7A4
-location	Klickitat County	#6BB18E
-location	Chelan County	#73B583
-location	Skagit County	#7CB878
-location	Adams County WA	#90BC65
-location	Walla Walla County	#9ABD5C
-location	Thurston County	#A4BE56
-location	Pierce County WA	#AFBD4F
-location	Lewis County WA	#C2BA46
-location	Benton County	#CCB742
-location	Spokane County	#D3B240
-location	Yakima County	#DAAC3D
-location	Kittitas County	#E39B39
-location	Grant County WA	#E68F36
-location	Jefferson County WA	#E68234
-location	Pacific County	#E4632E
-location	Cowlitz County	#E1512A
-location	Franklin County WA	#DF4027
+location	Mason County WA	#56A0AF
+location	Adams County WA	#5CA7A4
+location	Walla Walla County	#63AC99
+location	Thurston County	#6BB18E
+location	Kittitas County	#73B583
+location	Clark County WA	#7CB878
+location	Island County	#90BC65
+location	Jefferson County WA	#9ABD5C
+location	Benton County WA	#A4BE56
+location	Lincoln County WA	#AFBD4F
+location	Yakima County	#B9BC4A
+location	King County	#C2BA46
+location	Asotin County	#CCB742
+location	Kitsap County	#D3B240
+location	Pierce County WA	#DFA43B
+location	Skagit County	#E39B39
+location	Chelan County	#E68F36
+location	Tacoma	#E68234
+location	Pacific County	#E67431
+location	Grays Harbor County	#E4632E
+location	Spokane County	#E1512A
+location	Stevens County	#DF4027

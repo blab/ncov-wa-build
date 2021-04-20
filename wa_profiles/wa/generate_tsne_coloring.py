@@ -14,11 +14,8 @@ def mapping(coor, label):
 
     location_df = pd.DataFrame.from_dict(location_dict, orient = 'index')
     location_df.index.name = label
-    location_df = location_df[(location_df['latitude'] >= 45.7) & (location_df['latitude'] <= 49)]
-    location_df = location_df[(location_df['longitude'] >= -124.872535) & (location_df['longitude'] <= -117.040461)]
-    location_df = location_df[~((location_df['longitude'] < -123 ) & (location_df['latitude'] < 46))]
     lat_long_df = location_df.values[:,0:2]
-    return lat_long_df , location_df
+    return lat_long_df, location_df
 
 def tsne_ranking(lat_long_df, location_df, label):
     #creates a ranking of t-SNE

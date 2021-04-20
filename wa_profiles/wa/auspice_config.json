@@ -40,6 +40,11 @@
       "type": "continuous"
     },
     {
+      "key": "logistic_growth",
+      "title": "Logistic growth",
+      "type": "continuous"
+    },
+    {
       "key": "GISAID_clade",
       "title": "GISAID Clade",
       "type": "categorical"
