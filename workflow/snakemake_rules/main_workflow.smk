@@ -349,7 +349,7 @@ rule index_sequences:
         """
         augur index \
             --sequences {input.sequences} \
-            --output {output.sequence_index}
+            --output {output.sequence_index} 2>&1 | tee {log}
         """
 
 rule subsample:
@@ -1246,7 +1246,7 @@ rule export:
     conda: config["conda_environment"]
     shell:
         """
-        augur export v2 \
+        export AUGUR_RECURSION_LIMIT=10000 && augur export v2 \
             --tree {input.tree} \
             --metadata {input.metadata} \
             --node-data {input.node_data} \
