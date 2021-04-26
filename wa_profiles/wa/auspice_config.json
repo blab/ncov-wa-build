@@ -25,8 +25,8 @@
       "type": "categorical"
     },
     {
-      "key": "subclade_membership",
-      "title": "Emerging clade",
+      "key": "emerging_lineage",
+      "title": "Emerging Lineage",
       "type": "categorical"
     },
     {
@@ -45,6 +45,11 @@
       "type": "continuous"
     },
     {
+      "key": "current_frequency",
+      "title": "Current frequency",
+      "type": "continuous"
+    },
+    {
       "key": "GISAID_clade",
       "title": "GISAID Clade",
       "type": "categorical"
@@ -52,16 +57,6 @@
     {
       "key": "host",
       "title": "Host",
-      "type": "categorical"
-    },
-    {
-      "key": "age",
-      "title": "Age",
-      "type": "continuous"
-    },
-    {
-      "key": "sex",
-      "title": "Sex",
       "type": "categorical"
     },
     {
@@ -90,21 +85,6 @@
     },
     {
       "key": "genbank_accession",
-      "type": "categorical"
-    },
-    {
-      "key": "country_exposure",
-      "title": "Country of exposure",
-      "type": "categorical"
-    },
-    {
-      "key": "division_exposure",
-      "title": "Division of exposure",
-      "type": "categorical"
-    },
-    {
-      "key": "region_exposure",
-      "title": "Region of exposure",
       "type": "categorical"
     }
   ],
