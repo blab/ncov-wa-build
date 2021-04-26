@@ -11,6 +11,9 @@ if "wa_2m" in config["builds"]:
     config["builds"]["wa_2m"]["earliest_date"]= two_m.strftime('%Y-%m-%d')
     config["builds"]["wa_2m"]["background_date"] = four_m.strftime('%Y-%m-%d')
 
+if "ncov-wa-build_4m" in config["builds"]:
+    config["builds"]["ncov-wa-build_4m"]["earliest_date"]= four_m.strftime('%Y-%m-%d')
+
 if "wa_4m" in config["builds"]:
     config["builds"]["wa_4m"]["earliest_date"]= four_m.strftime('%Y-%m-%d')
 
