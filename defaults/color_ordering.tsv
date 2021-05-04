@@ -521,14 +521,20 @@ location	Kathmandu
 # Chattogram
 location	Cox's Bazar
 location	Bandarban
+location	Port Colony
 location	Chittagong
+location	Jamal Khan
+location	Kazir Dewri
+location	Sholokbahar
 location	Noakhali
+location	Muradpur
 location	Rangamati
 location	Lakshmipur
 location	Feni
 location	Khagrachari
 location	Chandpur
 location	Comilla
+location	Kunjachaya
 location	Brahmanbaria
 
 # Barishal
@@ -566,6 +572,7 @@ location	Kalabagan
 location	Azimpur
 location	Panthapath
 location	Tejgaon
+location	Rahmatganj
 location	Cantonment
 location	Banani
 location	Gulshan
@@ -1101,8 +1108,11 @@ location	Joe Gqabi
 location	Kempton Park
 
 # Gauteng
+location	Mogale City
 location	West Rand
+location	Emfuleni
 location	Johannesburg Metro
+location	Midvaal
 location	Ekurhuleni Metro
 
 # KwaZulu-Natal
@@ -1171,8 +1181,36 @@ location	Antananarivo
 location	Fenoarivo
 
 ### Mauritius
+# Black River
+location	Tamarin
+location	Canot
+
 # Plaine-Wilhems
+location	Phoenix
+location	Rose Hill
+location	Henrietta
+location	Quatre Bornes
 location	Candos
+location	Floreal
+location	Allee Brillant
+location	Engrais Martial
+location	Castel
+location	Highlands
+location	Curepipe
+location	Eau Coulee
+location	Forest Side
+
+# Moka
+location	Quartier Militaire
+location	Montagne Blanche
+
+# Grand Port
+location	Plaine Magnien
+location	Grand Bel Air
+location	Mahebourg
+
+# Flacq
+location	Poste La Fayette
 
 ################
 
@@ -8197,7 +8235,10 @@ location	La Cruz
 
 # Puntarenas
 location	Puntarenas
+location	Esparza
 location	Garabito
+location	Parrita
+location	Quepos
 location	Puerto Cortes
 location	Golfito
 location	Palmar
@@ -8212,22 +8253,23 @@ location	Canoas CR
 location	La Cuesta
 
 # Alajuela
-location	Guatuso
 location	Orotina
-location	Santiago (Alajuela)
-location	San Carlos CR
-location	San Carlos
-location	Quesada
-location	Naranjo
-location	Cutris
-location	Grecia
-location	San Roque CR
+location	San Ramon CR
 location	Guacima
 location	San Rafael de Alajuela
 location	Alajuela
+location	Santiago (Alajuela)
+location	Grecia
 location	Sabanilla
 location	San Isidro (Alajuela)
-location	San Ramon CR
+location	San Roque CR
+location	Naranjo
+location	Quesada
+location	San Carlos CR
+location	San Carlos
+location	Cutris
+location	Guatuso
+location	Los Chiles
 
 # Heredia
 location	Belen
@@ -8281,6 +8323,7 @@ location	Granadilla
 location	Moravia
 location	Goicoechea
 location	Vazquez De Coronado
+location	Dota
 location	San Isidro de El General
 location	Perez Zeledon
 
@@ -10125,7 +10168,11 @@ division	Diana
 division	Somalia
 
 ### Mauritius
+division	Black River
 division	Plaine-Wilhems
+division	Moka
+division	Grand Port
+division	Flacq
 
 ################
 
