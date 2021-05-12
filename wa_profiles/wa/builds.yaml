@@ -28,12 +28,12 @@ builds:
     division: Washington
     subsampling_scheme: four-month
 
-#  wa_1y:
-#    title: "Washington-focused SARS-CoV-2 genomic analysis: Past year"
-#    colors: wa_profiles/wa/colors.tsv
-#    description: wa_profiles/wa/descriptions/year_description.md
-#    division: Washington
-#    subsampling_scheme: one-year
+  wa_1y:
+    title: "Washington-focused SARS-CoV-2 genomic analysis: Past year"
+    colors: wa_profiles/wa/colors.tsv
+    description: wa_profiles/wa/descriptions/year_description.md
+    division: Washington
+    subsampling_scheme: one-year
 
 # remove S dropout sequences and sequences without division label in US
 filter:
