@@ -1,6 +1,7 @@
+
 inputs:
   - name: gisaid
-    metadata: "s3://nextstrain-ncov-private/metadata.tsv.gz"
+    metadata: "data/metadata.tsv"
    # sequences: "s3://nextstrain-ncov-private/sequences.fasta.gz"
    # Uncomment outputs to start the pipeline at that stage.
    # E.g. if you uncomment `filtered` then the pipeline
@@ -11,4 +12,4 @@ inputs:
    # aligned: "s3://nextstrain-ncov-private/aligned_gisaid.fasta.xz"
    # to-exclude: "s3://nextstrain-ncov-private/to-exclude_gisaid.txt.xz"
    # masked: "s3://nextstrain-ncov-private/masked_gisaid.fasta.xz"
-    filtered: "s3://nextstrain-ncov-private/filtered_gisaid.fasta.xz"
+    sequences: "data/sequences.fasta"
