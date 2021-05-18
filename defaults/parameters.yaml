@@ -10,6 +10,13 @@ strip_strain_prefixes:
   - hCoV-19/
   - SARS-CoV-2/
 
+sanitize_metadata:
+  rename_fields:
+    - "Virus name=strain"
+    - "Collection date=date"
+  standardize_columns: true
+  parse_location_field: Location
+
 reference_node_name: "USA/WA1/2020"
 
 # Define files used for external configuration. Common examples consist of a
