@@ -1,14 +1,8 @@
 # Update input location as needed.
 inputs:
-  - name: washington1
-    metadata: "data/wa1.metadata.tsv.xz"
-    sequences: "data/wa1.sequences.fasta.xz"
-  - name: washington2
-    metadata: "data/wa2.metadata.tsv.xz"
-    sequences: "data/wa2.sequences.fasta.xz"
-  - name: washington3
-    metadata: "data/wa3.metadata.tsv.xz"
-    sequences: "data/wa3.sequences.fasta.xz"
+  - name: washington
+    metadata: "data/wa.metadata.tsv.xz"
+    sequences: "data/wa.sequences.fasta.xz"
   - name: contextual
     metadata: "data/ncov_north-america.tsv"
     sequences: "data/ncov_north-america.fasta"
