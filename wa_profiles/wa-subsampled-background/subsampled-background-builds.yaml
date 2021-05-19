@@ -4,8 +4,8 @@ inputs:
     metadata: "data/washington.metadata.tsv"
     sequences: "data/washington.fasta"
   - name: contextual
-    metadata: "data/north-america_subsampled_metadata.tsv.xz"
-    sequences: "data/north-america_subsampled_sequences.fasta.xz"
+    metadata: "data/ncov_north-america.tsv"
+    sequences: "data/ncov_north-america.tsv"
 
 # Defines next align specs
 genes: ["ORF1a", "ORF1b", "S", "ORF3a", "M", "N"]
