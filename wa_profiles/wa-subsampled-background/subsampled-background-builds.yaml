@@ -1,0 +1,81 @@
+# Update input location as needed.
+inputs:
+  - name: washington
+    metadata: "data/washington.metadata.tsv"
+    sequences: "data/washington.fasta"
+  - name: contextual
+    metadata: "data/north-america_subsampled_metadata.tsv.xz"
+    sequences: "data/north-america_subsampled_sequences.fasta.xz"
+
+# Defines next align specs
+genes: ["ORF1a", "ORF1b", "S", "ORF3a", "M", "N"]
+use_nextalign: true
+conda_environment: "workflow/envs/nextstrain.yaml"
+
+# Define custom rules
+custom_rules:
+  - wa_profiles/wa/add_to_builds.smk
+
+# Define custom auspice configuration to enable frequencies.
+# Define subsclades.
+files:
+  auspice_config: "wa_profiles/wa/auspice_config.json"
+
+# Define WA builds.
+builds:
+  wa_2m:
+    title: "Washington-focused SARS-CoV-2 genomic analysis: Past two months"
+    colors: wa_profiles/wa/colors.tsv
+    description: wa_profiles/wa/descriptions/two-months_description.md
+    division: Washington
+    subsampling_scheme: two-month-priority
+
+  wa_4m:
+    title: "Washington-focused SARS-CoV-2 genomic analysis: Past four months"
+    colors: wa_profiles/wa/colors.tsv
+    description: wa_profiles/wa/descriptions/four-months_description.md
+    division: Washington
+    subsampling_scheme: four-month-priority
+
+# remove S dropout sequences and sequences without division label in US
+filter:
+  exclude_where: "division='USA' purpose_of_sequencing='S dropout'"
+
+# Define subsampling scheme for builds. This scheme should include as much
+# local diversity for a given division as possible and contextual samples from
+# the rest of the USA and the world.
+subsampling:
+  two-month-priority:
+    local-focus:
+      min_date: --min-date {earliest_date}
+      query: --query "(country == 'USA' & division == '{division}')"
+    # Included to accurately reconstruct # of introductions
+    contextual-proximity:
+      max_sequences: 1500
+      query: --query "contextual == 'yes'"
+      priorities:
+        type: proximity
+        focus: local-focus
+    # Included for accurate clade timing
+    contextual-random:
+      max_sequences: 500
+      group_by: "month year"
+      query: --query "contextual == 'yes'"
+
+  four-month-priority:
+    local-focus:
+      min_date: --min-date {earliest_date}
+      query: --query "(country == 'USA' & division == '{division}')"
+      max_sequences: 3000
+    # Included to accurately reconstruct # of introductions.
+    contextual-proximity:
+      max_sequences: 1500
+      query: --query "contextual == 'yes'"
+      priorities:
+        type: proximity
+        focus: local-focus
+    # Included for accurate clade timing.
+    contextual-random:
+      max_sequences: 500
+      group_by: "month year"
+      query: --query "contextual == 'yes'"
