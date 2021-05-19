@@ -2,7 +2,7 @@
 inputs:
   - name: washington
     metadata: "data/washington.metadata.tsv"
-    sequences: "data/washington.fasta.tsv"
+    sequences: "data/washington.fasta"
   - name: contextual
     metadata: "data/north-america_subsampled_metadata.tsv.xz"
     sequences: "data/north-america_subsampled_sequences.fasta.xz"
