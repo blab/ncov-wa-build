@@ -1,11 +1,17 @@
 # Update input location as needed.
 inputs:
-  - name: washington
-    metadata: "data/washington.metadata.tsv"
-    sequences: "data/washington.fasta"
+  - name: washington1
+    metadata: "data/wa1.metadata.tsv.xz"
+    sequences: "data/wa1.sequences.fasta.xz"
+  - name: washington2
+    metadata: "data/wa2.metadata.tsv.xz"
+    sequences: "data/wa2.sequences.fasta.xz"
+  - name: washington3
+    metadata: "data/wa3.metadata.tsv.xz"
+    sequences: "data/wa3.sequences.fasta.xz"
   - name: contextual
-    metadata: "data/north-america_subsampled_metadata.tsv.xz"
-    sequences: "data/north-america_subsampled_sequences.fasta.xz"
+    metadata: "data/ncov_north-america.tsv"
+    sequences: "data/ncov_north-america.fasta"
 
 # Defines next align specs
 genes: ["ORF1a", "ORF1b", "S", "ORF3a", "M", "N"]
