@@ -1,5 +1,5 @@
 import argparse
-from augur.io import read_sequences
+from augur.io import open_file, read_sequences, write_sequences
 from Bio import SeqIO
 import hashlib
 import sys
@@ -21,11 +21,13 @@ if __name__ == '__main__':
     duplicate_strains = set()
 
     counter = 0
-    with open(args.output, "w") as output_handle:
+    with open_file(args.output, "w") as output_handle:
         # Stream sequences from all input files into a single output file,
         # skipping duplicate records (same strain and sequence) and noting
-        # mismatched sequences for the same strain name.
-        for record in read_sequences(*args.input):
+        # mismatched sequences for the same strain name.  In order to
+        # prefer the latter files, we have to reverse the order of the
+        # files.
+        for record in read_sequences(*reversed(args.input)):
             counter += 1
             if counter % 10000 == 0:
                 print(f"Processed {counter} records")
@@ -46,7 +48,7 @@ if __name__ == '__main__':
                 continue
 
             sequence_hash_by_name[record.name] = sequence_hash
-            SeqIO.write(record, output_handle, 'fasta')
+            write_sequences(record, output_handle)
 
     if len(duplicate_strains) > 0:
         error_mode = "ERROR"
