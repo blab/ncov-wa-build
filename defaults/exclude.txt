@@ -2086,18 +2086,14 @@ USA/TN-UT2063/2020
 Japan/Donner380/2020
 
 # The following additional info was interpreted to mean that each of these sequences was a duplicate (second sample):
-# Brazil/GO-HLAGYN-1031607_R1/2021 EPI_ISL_2017281 additional_host_info: infection case firts episode / seconde sample (1586463)
-Brazil/GO-HLAGYN-1586463_R2/2021
-# Brazil/GO-HLAGYN-1088252_R1/2021 EPI_ISL_2017323 additional_host_info: infection case firts episode / seconde sample (P.1520715)
-Brazil/GO-HLAGYN-1520715_R2/2021
-# Brazil/GO-HLAGYN-1354344_R2/2021 EPI_ISL_2017447 additional_host_info: infection case second episode / first sample (P. 1169409)
+# Brazil/GO-HLAGYN-1354344_R2/2021 EPI_ISL_2017447 additional_host_info: infection case second episode / first sample (P. 1169409) - exclude "second sample" (same date)
 Brazil/GO-HLAGYN-1354344_R2/2021
-# Brazil/GO-HLAGYN-1520715_R2/2021 EPI_ISL_2017324 additional_host_info: infection case second episode / first sample (P.1088252)
+# Brazil/GO-HLAGYN-1520715_R2/2021 EPI_ISL_2017324 additional_host_info: infection case second episode / first sample (P.1088252) - exclude "second sample" (same date)
 Brazil/GO-HLAGYN-1520715_R2/2021
-# Brazil/GO-HLAGYN-1586463_R2/2021 EPI_ISL_2017282 additional_host_info: infection case second episode / first sample (1031607)
+# Brazil/GO-HLAGYN-1586463_R2/2021 EPI_ISL_2017282 additional_host_info: infection case second episode / first sample (1031607) - exclude 1586463 due to later date
 Brazil/GO-HLAGYN-1586463_R2/2021
-# Brazil/GO-HLAGYN-1169409_R1/2021 EPI_ISL_2102517 additional_host_info: Infection case firts episode / second sample (P. 1354344)
-Brazil/GO-HLAGYN-1354344_R2/2021
+# Brazil/GO-HLAGYN-1623988_R2/2021	EPI_ISL_2187985	additional_host_info: Post-vaccination reinfection, infection case seconde episode / first sample (855822) - exclude 855822 due to later date
+Brazil/GO-HLAGYN-855822/2021
 
 # Sample date before clade
 Spain/VC-IBV-99028301/2020
@@ -2117,3 +2113,50 @@ Germany/SL-SU-10427535/2020
 
 # S1 mutations; see https://bedfordlab.slack.com/archives/CTZKJC7PZ/p1621370263017600
 USA/TX-HMH-MCoV-25244/2021
+
+# Divergence; see https://bedfordlab.slack.com/archives/CTZKJC7PZ/p1621459450055600
+Ecuador/USFQ-1325/2021
+India/GJ-ICMR-NIV-INSACOG-GSEQ-92/2021
+Indonesia/JK-NIHRD-MI2104087/2021
+Gambia/19140/2021
+India/GJ-GBRC522b/2020
+Latvia/445/2021
+Japan/Donner379/2020
+Japan/Donner382/2020
+
+# wrong date probably; see https://bedfordlab.slack.com/archives/CTZKJC7PZ/p1621533304060300
+Poland/NIPH-NIH_ECDC-4488/2021
+
+# duplicates; see additional info below.
+# Japan/TY10-395-P1/2021 EPI_ISL_2158612 additional_host_info: Accession ID of original sequence is EPI_ISL_1927433.$
+Japan/TY10-395-P1/2021
+# Japan/TY11-330-P1/2021 EPI_ISL_2158613 additional_host_info: Accession ID of original sequence is EPI_ISL_1927438.$
+Japan/TY11-330-P1/2021
+# Japan/TY11-908-P1/2021 EPI_ISL_2158614 additional_host_info: Accession ID of original sequence is EPI_ISL_1927417.$
+Japan/TY11-908-P1/2021
+# Japan/TY11-912-P1/2021 EPI_ISL_2158615 additional_host_info: Accession ID of original sequence is EPI_ISL_1927845.$
+Japan/TY11-912-P1/2021
+# Japan/TY11-917-P1/2021 EPI_ISL_2158616 additional_host_info: Accession ID of original sequence is EPI_ISL_1927423.$
+Japan/TY11-917-P1/2021
+# Japan/TY11-927-P1/2021 EPI_ISL_2158617 additional_host_info: Accession ID of original sequence is EPI_ISL_1927424.$
+Japan/TY11-927-P1/2021
+# Japan/TY8-005-P0/2021 EPI_ISL_2158606 additional_host_info: Accession ID of original sequence is EPI_ISL_1128142.$
+Japan/TY8-005-P0/2021
+# Japan/TY8-008-P0/2021 EPI_ISL_2158607 additional_host_info: Accession ID of original sequence is EPI_ISL_1128143.$
+Japan/TY8-008-P0/2021
+# Japan/TY8-187-P0/2021 EPI_ISL_2158608 additional_host_info: Accession ID of original sequence is EPI_ISL_1131135.$
+Japan/TY8-187-P0/2021
+# Japan/TY8-689-P0/2021 EPI_ISL_2158605 additional_host_info: Accession ID of original sequence is EPI_ISL_1425704.$
+Japan/TY8-689-P0/2021
+# Japan/TY8-995-P0/2021 EPI_ISL_2158609 additional_host_info: Accession ID of original sequence is EPI_ISL_1198824.$
+Japan/TY8-995-P0/2021
+# Japan/TY9-344-P0/2021 EPI_ISL_2158610 additional_host_info: Accession ID of original sequence is EPI_ISL_1425611$
+Japan/TY9-344-P0/2021
+# Japan/TY9-435-P0/2021 EPI_ISL_2158611 additional_host_info: Accession ID of original sequence is EPI_ISL_1926894.$
+Japan/TY9-435-P0/2021
+
+# divergence, odd mutations; see https://bedfordlab.slack.com/archives/CTZKJC7PZ/p1621572185067000
+Togo/C5951/2021
+Togo/C6149/2021
+Australia/VIC16342/2020
+Australia/VIC7953/2020
