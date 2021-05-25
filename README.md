@@ -23,7 +23,7 @@ Download sequences from [GISAID](https://www.gisaid.org/). You will require a GI
 
 Currently, the workflow only expects one set of Washington metadata and sequences: `data/wa.metadata.tsv.xz` and `data/wa.sequences.fasta.xz`. If you download multiple selections, you will need to edit the inputs in `wa_profiles/wa-subsampled-background/subsampled-background-builds.yaml` to include all of your Washington sequence inputs.
 
-To run the workflow on AWS using Nextstrain build, use the below command from inside the `ncov-wa-build` folder. Update memory and CPUs as you wish:
+To run the workflow on AWS using Nextstrain build, use the below command from inside the `ncov-wa-build` folder. Update memory and CPUs as desired:
 ```
 nextstrain build --detach --aws-batch --cpus 16 --memory 32gb . --profile wa_profiles/wa-subsampled-background/
 ```
