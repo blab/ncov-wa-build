@@ -2160,3 +2160,30 @@ Togo/C5951/2021
 Togo/C6149/2021
 Australia/VIC16342/2020
 Australia/VIC7953/2020
+
+# excess S1 mutations; see https://bedfordlab.slack.com/archives/CTZKJC7PZ/p1621627646088600
+SriLanka/KDU8760/2021
+
+# divergence; see https://bedfordlab.slack.com/archives/CTZKJC7PZ/p1621628225089500
+Germany/BY-ChVir-1019/2020
+India/GJ-GBRC213a/2020
+India/HP-278/2020
+Indonesia/GO-NIHRD-PME20210/2020
+Indonesia/NB-NIHRD-WGS02319/2021
+Panama/GMI-PA911/2020
+Tunisia/COV1339/2020
+
+# mutations don't make sense; https://bedfordlab.slack.com/archives/CTZKJC7PZ/p1621879481099500
+USA/TX-HMH-MCoV-40892/2020
+USA/TX-HMH-MCoV-40893/2020
+USA/TX-HMH-MCoV-40917/2020
+USA/TX-HMH-MCoV-40977/2020
+USA/TX-HMH-MCoV-41485/2020
+USA/TX-HMH-MCoV-44272/2020
+
+# divergence, see https://bedfordlab.slack.com/archives/CTZKJC7PZ/p1621927155107400 and https://bedfordlab.slack.com/archives/CTZKJC7PZ/p1621927177108000
+USA/TX-HMH-MCoV-40956/2020
+USA/WA-UW-4130/2020
+
+# Date
+USA/IL-RIPHL_30044_G/2021
