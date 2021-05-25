@@ -21,5 +21,17 @@ if __name__ == '__main__':
         # In order to prefer the latter files, we have to reverse the order of
         # the files.
         for sequence in read_sequences(*reversed(args.sequences)):
-            sequence.id = re.sub(pattern, "", sequence.id)
+            # Strip specific sequences from strain names and replace whitespace
+            # with no space.
+            sequence_id = re.sub(pattern, "", sequence.description).replace(" ", "")
+
+            # Replace pipes ("|") that delimit additional metadata in the
+            # defline with spaces to avoid parsing these as part of the strain
+            # name. The same metadata should be present in the corresponding
+            # metadata TSV records.
+            if "|" in sequence_id:
+                sequence_id = sequence_id.split("|")[0]
+
+            sequence.id = sequence_id
+            sequence.description = ""
             write_sequences(sequence, output_handle)

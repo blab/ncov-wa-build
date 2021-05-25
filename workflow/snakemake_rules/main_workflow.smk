@@ -10,11 +10,17 @@ rule sanitize_metadata:
     log:
         "logs/sanitize_metadata_{origin}.txt"
     params:
+        parse_location_field=f"--parse-location-field {config['sanitize_metadata']['parse_location_field']}" if config["sanitize_metadata"].get("parse_location_field") else "",
+        rename_fields=config["sanitize_metadata"]["rename_fields"],
+        standardize_columns="--standardize-columns" if config["sanitize_metadata"].get("standardize_columns") else "",
         strain_prefixes=config["strip_strain_prefixes"],
     shell:
         """
         python3 scripts/sanitize_metadata.py \
             --metadata {input.metadata} \
+            {params.parse_location_field} \
+            --rename-fields {params.rename_fields:q} \
+            {params.standardize_columns} \
             --strip-prefixes {params.strain_prefixes:q} \
             --output {output.metadata}
         """
