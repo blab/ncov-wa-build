@@ -13,8 +13,27 @@ strip_strain_prefixes:
 sanitize_metadata:
   rename_fields:
     - "Virus name=strain"
+    - "Type=type"
+    - "Accession ID=gisaid_epi_isl"
     - "Collection date=date"
-  standardize_columns: true
+    - "Additional location information=additional_location_information"
+    - "Sequence length=length"
+    - "Host=host"
+    - "Patient age=patient_age"
+    - "Gender=sex"
+    - "Clade=GISAID_clade"
+    - "Pango lineage=pango_lineage"
+    - "Pangolin version=pangolin_version"
+    - "Variant=variant"
+    - "AA Substitutions=aa_substitutions"
+    - "aaSubstitutions=aa_substitutions"
+    - "Submission date=date_submitted"
+    - "Is reference?=is_reference"
+    - "Is complete?=is_complete"
+    - "Is high coverage?=is_high_coverage"
+    - "Is low coverage?=is_low_coverage"
+    - "N-Content=n_content"
+    - "GC-Content=gc_content"
   parse_location_field: Location
 
 reference_node_name: "USA/WA1/2020"
@@ -279,3 +298,6 @@ subsampling:
       group_by: "country year month"
       seq_per_group: 10
       exclude: "--exclude-where 'location={location}'"
+
+# Configure the prefix to use for Auspice JSONs.
+auspice_json_prefix: ncov

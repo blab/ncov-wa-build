@@ -1,10 +1,10 @@
 import argparse
-import numpy as np
+from pathlib import Path
 import pandas as pd
 import re
 import sys
 
-
+from utils import extract_tar_file_contents
 # Define all possible geographic scales we could expect in the GISAID location
 # field.
 LOCATION_FIELDS = (
@@ -123,7 +123,8 @@ def resolve_duplicates(metadata, strain_field, error_on_duplicates=False):
         # with the list of duplicate strains.
         raise ValueError(", ".join(duplicates))
 
-    # Try to resolve the duplicates. First, check for standard accession fields.
+    # Try to resolve the duplicates by preferring records with the most recent
+    # database accession. First, check for standard accession fields.
     accession_fields = [
         field
         for field in ACCESSION_FIELDS
@@ -131,19 +132,22 @@ def resolve_duplicates(metadata, strain_field, error_on_duplicates=False):
     ]
 
     # If any of these fields exists, sort by strain name and accessions in
-    # ascending order and take the last record. Otherwise, sort and group by
-    # strain name and take the last record from each group. It is possible for
-    # metadata to contain fields for multiple database accessions and for these
-    # fields to be incomplete for some databases. By sorting across all fields,
-    # we use information from all available accession fields. If all fields
-    # contain missing values (e.g., "?"), we end up returning the last record
-    # for a given strain as a reasonable default.
+    # ascending order and take the last record (the most recent accession for a
+    # given strain). Otherwise, sort and group by strain name and take the last
+    # record from each group. It is possible for metadata to contain fields for
+    # multiple database accessions and for these fields to be incomplete for
+    # some databases (for example, GISAID accession is `?` but GenBank accession
+    # is not). By sorting across all fields, we use information from all
+    # available accession fields. If all fields contain missing values (e.g.,
+    # "?"), we end up returning the last record for a given strain as a
+    # reasonable default.
     sort_fields = [strain_field]
     if len(accession_fields) > 0:
         sort_fields.extend(accession_fields)
 
-    # Return the last record from each group after sorting.
-    return metadata.sort_values(sort_fields).groupby(strain_field, sort=False).last().reset_index()
+    # Return the last record from each group after sorting by strain and
+    # available accessions.
+    return metadata.sort_values(sort_fields).drop_duplicates(strain_field, "last")
 
 
 if __name__ == '__main__':
@@ -154,17 +158,29 @@ if __name__ == '__main__':
     parser.add_argument("--metadata", required=True, help="metadata to be sanitized")
     parser.add_argument("--parse-location-field", help="split the given GISAID location field on '/' and create new columns for region, country, etc. based on available data. Replaces missing geographic data with '?' values.")
     parser.add_argument("--rename-fields", nargs="+", help="rename specific fields from the string on the left of the equal sign to the string on the right (e.g., 'Virus name=strain')")
-    parser.add_argument("--standardize-columns", action="store_true", help="lowercase column names and replace whitespaces with underscores")
     parser.add_argument("--strip-prefixes", nargs="+", help="prefixes to strip from strain names in the metadata")
     parser.add_argument("--error-on-duplicate-strains", action="store_true", help="exit with an error if any duplicate strains are found. By default, duplicates are resolved by preferring most recent accession id or the last record.")
     parser.add_argument("--output", required=True, help="sanitized metadata")
 
     args = parser.parse_args()
 
+    # If the input is a tarball, try to find a metadata file inside the archive.
+    metadata_file = args.metadata
+    tar_handle = None
+    if ".tar" in Path(args.metadata).suffixes:
+        try:
+            metadata_file, tar_handle = extract_tar_file_contents(
+                args.metadata,
+                "metadata"
+            )
+        except FileNotFoundError as error:
+            print(f"ERROR: {error}", file=sys.stderr)
+            sys.exit(1)
+
     # Read metadata with pandas because Augur's read_metadata utility does not
     # support metadata without a "strain" or "name" field.
     metadata = pd.read_csv(
-        args.metadata,
+        metadata_file,
         sep=None,
         engine="python",
         skipinitialspace=True,
@@ -173,6 +189,10 @@ if __name__ == '__main__':
             "name": "string",
         }
     ).fillna("")
+
+    # Close tarball after reading metadata if it is open still.
+    if tar_handle is not None:
+        tar_handle.close()
 
     if args.parse_location_field and args.parse_location_field in metadata.columns:
         # Parse GISAID location field into separate fields for geographic
@@ -193,11 +213,6 @@ if __name__ == '__main__':
             ],
             axis=1
         ).drop(columns=[args.parse_location_field])
-    elif args.parse_location_field:
-        print(
-            f"WARNING: The requested location field, '{args.parse_location_field}', does not exist in the given metadata file, '{args.metadata}'.",
-            file=sys.stderr
-        )
 
     new_column_names = {}
     if args.rename_fields:
@@ -211,13 +226,6 @@ if __name__ == '__main__':
                     f"WARNING: missing mapping of old to new column in form of 'Virus name=strain' for rule: '{rule}'.",
                     file=sys.stderr
                 )
-
-    if args.standardize_columns:
-        # Standardize remaining columns to lowercase and underscore-delimited.
-        current_columns = metadata.columns.values
-        for column in current_columns:
-            if column not in new_column_names:
-                new_column_names[column] = column.lower().replace(" ", "_")
 
     # Rename columns as needed.
     if len(new_column_names) > 0:
@@ -236,6 +244,7 @@ if __name__ == '__main__':
             f"Available columns are: {metadata.columns.values}",
             file=sys.stderr
         )
+        sys.exit(1)
 
     if args.strip_prefixes:
         prefixes = "|".join(args.strip_prefixes)

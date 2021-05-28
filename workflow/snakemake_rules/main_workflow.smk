@@ -12,7 +12,6 @@ rule sanitize_metadata:
     params:
         parse_location_field=f"--parse-location-field {config['sanitize_metadata']['parse_location_field']}" if config["sanitize_metadata"].get("parse_location_field") else "",
         rename_fields=config["sanitize_metadata"]["rename_fields"],
-        standardize_columns="--standardize-columns" if config["sanitize_metadata"].get("standardize_columns") else "",
         strain_prefixes=config["strip_strain_prefixes"],
     shell:
         """
@@ -20,9 +19,8 @@ rule sanitize_metadata:
             --metadata {input.metadata} \
             {params.parse_location_field} \
             --rename-fields {params.rename_fields:q} \
-            {params.standardize_columns} \
             --strip-prefixes {params.strain_prefixes:q} \
-            --output {output.metadata}
+            --output {output.metadata} 2>&1 | tee {log}
         """
 
 
@@ -353,19 +351,16 @@ rule combine_sequences_for_subsampling:
         "benchmarks/combine_sequences_for_subsampling.txt"
     conda: config["conda_environment"]
     params:
-        warn_about_duplicates="--warn-about-duplicates" if config.get("combine_sequences_for_subsampling", {}).get("warn_about_duplicates") else "",
+        error_on_duplicate_strains="--error-on-duplicate-strains" if not config.get("combine_sequences_for_subsampling", {}).get("warn_about_duplicates") else "",
         strain_prefixes=config["strip_strain_prefixes"],
     shell:
         """
         python3 scripts/sanitize_sequences.py \
                 --sequences {input} \
                 --strip-prefixes {params.strain_prefixes:q} \
+                {params.error_on_duplicate_strains} \
                 --output /dev/stdout \
-        | python3 scripts/combine-and-dedup-fastas.py \
-            --input /dev/stdin \
-            {params.warn_about_duplicates} \
-            --output /dev/stdout \
-        | xz -2 > {output}
+                | xz -c -2 > {output}
         """
 
 rule index_sequences:
@@ -646,7 +641,7 @@ rule adjust_metadata_regions:
     input:
         metadata = _get_unified_metadata
     output:
-        metadata = "results/{build_name}/metadata_adjusted.tsv"
+        metadata = "results/{build_name}/metadata_adjusted.tsv.xz"
     params:
         region = lambda wildcards: config["builds"][wildcards.build_name]["region"]
     log:
@@ -1263,9 +1258,9 @@ rule finalize:
         frequencies = rules.tip_frequencies.output.tip_frequencies_json,
         root_sequence_json = rules.export.output.root_sequence_json
     output:
-        auspice_json = "auspice/ncov_{build_name}.json",
-        tip_frequency_json = "auspice/ncov_{build_name}_tip-frequencies.json",
-        root_sequence_json = "auspice/ncov_{build_name}_root-sequence.json"
+        auspice_json = f"auspice/{config['auspice_json_prefix']}_{{build_name}}.json",
+        tip_frequency_json = f"auspice/{config['auspice_json_prefix']}_{{build_name}}_tip-frequencies.json",
+        root_sequence_json = f"auspice/{config['auspice_json_prefix']}_{{build_name}}_root-sequence.json"
     log:
         "logs/fix_colorings_{build_name}.txt"
     benchmark:

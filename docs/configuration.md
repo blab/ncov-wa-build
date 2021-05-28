@@ -268,7 +268,7 @@ Builds support any named attributes that can be referenced by subsampling scheme
 
 ## inputs
 * type: array
-* description: A list of named input datasets to use for the workflow. Input order determines the precedence of genome sequences and metadata such that earliest datasets override later datasets. Each input must define a `name`, a path to `metadata`, and a path to sequences at one of many possible starting points. The workflow merged all input metadata and sequences into a single metadata and sequences file prior to subsampling.
+* description: A list of named input datasets to use for the workflow. Input order determines the precedence of genome sequences and metadata such that later datasets override earlier datasets. Each input must define a `name`, a path to `metadata`, and a path to sequences at one of many possible starting points. The workflow merged all input metadata and sequences into a single metadata and sequences file prior to subsampling.
 * required
 	* `name`
 	* `metadata`
@@ -497,6 +497,44 @@ Valid attributes for list entries in `inputs` are provided below.
 * description: A list of prefixes to strip from strain names in metadata and sequence records to maintain consistent strain names when analyzing data from multiple sources.
 * default: `["hCoV-19/", "SARS-CoV-2/"]`
 
+## sanitize_metadata
+* type: object
+* description: Parameters to configure how to sanitize metadata to a Nextstrain-compatible format.
+
+### parse_location_field
+* type: string
+* description: Field in the metadata that stores GISAID-formatted location details (e.g., `North America / USA / Washington`) to be parsed into `region`, `country`, `division`, and `location` fields.
+* default: `Location`
+
+### rename_fields
+* type: array
+* description: List of key/value pairs mapping fields in the input metadata to rename to another value in the sanitized metadata.
+* default:
+```yaml
+    - "Virus name=strain"
+    - "Type=type"
+    - "Accession ID=gisaid_epi_isl"
+    - "Collection date=date"
+    - "Additional location information=additional_location_information"
+    - "Sequence length=length"
+    - "Host=host"
+    - "Patient age=patient_age"
+    - "Gender=sex"
+    - "Clade=GISAID_clade"
+    - "Pango lineage=pango_lineage"
+    - "Pangolin version=pangolin_version"
+    - "Variant=variant"
+    - "AA Substitutions=aa_substitutions"
+    - "aaSubtitutions=aa_substitutions"
+    - "Submission date=date_submitted"
+    - "Is reference?=is_reference"
+    - "Is complete?=is_complete"
+    - "Is high coverage?=is_high_coverage"
+    - "Is low coverage?=is_low_coverage"
+    - "N-Content=n_content"
+    - "GC-Content=gc_content"
+```
+
 ## subsampling
 * type: object
 * description: Schemes for subsampling data prior to phylogenetic inference to avoid sampling bias or focus an analysis on specific spatial and/or temporal scales. [See the SARS-CoV-2 tutorial for more details on defining subsampling schemes](https://docs.nextstrain.org/en/latest/tutorials/SARS-CoV-2/steps/customizing-analysis.html#subsampling).
@@ -631,3 +669,8 @@ Each named traits configuration (`default` or build-named) supports the followin
 * type: string
 * description: Arguments specific to the tree method (`iqtree`) to be passed through to the tree builder command run by `augur tree`.
 * default: `'-ninit 10 -n 4'`
+
+## auspice_json_prefix
+* type: string
+* description: Prefix to use for Auspice JSON outputs. Change this value to produce JSONs named like `auspice/<your_prefix>_global.json` for a build named `global`, for example. If you are using [Nextstrain's Community Sharing](https://docs.nextstrain.org/en/latest/guides/share/community-builds.html) to view your builds, set this value to your GitHub repository name and the `ncov` default. For example, if your repository is named `evolution`, set `auspice_json_prefix: evolution_ncov` to get JSONs you can view your `global` build at https://nextstrain.org/community/*your_github_organization*/evolution/ncov/global.
+* default: `ncov`
