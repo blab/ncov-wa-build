@@ -9,6 +9,7 @@ Trees are reconstructed from a set of focal sequences -- SARS-CoV-2 samples from
 Contextual sequences can be selected from either two different datasets: 
 1. Sequences in [Nextstrain's North America SARS-CoV-2 build](https://nextstrain.org/ncov/north-america).
 2. All sequences available on GISAID.
+
 Trees built using either dataset reconstruct similar patterns of introductions and spread of SARS-CoV-2 in Washington State.
 The location from which an introduction is inferred is more accurate with (2); however, using (2) requires downloading and aligning 1.7 million+ sequences from GISAID.
 For most use cases, (1) is appropriate.
