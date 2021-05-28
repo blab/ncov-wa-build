@@ -47,8 +47,8 @@ inputs:
     metadata: "data/wa2.tar.gz"
     sequences: "data/wa2.tar.gz"
   - name: contextual
-    metadata: "data/ncov_north-america.tsv"
-    sequences: "data/ncov_north-america.fasta"
+    metadata: "data/ncov_north-america.tar.gz"
+    sequences: "data/ncov_north-america.tar.gz"
 ```
 
 Next, run the workflow on AWS using Nextstrain build using the below command from inside the `ncov-wa-build` folder. Update memory and CPUs as desired:
