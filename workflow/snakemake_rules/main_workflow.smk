@@ -115,7 +115,7 @@ rule diagnostic:
         "benchmarks/diagnostics_{origin}.txt"
     resources:
         # Memory use scales primarily with the size of the metadata file.
-        mem_mb=lambda wildcards, input: 15 * int(input.metadata.size / 1024 / 1024)
+        mem_mb=12000
     conda: config["conda_environment"]
     shell:
         """
@@ -216,7 +216,7 @@ rule filter:
         intermediate_output=lambda wildcards, output: Path(output.sequences).with_suffix("")
     resources:
         # Memory use scales primarily with the size of the metadata file.
-        mem_mb=lambda wildcards, input: 15 * int(input.metadata.size / 1024 / 1024)
+        mem_mb=12000
     conda: config["conda_environment"]
     shell:
         """
@@ -428,7 +428,7 @@ rule subsample:
         priority_argument = get_priority_argument
     resources:
         # Memory use scales primarily with the size of the metadata file.
-        mem_mb=lambda wildcards, input: 15 * int(input.metadata.size / 1024 / 1024)
+        mem_mb=12000
     conda: config["conda_environment"]
     shell:
         """
@@ -902,7 +902,7 @@ rule traits:
         sampling_bias_correction = _get_sampling_bias_correction_for_wildcards
     resources:
         # Memory use scales primarily with the size of the metadata file.
-        mem_mb=lambda wildcards, input: 15 * int(input.metadata.size / 1024 / 1024)
+        mem_mb=12000
     conda: config["conda_environment"]
     shell:
         """
@@ -1042,7 +1042,7 @@ rule recency:
         "benchmarks/recency_{build_name}.txt"
     resources:
         # Memory use scales primarily with the size of the metadata file.
-        mem_mb=lambda wildcards, input: 15 * int(input.metadata.size / 1024 / 1024)
+        mem_mb=12000
     conda: config["conda_environment"]
     shell:
         """
@@ -1071,7 +1071,7 @@ rule tip_frequencies:
         proportion_wide = config["frequencies"]["proportion_wide"]
     resources:
         # Memory use scales primarily with the size of the metadata file.
-        mem_mb=lambda wildcards, input: 15 * int(input.metadata.size / 1024 / 1024)
+        mem_mb=12000
     conda: config["conda_environment"]
     shell:
         """
@@ -1189,7 +1189,7 @@ rule export:
         title = export_title
     resources:
         # Memory use scales primarily with the size of the metadata file.
-        mem_mb=lambda wildcards, input: 15 * int(input.metadata.size / 1024 / 1024)
+        mem_mb=12000
     conda: config["conda_environment"]
     shell:
         """

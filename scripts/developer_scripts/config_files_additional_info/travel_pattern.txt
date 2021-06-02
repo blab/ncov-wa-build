@@ -83,4 +83,8 @@ recent travel_XXX
 Airport Quarantine Station in Japan,Human, COVID-19 positive case who entered from XXX
 Patient Likely Infected During Travel To XXX
 Patient Likely infected during travel to XXX
+Travel history: XXX
 Travel related exposure - XXX
+Imported With Travel History From XXX
+Imported with travel history from XXX
+A quarantined Traveller from XXX
