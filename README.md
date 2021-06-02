@@ -6,7 +6,10 @@ These modifications draw heavily from work by John Huddleston in the [SPHERES au
 The 1y, 4m, and 2m Washington builds are visible at: https://nextstrain.org/groups/blab/ncov/wa/1y, https://nextstrain.org/groups/blab/ncov/wa/4m, and https://nextstrain.org/groups/blab/ncov/wa/2m, respectively.
 
 Trees are reconstructed from a set of focal sequences -- SARS-CoV-2 samples from Washington State collected during the past two months, four months, or year -- and contextual sequences -- other US and global SARS-CoV-2 samples chosen by genetic proximity to the focal dataset.
-Contextual sequences can be selected from two different datasets: Either (1) sequences in [Nextstrain's North America SARS-CoV-2 build](https://nextstrain.org/ncov/north-america), or (2) all sequences available on GISAID.
+Contextual sequences can be selected from either two different datasets: 
+1. Sequences in [Nextstrain's North America SARS-CoV-2 build](https://nextstrain.org/ncov/north-america).
+2. All sequences available on GISAID.
+
 Trees built using either dataset reconstruct similar patterns of introductions and spread of SARS-CoV-2 in Washington State.
 The location from which an introduction is inferred is more accurate with (2); however, using (2) requires downloading and aligning 1.7 million+ sequences from GISAID.
 For most use cases, (1) is appropriate.
@@ -44,8 +47,8 @@ inputs:
     metadata: "data/wa2.tar.gz"
     sequences: "data/wa2.tar.gz"
   - name: contextual
-    metadata: "data/ncov_north-america.tsv"
-    sequences: "data/ncov_north-america.fasta"
+    metadata: "data/ncov_north-america.tar.gz"
+    sequences: "data/ncov_north-america.tar.gz"
 ```
 
 Next, run the workflow on AWS using Nextstrain build using the below command from inside the `ncov-wa-build` folder. Update memory and CPUs as desired:
