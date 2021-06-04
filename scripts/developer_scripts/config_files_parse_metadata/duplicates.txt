@@ -178,3 +178,6 @@ Lot
 Wojnowice
 Leczyca
 Marica
+San Cristobal
+San Antonio
+Retiro
