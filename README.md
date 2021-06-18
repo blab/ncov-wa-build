@@ -78,5 +78,5 @@ snakemake --profile wa_profiles/wa-rhino/
 
 If running with AWS:
 ```
-nextstrain build --detach --aws-batch --cpus 16 --memory 32gb .snakemake --profile wa_profiles/wa/
+nextstrain build --detach --aws-batch --cpus 16 --memory 32gb . --profile wa_profiles/wa/
 ```
