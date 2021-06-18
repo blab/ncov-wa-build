@@ -634,10 +634,10 @@ Jurbise
 	Jurbise
 	Masnuy-Saint-Jean
 	Masnuy-Saint-Pierre
-Lens
+Lens BE
 	Bauffe
 	Cambron-Saint-Vincent
-	Lens
+	Lens BE
 	Lombise
 	Montignies-lez-Lens
 Mons
@@ -2041,7 +2041,7 @@ Onhaye
 	Serville
 	Sommière
 	Weillen
-Rochefort
+Rochefort BE
 	Ave-et-Auffe
 	Buissonville
 	Éprave
@@ -2050,7 +2050,7 @@ Rochefort
 	Lavaux-Sainte-Anne
 	Lessive
 	Mont-Gauthier
-	Rochefort
+	Rochefort BE
 	Villers-sur-Lesse
 	Wavreille
 Somme-Leuze
@@ -2721,7 +2721,7 @@ Beersel
 	Beersel
 	Dworp
 	Huizingen
-	Lot
+	Lot BE
 Bever
 	Bever
 Dilbeek

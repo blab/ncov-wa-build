@@ -3,6 +3,66 @@
 As of April 2021, we use major version numbers (e.g. v2) to reflect backward incompatible changes to the workflow that likely require you to update your Nextstrain installation.
 We also use this change log to document new features that maintain backward compatibility, indicating these features by the date they were added.
 
+## v7 (27 May 2021)
+
+For more details about this release, see [the configuration reference for the new "sanitize metadata" parameters](https://nextstrain.github.io/ncov/configuration.html#sanitize_metadata) and [the corresponding pull request](https://github.com/nextstrain/ncov/pull/640).
+
+### Major changes
+
+- Deduplicate metadata and sequences from each `inputs` dataset at the beginning of the workflow.
+
+### Features
+
+- Support full GISAID metadata and sequences from the "Download packages" interface by converting this default format into Nextstrain-compatible metadata and sequences.
+- Support reading metadata and sequences directly from GISAID's tar archives. For example, you can now define `inputs` as `metadata: data/ncov_north-america.tar.gz` and `sequences: data/ncov_north-america.tar.gz` to decompress and read the corresponding data from the archive.
+
+## New features since last version update
+
+ - 25 May 2021: Support custom Auspice JSON prefixes with a new configuration parameter, `auspice_json_prefix`. [See the configuration reference for more details](https://nextstrain.github.io/ncov/configuration.html#auspice_json_prefix). ([#643](https://github.com/nextstrain/ncov/pull/643))
+
+## v6 (20 May 2021)
+
+### Major changes
+
+- Fix bug in precedence of input data such that duplicate sequence and metadata records are resolved by always preferring the record from the last `inputs` dataset. Thank you to @ttung for catching/patching this! If you have depended on the previous behavior where the sequence from first `input` dataset was preferred, you will need to change the order of your `inputs` such that the preferred input appears last in the list. ([#639](https://github.com/nextstrain/ncov/pull/639)).
+
+## New features since last version update
+
+ - 19 May 2021: Compress metadata, sequence indices, and early intermediate sequences (aligned, masked, filtered, combined for subsampling, and subsampled files) to save disk space. ([#636](https://github.com/nextstrain/ncov/pull/636))
+ - 12 May 2021: Include S1 mutations and nextalign-based ancestral amino acid mutations in Auspice JSONs by default instead of requiring the now-unnecessary `use_nextalign` configuration parameter. ([#630](https://github.com/nextstrain/ncov/pull/630))
+ - 12 May 2021: [Document all available workflow configuration parameters](https://nextstrain.github.io/ncov/configuration). ([#633](https://github.com/nextstrain/ncov/pull/633))
+
+## v5 (7 May 2021)
+
+[See the corresponding pull request](https://github.com/nextstrain/ncov/pull/615) for more details about this release.
+
+### Major changes
+
+- Drop support for old sequence/metadata inputs. This change removes support for the `config["sequences"]` and `config["metadata"]` starting points for the workflow in favor of the more flexible [`config["inputs"]` format](https://nextstrain.github.io/ncov/configuration.html#inputs).
+- Use `nextalign` for alignment instead of `mafft`. This change completely removes support for `mafft` in favor of `nextalign`. Future versions may reinstate `mafft` support as part of `augur align` updates.
+
+### Minor changes
+
+- Drop unused haplotype status rule and script
+- Remove unused nucleotide mutation frequencies rule
+- Use `augur distance` for mutation counts instead of a custom script in the ncov repository. [Recent improvements to `augur distance` in v12.0.0](https://github.com/nextstrain/augur/blob/master/CHANGES.md#1200-13-april-2021) enable this change by properly accounting for insertion/deletion events.
+
+## v4 (5 May 2021)
+
+[See the corresponding pull request](https://github.com/nextstrain/ncov/pull/605) for more details about changes in this release.
+
+### Major changes
+
+- Change the default build name from "global" to "default-build" and use a default subsampling scheme that selects all input sequences
+- Warn about duplicate sequences found when merging sequences from multiple inputs instead of throwing an error (set `combine_sequences_for_subsampling: warn_about_duplicates: false` in your configuration file to revert this behavior)
+
+### Features
+
+- Define a new subsampling scheme named `all` that selects all input sequences
+- Add a new top-level configuration parameter `default_build_name` to allow overriding new default name of "default-build"
+- Support compressed sequence inputs for alignment with mafft and nextalign (requires mafft upgrade)
+- Sanitize strain names in sequences and metadata from different sources (e.g., `hCoV-19/` from GISAID or `SARS-CoV-2/` from GenBank, etc.)
+
 ## New features since last version update
 
 - 20 April 2021: Surface emerging lineage as a colorby. This replaces the rather stale color by "Emerging Clade" with a new color by "Emerging Lineage". This focuses on PANGO lineages that are of interest triangulated by [CoVariants](https://covariants.org/), [PANGO](https://cov-lineages.org/) international lineage reports, [CDC](https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/variant-surveillance/variant-info.html) VUIs and VOCs and [PHE](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/975742/Variants_of_Concern_VOC_Technical_Briefing_8_England.pdf) VUIs and VOCs. The intention is for the listing at `emerging_lineages.tsv` to be updated frequently with new lineages added and no longer interesting lineages dropped. [#609](https://github.com/nextstrain/ncov/pull/609)

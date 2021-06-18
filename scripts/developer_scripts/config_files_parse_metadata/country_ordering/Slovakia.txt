@@ -819,7 +819,7 @@ District of Trnava
 	Trstín
 	Voderady
 	Zavar
-	Zeleneč
+	Zeleneč SK
 	Križovany nad Dudváhom
 	Opoj
 	Vlčkovce
@@ -968,7 +968,7 @@ District of Partizanske
 	Veľký Klíž
 	Žabokreky nad Nitrou
 	Bošany
-	Hradište, district Partizanske
+	Hradiste (Trenčín)
 	Chynorany
 	Klátova Nová Ves
 	Kolačno
@@ -1349,7 +1349,7 @@ District of Nove Zamky
 	Komjatice
 	Komoča
 	Leľa
-	Lipová, district Nove Zamky
+	Lipová
 	Ľubá
 	Malá nad Hronom
 	Malé Kosihy
@@ -1488,7 +1488,7 @@ District of Zlaté Moravce
 
 # Zilina
 District of Tvrdosin
-	Brezovica, district Tvrdosin
+	Brezovica (Zilina)
 	Habovka
 	Hladovka
 	Liesek
@@ -2177,7 +2177,7 @@ District of Poltar
 	Breznička, district Poltar
 	Cinobaňa
 	České Brezovo
-	Hradište, district Poltar
+	Hradiste (Banska Bystrica)
 	Kalinovo
 	Kokava nad Rimavicou
 	Krná
@@ -2577,6 +2577,7 @@ District of Vranov nad Toplov
 	Hlinné
 	Hencovce
 District of Bardejov
+	Bardejovská Nová Ves
 	Vaniškovce
 	Bardejov
 	Abrahámovce, district Bardejov
@@ -2619,7 +2620,7 @@ District of Bardejov
 	Kurov
 	Lascov
 	Lenartov
-	Lipová, district Bardejov
+	Lipová
 	Livov
 	Livovska Huta
 	Lopúchov
@@ -2952,7 +2953,7 @@ District of Prešov
 District of Sabinov
 	Bajerovce
 	Bodovce
-	Brezovica, district Sabinov
+	Brezovica (Prešov)
 	Brezovička
 	Červená Voda
 	Červenica pri Sabinove

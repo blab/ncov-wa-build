@@ -105,7 +105,8 @@ def read_geography_file(file_name, hierarchical = False):
             data = {"location": {}, "division": {}, "country": {}, "region": {}}
         else:
             # dictionary containing all locations, divisions etc. as lists
-            data = {"location": [], "division": [], "country": [], "region": [], "recency": [], "emerging_lineage": [], "pango_lineage": []}
+            data = {"location": [], "division": [], "country": [], "region": []}
+            color_ordering_other = {}
 
         for line in data_file:
             if line == "\n":
@@ -115,16 +116,26 @@ def read_geography_file(file_name, hierarchical = False):
                 continue
             type = l[0] #location, division etc
             name = l[1]
-            if name not in data[type]:
-                if lat_longs:
+
+            if lat_longs:
+                if name not in data[type]:
                     data[type][name] = (float(l[2]), float(l[3]))
                 else:
-                    data[type].append(name)
+                    print("Duplicate in lat_longs? (" + l[0] + " " + l[1] + ")\n")  # if already in the dictionary, print warning
             else:
-                s = "ordering"
-                if lat_longs:
-                    s = "lat_longs"
-                print("Duplicate in " + s + "? (" + l[0] + " " + l[1] + ")\n") #if already in the dictionary, print warning
+                if type in data:
+                    if name not in data[type]:
+                        data[type].append(name)
+                    else:
+                        print("Duplicate in color_ordering? (" + l[0] + " " + l[1] + ")\n")  # if already in the dictionary, print warning
+                else:
+                    if type not in color_ordering_other:
+                        color_ordering_other[type] = []
+                    color_ordering_other[type].append(name)
+        if lat_longs:
+            return data
+        else:
+            return data, color_ordering_other
     else: #hierarchical structure of ordering for checking similar names only in the same country
         data = {"Asia": {}, "Oceania": {}, "Africa": {}, "Europe": {}, "South America": {}, "North America": {}}
 
@@ -599,6 +610,10 @@ def adjust_to_database(data): #TODO: temporary solution, needs reworking
                             if clean_string(location) in location_to_arrondissement and division == location_to_arrondissement[clean_string(location)]:
                                 continue
 
+                            # other way around (in case of duplicates overwriting each other in location_to_arrondissement)
+                            if division_c in arrondissement_to_location and location in arrondissement_to_location[division_c]:
+                                continue
+
                             # location given, but with wrong division - adjust to correct division
                             #if location in location_to_arrondissement and division != location_to_arrondissement[location]:
                                 #print("Wrong division " + bold(division) + " given for location " + bold(location))
@@ -616,6 +631,7 @@ def adjust_to_database(data): #TODO: temporary solution, needs reworking
                                 #print("Location " + bold(location) + " should be adjusted to " + bold(variants[location]) + ". Wrong division " + bold(division) + " given for location " + bold(variants[location]))
                                 #print("Suggestion: add [" + "\t".join( [region, country, division, location, region, country, location_to_arrondissement[variants[location]], variants[location]]) + "] to manual_adjustments.txt")
                                 #continue
+
 
                         ### location empty
                         else:
@@ -640,6 +656,7 @@ def adjust_to_database(data): #TODO: temporary solution, needs reworking
                                 print("Given division " + bold(division) + " is a misspelled location " + bold(variants[division]) + " within division " + bold(location_to_arrondissement[clean_string(variants[division])]))
                                 print("Suggestion: add [" + "/".join([region, country, division, location]) + "\t" + "/".join([region, country, location_to_arrondissement[clean_string(variants[division])], variants[division]]) + "] to manual_adjustments.txt")
                                 continue
+
 
                         print("Missing combination in " + country + " database: " + bold(division + ", " + location))
 
@@ -1143,12 +1160,17 @@ def ask_geocoder(full_unknown_place, geolocator):
 def find_place(geo_level, place, full_place, geolocator):
     typed_place = full_place
     redo = True
+    tries = 0
     while redo == True:
-
-        try:
-            new_place = ask_geocoder(typed_place, geolocator)
-        except:
-            continue
+        if tries < 5:
+            try:
+                new_place = ask_geocoder(typed_place, geolocator)
+            except:
+                tries += 1
+                continue
+        else:
+            new_place = None
+            tries = 0
 
         if str(new_place) == 'None':
             print("\nCurrent place for missing {}:\t".format(geo_level) + full_place)
@@ -1228,7 +1250,7 @@ def write_ordering(data, hierarchy):
         mode = "w"
 
     with open(path_to_output_files+"color_ordering.tsv", mode) as out:
-        if hierarchy in ["recency", "emerging_lineage", "pango_lineage"]:
+        if hierarchy not in ["region", "country", "division", "location"]:
             for l in data[hierarchy]:
                 out.write(hierarchy + "\t" + l + "\n")
             out.write("\n################\n\n\n")
@@ -1286,7 +1308,7 @@ def auto_add_annotations(additions_to_annotation):
 
     with open("../ncov-ingest/source-data/gisaid_annotations.tsv") as myfile:
         annotations = myfile.readlines()
-    types = {"geography": ["location", "division", "country", "region", "division_exposure", "country_exposure", "region_exposure"], "special": ["purpose_of_sequencing", "date", "host", "strain"], "paper": ["title", "paper_url"], "genbank": ["genbank_accession"]}
+    types = {"geography": ["location", "division", "country", "region", "division_exposure", "country_exposure", "region_exposure"], "special": ["sampling_strategy", "date", "host", "strain"], "paper": ["title", "paper_url"], "genbank": ["genbank_accession"]}
     sections = {"comments": [], "geography": [], "special": [], "paper": [], "genbank": []}
 
     print("The following annotations have unknown type:")
@@ -1347,7 +1369,7 @@ if __name__ == '__main__':
         metadata = myfile.readlines()
 
     # Read orderings and lat_longs
-    ordering = read_geography_file("defaults/color_ordering.tsv") #TODO: combine with read_local_files()?
+    ordering, ordering_other = read_geography_file("defaults/color_ordering.tsv") #TODO: combine with read_local_files()?
     hierarchical_ordering = read_geography_file("defaults/color_ordering.tsv", True)
     lat_longs = read_geography_file("defaults/lat_longs.tsv")
 
@@ -1408,10 +1430,8 @@ if __name__ == '__main__':
     write_ordering(data, "division")
     write_ordering(data, "country")
     write_ordering(data, "region")
-    write_ordering(ordering, "recency")
-    write_ordering(ordering, "emerging_lineage")
-    write_ordering(ordering, "pango_lineage")
-
+    for type in ordering_other:
+        write_ordering(ordering_other, type)
 
     ##### Bonus step: Print out all collected annotations - if considered correct, they can be copied by the user to annotations.tsv
     with open(path_to_output_files+"new_annotations.tsv", 'w') as out:
@@ -1422,7 +1442,7 @@ if __name__ == '__main__':
 
     # Only print line if not yet present
     # Print warning if this GISAID ID is already in the file
-    lines_exclude = ["title", "authors", "paper_url", "genbank_accession", "purpose_of_sequencing"]
+    lines_exclude = ["title", "authors", "paper_url", "genbank_accession", "sampling_strategy"]
     annot_lines_to_write = []
     for line in additions_to_annotation:
         if line in annotations:

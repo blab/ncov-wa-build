@@ -26,10 +26,10 @@ def get_todays_date():
 
 rule all_regions:
     input:
-        auspice_json = expand("auspice/ncov_{build_name}.json", build_name=BUILD_NAMES),
-        tip_frequencies_json = expand("auspice/ncov_{build_name}_tip-frequencies.json", build_name=BUILD_NAMES),
-        dated_auspice_json = expand("auspice/ncov_{build_name}_{date}.json", build_name=BUILD_NAMES, date=get_todays_date()),
-        dated_tip_frequencies_json = expand("auspice/ncov_{build_name}_{date}_tip-frequencies.json", build_name=BUILD_NAMES, date=get_todays_date())
+        auspice_json = expand("auspice/{prefix}_{build_name}.json", prefix=config["auspice_json_prefix"], build_name=BUILD_NAMES),
+        tip_frequencies_json = expand("auspice/{prefix}_{build_name}_tip-frequencies.json", prefix=config["auspice_json_prefix"], build_name=BUILD_NAMES),
+        dated_auspice_json = expand("auspice/{prefix}_{build_name}_{date}.json", prefix=config["auspice_json_prefix"], build_name=BUILD_NAMES, date=get_todays_date()),
+        dated_tip_frequencies_json = expand("auspice/{prefix}_{build_name}_{date}_tip-frequencies.json", prefix=config["auspice_json_prefix"], build_name=BUILD_NAMES, date=get_todays_date())
 
 # This cleans out files to allow re-run of 'normal' run with `export`
 # to check lat-longs & orderings
@@ -46,7 +46,7 @@ rule clean_export_regions:
 rule extract_meta:
     input:
         alignment = rules.build_align.output.alignment,
-        metadata = _get_metadata_by_wildcards
+        metadata="results/{build_name}/metadata_adjusted.tsv.xz",
     output:
         metadata = "results/{build_name}/extracted_metadata.tsv"
     run:
@@ -65,8 +65,7 @@ rule export_all_regions:
     input:
         auspice_json = expand("results/{build_name}/ncov_with_accessions.json", build_name=BUILD_NAMES),
         lat_longs = config["files"]["lat_longs"],
-        metadata = [_get_metadata_by_build_name(build_name).format(build_name=build_name)
-                    for build_name in BUILD_NAMES],
+        metadata=expand("results/{build_name}/metadata_adjusted.tsv.xz", build_name=BUILD_NAMES),
         colors = expand("results/{build_name}/colors.tsv", build_name=BUILD_NAMES),
     benchmark:
         "benchmarks/export_all_regions.txt"
@@ -85,9 +84,6 @@ rule export_all_regions:
         """
 
 
-rule all_mutation_frequencies:
-    input: expand("results/{build_name}/nucleotide_mutation_frequencies.json", build_name=BUILD_NAMES)
-
 rule mutation_summary:
     message: "Summarizing {input.alignment}"
     input:
@@ -97,14 +93,15 @@ rule mutation_summary:
         reference = config["files"]["alignment_reference"],
         genemap = config["files"]["annotation"]
     output:
-        mutation_summary = "results/mutation_summary{origin}.tsv"
+        mutation_summary = "results/mutation_summary_{origin}.tsv.xz"
     log:
-        "logs/mutation_summary{origin}.txt"
+        "logs/mutation_summary_{origin}.txt"
     benchmark:
-        "benchmarks/mutation_summary{origin}.txt"
+        "benchmarks/mutation_summary_{origin}.txt"
     params:
         outdir = "results/translations",
-        basename = "seqs{origin}"
+        basename = "seqs_{origin}",
+        genes=config["genes"],
     conda: config["conda_environment"]
     shell:
         """
@@ -114,6 +111,7 @@ rule mutation_summary:
             --directory {params.outdir} \
             --basename {params.basename} \
             --reference {input.reference} \
+            --genes {params.genes:q} \
             --genemap {input.genemap} \
             --output {output.mutation_summary} 2>&1 | tee {log}
         """
@@ -129,10 +127,10 @@ rule dated_json:
         auspice_json = rules.finalize.output.auspice_json,
         tip_frequencies_json = rules.tip_frequencies.output.tip_frequencies_json
     output:
-        dated_auspice_json = "auspice/ncov_{build_name}_{date}.json",
-        dated_tip_frequencies_json = "auspice/ncov_{build_name}_{date}_tip-frequencies.json"
+        dated_auspice_json = "auspice/{prefix}_{build_name}_{date}.json",
+        dated_tip_frequencies_json = "auspice/{prefix}_{build_name}_{date}_tip-frequencies.json"
     benchmark:
-        "benchmarks/dated_json_{build_name}_{date}.txt"
+        "benchmarks/dated_json_{prefix}_{build_name}_{date}.txt"
     conda: config["conda_environment"]
     shell:
         """
@@ -160,18 +158,18 @@ except:
     # means that the Snakefile won't crash.
     deploy_origin = "by an unknown identity"
 
-rule deploy_to_staging:
+rule deploy:
     input:
         *rules.all_regions.input
     params:
-        slack_message = f"Deployed <https://nextstrain.org/staging/ncov|nextstrain.org/staging/ncov> {deploy_origin}",
-        s3_staging_url = config["s3_staging_url"]
+        slack_message = f"Deployed to {config['deploy_url']} {deploy_origin}",
+        deploy_url = config["deploy_url"]
     benchmark:
-        "benchmarks/deploy_to_staging.txt"
+        "benchmarks/deploy.txt"
     conda: config["conda_environment"]
     shell:
         """
-        nextstrain deploy {params.s3_staging_url:q} {input:q}
+        nextstrain deploy {params.deploy_url:q} {input:q}
 
         if [[ -n "$SLACK_TOKEN" && -n "$SLACK_CHANNEL" ]]; then
             curl https://slack.com/api/chat.postMessage \
@@ -199,30 +197,29 @@ rule upload_reference_sets:
             cmd = f"./scripts/upload-to-s3 {fname} s3://{params.s3_bucket}/{os.path.dirname(fname).split('/')[-1]}_metadata.tsv.{params.compression} | tee -a {log}"
             print("upload command:", cmd)
             shell(cmd)
-					    
+
 
 rule upload:
     message: "Uploading intermediate files for specified origins to {params.s3_bucket}"
     input:
-        expand("results/aligned_{origin}.fasta", origin=config["S3_DST_ORIGINS"]),              # from `rule align`
-        expand("results/sequence-diagnostics_{origin}.tsv", origin=config["S3_DST_ORIGINS"]),   # from `rule diagnostic`
-        expand("results/flagged-sequences_{origin}.tsv", origin=config["S3_DST_ORIGINS"]),      # from `rule diagnostic`
-        expand("results/to-exclude_{origin}.txt", origin=config["S3_DST_ORIGINS"]),             # from `rule diagnostic`
-        expand("results/masked_{origin}.fasta", origin=config["S3_DST_ORIGINS"]),               # from `rule mask`
-        expand("results/filtered_{origin}.fasta", origin=config["S3_DST_ORIGINS"]),             # from `rule filter`
-        expand("results/mutation_summary_{origin}.tsv", origin=config["S3_DST_ORIGINS"]),       # from `rule mutation_summary
-        expand("results/{build_name}/{build_name}_subsampled_sequences.fasta", build_name=config["builds"]),
-        expand("results/{build_name}/{build_name}_subsampled_metadata.tsv", build_name=config["builds"]),
+        expand("results/aligned_{origin}.fasta.xz", origin=config["S3_DST_ORIGINS"]),              # from `rule align`
+        expand("results/sequence-diagnostics_{origin}.tsv.xz", origin=config["S3_DST_ORIGINS"]),   # from `rule diagnostic`
+        expand("results/flagged-sequences_{origin}.tsv.xz", origin=config["S3_DST_ORIGINS"]),      # from `rule diagnostic`
+        expand("results/to-exclude_{origin}.txt.xz", origin=config["S3_DST_ORIGINS"]),             # from `rule diagnostic`
+        expand("results/masked_{origin}.fasta.xz", origin=config["S3_DST_ORIGINS"]),               # from `rule mask`
+        expand("results/filtered_{origin}.fasta.xz", origin=config["S3_DST_ORIGINS"]),             # from `rule filter`
+        expand("results/mutation_summary_{origin}.tsv.xz", origin=config["S3_DST_ORIGINS"]),       # from `rule mutation_summary
+        expand("results/{build_name}/{build_name}_subsampled_sequences.fasta.xz", build_name=config["builds"]),
+        expand("results/{build_name}/{build_name}_subsampled_metadata.tsv.xz", build_name=config["builds"]),
     params:
         s3_bucket = config["S3_DST_BUCKET"],
-        compression = config["S3_DST_COMPRESSION"]
     log:
         "logs/upload_gisaid.txt"
     benchmark:
         "benchmarks/upload_gisaid.txt"
     run:
         for fname in input:
-            cmd = f"./scripts/upload-to-s3 {fname} s3://{params.s3_bucket}/{os.path.basename(fname)}.{params.compression} | tee -a {log}"
+            cmd = f"./scripts/upload-to-s3 {fname} s3://{params.s3_bucket}/{os.path.basename(fname)} | tee -a {log}"
             print("upload command:", cmd)
             shell(cmd)
 
