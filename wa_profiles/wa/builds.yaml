@@ -1,7 +1,7 @@
 # Define starting input. Will be overridden if input.yaml is listed as a
 # configfile in the config.yaml
-sequences: "data/sequences.fasta"
-metadata: "data/metadata.tsv"
+#sequences: "data/sequences.fasta"
+#metadata: "data/metadata.tsv"
 
 # Defines next align specs
 genes: ["ORF1a", "ORF1b", "S", "ORF3a", "M", "N"]
