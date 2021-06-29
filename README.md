@@ -6,7 +6,7 @@ These modifications draw heavily from work by John Huddleston in the [SPHERES au
 The 1y, 4m, and 2m Washington builds are visible at: https://nextstrain.org/groups/blab/ncov/wa/1y, https://nextstrain.org/groups/blab/ncov/wa/4m, and https://nextstrain.org/groups/blab/ncov/wa/2m, respectively.
 
 Trees are reconstructed from a set of focal sequences -- SARS-CoV-2 samples from Washington State collected during the past two months, four months, or year -- and contextual sequences -- other US and global SARS-CoV-2 samples chosen by genetic proximity to the focal dataset.
-Contextual sequences can be selected from either two different datasets: 
+Contextual sequences can be selected from either two different datasets:
 1. Sequences in [Nextstrain's North America SARS-CoV-2 build](https://nextstrain.org/ncov/north-america).
 2. All sequences available on GISAID.
 
