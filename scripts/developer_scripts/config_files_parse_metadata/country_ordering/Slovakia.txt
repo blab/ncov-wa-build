@@ -157,7 +157,7 @@ District of Michalovce
 	Voľa
 	Vrbnica
 	Vysoká nad Uhom
-	Závadka, district Michalovce
+	Závadka (Michalovce)
 	Zbudza
 	Zemplínska Široká
 	Žbince
@@ -2507,6 +2507,8 @@ District of Svidnik
 	Vyšný Mirošov
 	Vyšný Orlík
 	Dukovce
+	Dubová
+
 District of Vranov nad Toplov
 	Holčíkovce
 	Jasenovce

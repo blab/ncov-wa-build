@@ -233,6 +233,7 @@ Westerlo
 ### Brabant Wallon
 
 # Nivelles
+Argenteuil BE
 Beauvechain
 	Beauvechain
 	Hamme-Mille
@@ -655,7 +656,7 @@ Mons
 	Mons
 	Nimy
 	Nouvelles
-	Saint-Denis
+	Saint-Denis (Mons)
 	Obourg
 	Saint-Symphorien
 	Spiennes
@@ -730,9 +731,9 @@ Soignies
 # Thuin
 Anderlues
 	Anderlues
-Beaumont
+Beaumont BE
 	Barbençon
-	Beaumont
+	Beaumont BE
 	Leugnies
 	Leval-Chaudeville
 	Renlies
@@ -1886,6 +1887,7 @@ Habay
 	Habay-la-Vieille
 	Hachy
 	Houdemont
+	Marbehan
 	Rulles
 Meix-devant-Virton
 	Gérouville
@@ -2180,7 +2182,7 @@ La Bruyère
 	Émines
 	Meux
 	Rhisnes
-	Saint-Denis
+	Saint-Denis (La Bruyère)
 	Villers-lez-Heest
 	Warisoulx
 Mettet
@@ -2548,6 +2550,7 @@ Gent
 	Sint-Denijs-Westrem - Afsnee
 	Wondelgem
 	Zwijnaarde
+	Desteldonk
 Lievegem
 	Lovendegem
 	Oostwinkel
@@ -2755,7 +2758,7 @@ Halle
 Herne
 	Herfelingen
 	Herne
-	Sint-Pieters-Kapelle
+	Sint-Pieters-Kapelle (Herne)
 Hoeilaart
 	Hoeilaart
 Kampenhout
@@ -2882,6 +2885,7 @@ Diest
 	Molenstede
 	Schaffen
 	Webbekom
+	Deurne (Leuven)
 Geetbets
 	Geetbets
 	Grazen
@@ -3015,7 +3019,7 @@ Zoutleeuw
 Beernem
 	Beernem
 	Oedelem
-	Sint-Joris
+	Sint-Joris (Brugge)
 Blankenberge
 	Blankenberge
 	Uitkerke
@@ -3229,7 +3233,7 @@ Middelkerke
 	Mannekensvere
 	Middelkerke
 	Schore
-	Sint-Pieters-Kapelle
+	Sint-Pieters-Kapelle (Middelkerke)
 	Slijpe
 	Westende
 	Wilskerke
@@ -3324,7 +3328,7 @@ Koksijde
 Nieuwpoort
 	Nieuwpoort
 	Ramskapelle
-	Sint-Joris
+	Sint-Joris (Veurne)
 Veurne
 	Avekapelle
 	Vinkem

@@ -230,6 +230,8 @@ def check_dates(data, today):
         "21D (Eta)": "2020-11-21",
         "21E (Theta)": "2021-01-10",
         "21F (Iota)": "2020-11-20",
+        "21G (Lambda)": "2021-01-05",
+        "21H": "2021-01-05",
     }
 
     invalid_sample_date = {}
@@ -311,6 +313,48 @@ def check_dates(data, today):
     print("\nSample date before clade (automatically excluded from total counts):")
     for strain in suspicious_sample_date:
         print(strain + ": " + suspicious_sample_date[strain])
+
+    return data
+
+
+flagged_properties = {"originating_lab": ["Synlab Haut de France"]}
+
+# Check for certain unique properties and potentially exclude (e.g. all sequences from a certain submission lab)
+def check_flagged_properties(data):
+
+    flagged_strains = {}
+    for p in flagged_properties:
+        flagged_strains[p] = {}
+        for name in flagged_properties[p]:
+            flagged_strains[p][name] = []
+
+    seqs_found = False
+    for id in list(data.keys()):
+        strain = data[id]["strain"]
+        exclude = False
+        for p in flagged_properties:
+            prop = data[id][p]
+            for name in flagged_properties[p]:
+                if prop == name:
+                    flagged_strains[p][name].append(strain)
+                    seqs_found = True
+                    exclude = True
+        if exclude:
+            data.pop(id)
+
+    if seqs_found:
+        print(bold("\nFlagged properties found! Please check outputs_new_sequences/sequences_exclude.txt for strain names to exclude") + " (automatically excluded from total counts).\n")
+    else:
+        print("\nNo flagged properties found.\n")
+
+    with open(path_to_outputs + "sequences_exclude.txt", "w") as out:
+        out.write("\n\nStrains to add to exclude (based on flagged properties):\n")
+        for p in flagged_strains:
+            for name in flagged_properties[p]:
+                out.write(p + " = \"" + name + "\":\n")
+                for strain in flagged_strains[p][name]:
+                    out.write(strain + "\n")
+                out.write("\n")
 
     return data
 
@@ -563,12 +607,12 @@ def filter_for_date_region(data, path_to_outputs, params):
 def prepare_tweet(counts, total_lab_collection, lab_collection):
 
     links = {
-        "Africa": "nextstrain.org/ncov/africa",
-        "Asia": "nextstrain.org/ncov/asia",
-        "Europe": "nextstrain.org/ncov/europe",
-        "North America": "nextstrain.org/ncov/north-america",
-        "Oceania": "nextstrain.org/ncov/oceania",
-        "South America": "nextstrain.org/ncov/south-america"
+        "Africa": "nextstrain.org/ncov/gisaid/africa",
+        "Asia": "nextstrain.org/ncov/gisaid/asia",
+        "Europe": "nextstrain.org/ncov/gisaid/europe",
+        "North America": "nextstrain.org/ncov/gisaid/north-america",
+        "Oceania": "nextstrain.org/ncov/gisaid/oceania",
+        "South America": "nextstrain.org/ncov/gisaid/south-america"
     }
 
     starters = [
@@ -592,7 +636,7 @@ def prepare_tweet(counts, total_lab_collection, lab_collection):
     counts_country = {region: {country: sum(counts[country].values()) for country in total_lab_collection[region]} for region in total_lab_collection}
     total = sum([sum(counts_country[region].values()) for region in counts_country])
 
-    start_tweet = "Thanks to #opendata sharing via @GISAID, we've updated nextstrain.org/ncov with " + str(
+    start_tweet = "Thanks to #opendata sharing via @GISAID, we've updated nextstrain.org/ncov/gisaid with " + str(
         total) + " new #COVID19 #SARSCoV2 sequences!"
     char_total = 230
     char_available = char_total - len("Check out the new sequences from on ") - len("(Thanks to )") - len("1/1")
@@ -759,6 +803,7 @@ today = str(datetime.datetime.now())[:10]
 if __name__ == '__main__':
     data, list_of_strains = read_data(path_to_input)
     data = check_dates(data, today)
+    data = check_flagged_properties(data)
     #plot_dates(data, path_to_outputs + "plots/")
     counts = print_counts(data)
     lab_collection = collect_labs(data, table_file_name)

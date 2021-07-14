@@ -37,12 +37,6 @@
 	* `joint`
 	* `marginal`
 
-## build_sizes
-* type: object
-* description: Number of strains to include in a build by name. Experimental.
-* examples
-	* `standard: 4000`
-
 ## builds
 * type: object
 * description: Named builds to produce by the workflow from the given inputs. Builds are indexed by name and include any number of build attributes that can be used to control subsampling, Auspice configuration, and more.
@@ -111,7 +105,7 @@ Builds support any named attributes that can be referenced by subsampling scheme
 * description:  List of paths to Snakemake files to include in the workflow, allowing users to inject their own rules at the beginning or the end of the workflow (e.g., to pre-process data prior to the workflow, annotate outputs from the workflow, etc.).
 * examples
 	* `- workflow/snakemake_rules/export_for_nextstrain.smk`
-	* `- nextstrain_profiles/nextstrain/subsampling_ranges.smk`
+	* `- nextstrain_profiles/nextstrain-gisaid/subsampling_ranges.smk`
 
 ## default_build_name
 * type: string
@@ -265,6 +259,11 @@ Builds support any named attributes that can be referenced by subsampling scheme
 * type: array
 * description: A list of genes for which `nextalign` should generate amino acid sequences during the alignment process. Gene names must match the names provided in the gene map from the `annotation` parameter.
 * default: `["ORF1a", "ORF1b", "S", "ORF3a", "M", "N"]`
+
+## include_hcov19_prefix
+* type: boolean
+* description: Prepend strain names with `hCoV-19/` per GISAID requirements for web display
+* default: `false`
 
 ## inputs
 * type: array
