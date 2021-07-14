@@ -19,7 +19,7 @@ files:
 
 # Define WA builds.
 builds:
-  orf7b-deletions:
+  long-deletions:
     title: "SARS-CoV-2 phylogeny focused on deletions in Orf7b"
     description: my_profiles/long-deletions/description.md
     subsampling_scheme: focal-contextual
