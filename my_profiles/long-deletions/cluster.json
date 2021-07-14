@@ -1,0 +1,36 @@
+{
+    "__default__": {
+        "partition": "-p restart-new --qos=restart-new",
+        "time" : "00:05:00",
+        "cores" : 1,
+        "memory": "256",
+        "disk": "10",
+        "name": "{rule}.{wildcards}"
+    },
+    "align": {
+        "partition": "-p campus-new",
+        "memory": "8192",
+        "cores": 8
+    },
+    "filter": {
+      "partition": "-p campus-new",
+      "time": "01:30:00"
+    },
+    "proximity_score": {
+      "partition": "-p campus-new",
+      "time": "00:25:00"
+    },
+    "tree": {
+        "partition": "-p campus-new",
+        "time": "6:00:00",
+        "cores": 8
+    },
+    "refine": {
+        "partition": "-p campus-new",
+        "time": "4:00:00"
+    },
+    "ancestral": {
+        "partition": "-p campus-new",
+        "time": "0:15:00"
+    }
+}

@@ -1,0 +1,40 @@
+# Define inputs.
+inputs:
+  - name: focal
+    metadata: "data/deletions.metadata.tsv"
+    sequences: "data/deletions.sequences.fasta.xz"
+  - name: gisaid
+    metadata: "s3://nextstrain-ncov-private/metadata.tsv.gz"
+    filtered: "s3://nextstrain-ncov-private/filtered_gisaid.fasta.xz"
+
+# Defines next align specs
+genes: ["ORF1a", "ORF1b", "S", "ORF3a", "M", "N"]
+use_nextalign: true
+conda_environment: "workflow/envs/nextstrain.yaml"
+
+# Define custom auspice configuration to enable frequencies.
+# Define subsclades.
+files:
+  auspice_config: "my_profiles/long-deletions/auspice_config.json"
+
+# Define WA builds.
+builds:
+  orf7b-deletions:
+    title: "SARS-CoV-2 phylogeny focused on deletions in Orf7b"
+    description: my_profiles/long-deletions/description.md
+    subsampling_scheme: focal-contextual
+
+# Define subsampling scheme for builds. This scheme should include as much
+# local diversity for a given division as possible and contextual samples from
+# the rest of the USA and the world.
+subsampling:
+    focal-contextual:
+      focal:
+        query: --query "focal == 'yes'"
+      # Included to accurately reconstruct # of introductions
+      contextual-proximity:
+        max_sequences: 500
+        query: --query "focal == 'no'"
+        priorities:
+          type: proximity
+          focus: focal
