@@ -5,7 +5,7 @@ inputs:
     sequences: "data/deletions.sequences.fasta.xz"
   - name: gisaid
     metadata: "s3://nextstrain-ncov-private/metadata.tsv.gz"
-    filtered: "s3://nextstrain-ncov-private/filtered_gisaid.fasta.xz"
+    filtered: "s3://nextstrain-ncov-private/filtered.fasta.xz"
 
 # Defines next align specs
 genes: ["ORF1a", "ORF1b", "S", "ORF3a", "M", "N"]
