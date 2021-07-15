@@ -91,7 +91,7 @@
     {
       "key": "genbank_accession",
       "type": "categorical"
-    },
+    }
   ],
   "geo_resolutions": [
     "location",
