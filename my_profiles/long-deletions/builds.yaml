@@ -12,6 +12,9 @@ genes: ["ORF1a", "ORF1b", "S", "ORF3a", "M", "N"]
 use_nextalign: true
 conda_environment: "workflow/envs/nextstrain.yaml"
 
+# Skip travel history adjustment
+skip_travel_history_adjustment: true
+
 # Define custom auspice configuration to enable frequencies.
 # Define subsclades.
 files:
