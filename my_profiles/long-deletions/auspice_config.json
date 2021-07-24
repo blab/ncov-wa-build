@@ -100,8 +100,8 @@
     "region"
   ],
   "display_defaults": {
-    "color_by": "clade_membership",
-    "distance_measure": "num_date",
+    "color_by": "deletion",
+    "distance_measure": "div",
     "geo_resolution": "division",
     "map_triplicate": true,
     "branch_label": "clade",
